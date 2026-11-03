@@ -16,8 +16,8 @@ Ids: `pess.t11` (`pess_thm11`), `pess.berge` (`pess_cor29`), `pess.t212` (`pess_
 (`pess_thm218`), `pess.t215` (`pess_thm215`), `pess.t220` (`pess_thm220`), `pess.t221` (`pess_thm221`);
 `pess.target_neg` for `PP` (`neg_mem_PP`, `neg_mem_PP_iff`).
 
-Assumptions are inherited from the optimistic statements and taken only as instance-implicit binders; no
-instance of any assumption class exists.
+Assumptions are inherited from the optimistic statements and taken only as instance-implicit binders;
+the library declares no instance of any assumption class.
 
 Deviations: none.
 -/
@@ -37,6 +37,7 @@ set_option linter.concreteInstances false
 theorem neg_mem_PP {n : ℕ} {f : (Fin n → ℝ) → ℝ} (hf : f ∈ PP n) : (fun x => -f x) ∈ PP n := by
   obtain ⟨N, S, p, hS, hdisj, hcov, hfp⟩ := hf
   refine ⟨N, S, fun i => -p i, hS, hdisj, hcov, fun i x hx => ?_⟩
+  show -f x = eval x (-p i)
   rw [hfp i x hx, map_neg]
 
 theorem neg_mem_PP_iff {n : ℕ} {f : (Fin n → ℝ) → ℝ} : (fun x => -f x) ∈ PP n ↔ f ∈ PP n := by
