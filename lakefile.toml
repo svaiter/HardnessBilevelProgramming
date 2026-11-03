@@ -1,0 +1,13 @@
+name = "HardnessBilevel"
+defaultTargets = ["HardnessBilevel"]
+
+[leanOptions]
+autoImplicit = false
+
+[[lean_lib]]
+name = "HardnessBilevel"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "1df8067a8085b91c97a15373e1cf2d3c643ddbeb"
