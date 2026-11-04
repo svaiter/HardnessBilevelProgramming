@@ -3,11 +3,14 @@
 A Lean 4 + Mathlib formalization of the results of
 
 > J. Bolte, T. Lê, E. Pauwels, S. Vaiter, *Geometric and computational hardness of bilevel programming*,
-> arXiv:2407.12372 (v2, Jan 2025).
+> Mathematical Programming, 2025 (arXiv:2407.12372).
 
 The mathematical plan is `blueprint.md` (proof routes, Lean encoding, paper errata); the execution plan is `PLAN.md`.
 The library has 36 files, about 6946 lines and 700 declarations, builds with no `sorry`, and every main theorem depends only on
 `propext`, `Classical.choice`, `Quot.sound` (run `scripts/check.sh`).
+
+NOTE: this is a work in progress, and relies on brutal axiomatization of semialgebraic sets.
+It is also fully auto-formalized without human intervention on the Lean4 code.
 
 ## Toolchain
 
