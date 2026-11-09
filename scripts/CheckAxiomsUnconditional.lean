@@ -9,6 +9,11 @@ exactly `[propext, Classical.choice, Quot.sound]`: the three real-algebraic-geom
 
 open Bilevel
 
+-- instance search finds the three proved instances
+example : HasSemialgebraicProjections := inferInstance
+example : HasFinitenessTheorem := inferInstance
+example : HasGrowthBound := inferInstance
+
 -- the three proved instances
 #print axioms instHasSemialgebraicProjections
 #print axioms instHasFinitenessTheorem

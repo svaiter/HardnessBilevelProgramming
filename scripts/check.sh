@@ -6,11 +6,13 @@ cd "$(dirname "$0")/.."
 . scripts/env.sh
 echo "== build =="
 lake build 2>&1 | grep -v "module system" | tail -2
-echo "== hygiene: sorry / axiom / native_decide / admit =="
+echo "== hygiene: sorry / admit / native_decide / axiom / unsafe / implemented_by / extern / opaque =="
 # (mentions inside backticks or on comment lines are allowed; the axiom checks below are the real guard)
 SRC="HardnessBilevel HardnessBilevel.lean HardnessBilevelUnconditional HardnessBilevelUnconditional.lean"
-if grep -rnE '\b(sorry|admit|native_decide)\b|^\s*axiom\b' $SRC | grep -vE '`(sorry|admit|native_decide|axiom)|^[^:]+:[0-9]+:\s*(--|/-|\*)' | grep -q .; then
-  grep -rnE '\b(sorry|admit|native_decide)\b|^\s*axiom\b' $SRC | grep -vE '`(sorry|admit|native_decide|axiom)|^[^:]+:[0-9]+:\s*(--|/-|\*)'
+PAT='\b(sorry|admit|native_decide|implemented_by|extern)\b|^\s*(private\s+|protected\s+)?(axiom|unsafe|opaque)\b'
+SKIP='`[^`]*(sorry|admit|native_decide|axiom|unsafe|implemented_by|extern|opaque)|^[^:]+:[0-9]+:\s*(--|/-|\*)'
+if grep -rnE "$PAT" $SRC | grep -vE "$SKIP" | grep -q .; then
+  grep -rnE "$PAT" $SRC | grep -vE "$SKIP"
   echo "FAIL: forbidden token"; exit 1
 fi
 echo "none"
@@ -24,7 +26,13 @@ expected="$(printf '%s\n' 'instance instHasFinitenessTheorem : HasFinitenessTheo
 if [ "$found" != "$expected" ] || [ "$(grep -rcE '^\s*(@\[[^]]*\]\s*)?(noncomputable\s+)?(scoped\s+|local\s+)?instance\b' HardnessBilevelUnconditional | awk -F: '{s+=$2} END {print s}')" != 3 ]; then
   echo "$found"; echo "FAIL: unexpected instance declarations in HardnessBilevelUnconditional"; exit 1
 fi
+if grep -rnE 'attribute\s*\[[^]]*instance' HardnessBilevel HardnessBilevelUnconditional; then echo "FAIL: instance attribute set outside an instance declaration"; exit 1; fi
 echo "ok (each is proved; its axioms are printed below)"
+echo "== instance search fails in the core library =="
+if [ -n "$(lake lean scripts/CheckNoInstance.lean 2>/dev/null)" ]; then
+  lake lean scripts/CheckNoInstance.lean 2>/dev/null; echo "FAIL: an instance of an assumption class is in scope in the core library"; exit 1
+fi
+echo "ok"
 
 # check_axioms FILE: every `#print axioms` of FILE must report exactly the three standard axioms.
 check_axioms() {
@@ -43,4 +51,8 @@ echo "== axioms of the main theorems (core library; assumptions are class binder
 check_axioms scripts/CheckAxioms.lean
 echo "== axioms of the proved instances and of the assumption-free corollaries =="
 check_axioms scripts/CheckAxiomsUnconditional.lean
+# every theorem of HardnessBilevelUnconditional/Main.lean must be listed in the axiom check
+for t in $(grep -oE '^theorem [A-Za-z0-9_]+' HardnessBilevelUnconditional/Main.lean | awk '{print $2}'); do
+  grep -q "^#print axioms Unconditional.$t\$" scripts/CheckAxiomsUnconditional.lean || { echo "FAIL: $t is not axiom-checked"; exit 1; }
+done
 echo "OK: all listed theorems depend only on propext, Classical.choice, Quot.sound"

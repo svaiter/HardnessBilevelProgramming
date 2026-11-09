@@ -121,7 +121,7 @@ Optional, after everything: `t220.euclid_remark`, `s3.coeff_bound`, `sa.closure`
 ## 4. Per-unit acceptance checklist (used by the auditors)
 
 - [ ] file builds inside the project (`lake build HardnessBilevel.<Module>`)
-- [ ] no `sorry`, `axiom`, `native_decide`, `unsafe`; no `instance` of A1–A3
+- [ ] no `sorry`, `axiom`, `native_decide`, `unsafe`; no `instance` of A1–A3 in the core library (and no unproved one anywhere)
 - [ ] `#print axioms` of each public theorem ⊆ {`propext`, `Classical.choice`, `Quot.sound`}
 - [ ] every blueprint lemma id of the unit is present (or its absence is justified in the header)
 - [ ] every statement matches the blueprint mathematically (hypotheses, conclusion, types, universes `Type`)

@@ -6,7 +6,7 @@ A Lean 4 + Mathlib formalization of the results of
 > Mathematical Programming, 2025 (arXiv:2407.12372).
 
 The mathematical plan is `blueprint.md` (proof routes, Lean encoding, paper errata); the execution plan is `PLAN.md`.
-The core library `HardnessBilevel` has 36 files, about 6950 lines and 700 declarations and builds with no `sorry`.
+The core library `HardnessBilevel` has 36 files, about 7000 lines and 700 declarations and builds with no `sorry`.
 The library `HardnessBilevelUnconditional` adds proved instances of the three real-algebraic-geometry facts the core
 library takes as hypotheses, and the main theorems with no hypothesis left. Every main theorem, in both forms, depends
 only on `propext`, `Classical.choice`, `Quot.sound` (run `scripts/check.sh`).

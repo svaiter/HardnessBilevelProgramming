@@ -31,7 +31,7 @@ import HardnessBilevel.Semialgebraic.Basic
 
 namespace Bilevel
 
--- No instance of these classes exists (by policy), so they are deliberately local binders.
+-- The core library declares no instance of these classes (by policy), so they are deliberately local binders.
 set_option linter.concreteInstances false
 
 /-- A1 (Tarski–Seidenberg, blueprint §2.5 / §4.B.3). Projection form: forgetting finitely many coordinates
