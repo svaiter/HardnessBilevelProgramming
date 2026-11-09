@@ -7,14 +7,21 @@ Implements blueprint §2.5 and the class statements of §4.B.3 (A1, Tarski–Sei
 theorem, paper Prop 2.4) and §4.B.5 (A3, growth bound, CORRECTED paper Prop 2.5), with exactly the statements
 of blueprint §2.5.
 
-## No-instance policy (binding, blueprint §2.5 / PLAN §1 rule 4)
+## No-unproved-instance policy (binding, blueprint §2.5 / PLAN §1 rule 4)
 
-* There is **no `instance`** of `HasSemialgebraicProjections`, `HasFinitenessTheorem` or `HasGrowthBound`
-  anywhere in the library — not even a `sorry`ed one (typeclass search would silently use it).
-* Every theorem that needs an assumption takes it as an explicit instance-implicit binder
+* The core library `HardnessBilevel` declares **no `instance`** of `HasSemialgebraicProjections`,
+  `HasFinitenessTheorem` or `HasGrowthBound`, and no unproved (`sorry`ed, axiomatized) instance may exist
+  anywhere: typeclass search would silently use it.
+* Every theorem of the core library that needs an assumption takes it as an explicit instance-implicit binder
   (`[HasSemialgebraicProjections]`, `[HasFinitenessTheorem]`, `[HasGrowthBound]`), so the assumption is
   visible in its signature and `#print axioms` stays ⊆ {propext, Classical.choice, Quot.sound}.
-* A theorem that secretly used an assumption without the binder fails to elaborate, since no instance exists.
+* A theorem of the core library that secretly used an assumption without the binder fails to elaborate, since
+  no instance is in scope there. (Where other files of the core library say "no instance exists", read: in the
+  core library.)
+* **Proved** instances of the three classes are declared in the separate library
+  `HardnessBilevelUnconditional` (`HardnessBilevelUnconditional/Instances.lean`), from the `Semialgebraic`
+  companion library built on TauCeti; the assumption-free corollaries of the main theorems are in
+  `HardnessBilevelUnconditional/Main.lean`. The core library does not import them.
 
 Note on A3: the hypothesis is stated with the explicit graph set
 `{z : Fin n ⊕ Unit → ℝ | f (z ∘ Sum.inl) = z (Sum.inr ())}`, which is `graphSet f` by definition
@@ -24,7 +31,7 @@ import HardnessBilevel.Semialgebraic.Basic
 
 namespace Bilevel
 
--- No instance of these classes exists (by policy), so they are deliberately local binders.
+-- The core library declares no instance of these classes (by policy), so they are deliberately local binders.
 set_option linter.concreteInstances false
 
 /-- A1 (Tarski–Seidenberg, blueprint §2.5 / §4.B.3). Projection form: forgetting finitely many coordinates

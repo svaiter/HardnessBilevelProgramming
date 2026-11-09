@@ -6,38 +6,60 @@ A Lean 4 + Mathlib formalization of the results of
 > Mathematical Programming, 2025 (arXiv:2407.12372).
 
 The mathematical plan is `blueprint.md` (proof routes, Lean encoding, paper errata); the execution plan is `PLAN.md`.
-The library has 36 files, about 6946 lines and 700 declarations, builds with no `sorry`, and every main theorem depends only on
-`propext`, `Classical.choice`, `Quot.sound` (run `scripts/check.sh`).
+The core library `HardnessBilevel` has 36 files, about 7000 lines and 700 declarations and builds with no `sorry`.
+The library `HardnessBilevelUnconditional` adds proved instances of the three real-algebraic-geometry facts the core
+library takes as hypotheses, and the main theorems with no hypothesis left. Every main theorem, in both forms, depends
+only on `propext`, `Classical.choice`, `Quot.sound` (run `scripts/check.sh`).
 
-NOTE: this is a work in progress, and relies on brutal axiomatization of semialgebraic sets.
-It is also fully auto-formalized without human intervention on the Lean4 code.
+NOTE: this is a work in progress, fully auto-formalized without human intervention on the Lean 4 code.
 
 ## Toolchain
 
-Lean `leanprover/lean4:v4.36.0-rc2`, Mathlib commit `1df8067a` (pinned in `lakefile.toml` / `lake-manifest.json`).
+Lean `leanprover/lean4:v4.36.0-rc2`. Pinned in `lakefile.toml` / `lake-manifest.json`:
+
+| dependency | commit | role |
+|---|---|---|
+| Mathlib | `1b1ccf4b` | everything |
+| [Semialgebraic](https://github.com/svaiter/Semialgebraic) | see `lakefile.toml` | proofs of A1, A2, A3 over `ℝ` |
+| [TauCeti](https://github.com/TauCetiProject/TauCeti) | `2c9b12be` (through Semialgebraic) | semialgebraic sets, Tarski–Seidenberg |
 
 ```bash
-lake exe cache get   # Mathlib oleans
-lake build
-scripts/check.sh     # build + hygiene + #print axioms of the main theorems
+scripts/setup.sh     # once: Mathlib oleans, and the mappings of TauCeti's olean cache
+. scripts/env.sh     # in every shell: lets Lake fetch TauCeti modules instead of compiling them
+lake build           # both libraries
+scripts/check.sh     # build + hygiene + #print axioms of the main theorems, with and without assumptions
 ```
 
-## Assumptions
+Without `scripts/env.sh` the build is still correct, but Lake compiles the imported part of TauCeti from source.
+`lake build HardnessBilevel` builds the core library alone.
+
+## Assumptions, and their proofs
 
 Mathlib has no real algebraic geometry beyond the basics, so three facts are **quarantined as Prop-classes** in
-`HardnessBilevel/Assumptions/Classes.lean` and taken as explicit instance-implicit hypotheses by the theorems that need them.
-**No instance of any of them is declared anywhere** (`scripts/check.sh` enforces this), so `#print axioms` stays clean and
-every dependency is visible in a theorem's signature.
+`HardnessBilevel/Assumptions/Classes.lean` and taken as explicit instance-implicit hypotheses by the theorems of the
+core library that need them. The core library declares **no instance** of them, so every dependency is visible in a
+theorem's signature.
 
-| id | class | content |
-|---|---|---|
-| A1 | `HasSemialgebraicProjections` | Tarski–Seidenberg: projections of semialgebraic sets are semialgebraic |
-| A2 | `HasFinitenessTheorem` | closed semialgebraic sets are finite unions of finite intersections of `{p ≥ 0}` (paper Prop 2.4) |
-| A3 | `HasGrowthBound` | a semialgebraic function bounded on bounded sets is polynomially bounded (corrected paper Prop 2.5) |
+All three are now **proved**: the companion library `Semialgebraic` proves them over `ℝ` on top of TauCeti, and
+`HardnessBilevelUnconditional/Instances.lean` declares the instances (each is the companion's interface theorem with
+no glue, since `Bilevel.IsSemialgebraic` and `TauCeti.IsSemialgebraic` have the same body). No unproved instance
+exists anywhere (`scripts/check.sh` enforces this).
+
+| id | class | content | proved by (namespace `Semialgebraic.Interface`) |
+|---|---|---|---|
+| A1 | `HasSemialgebraicProjections` | Tarski–Seidenberg: projections of semialgebraic sets are semialgebraic | `image_comp_inl` (TauCeti's cylindrical algebraic decomposition) |
+| A2 | `HasFinitenessTheorem` | closed semialgebraic sets are finite unions of finite intersections of `{p ≥ 0}` (paper Prop 2.4) | `exists_eq_iUnion_iInter_nonneg` (weighted Łojasiewicz inequality) |
+| A3 | `HasGrowthBound` | a semialgebraic function bounded on bounded sets is polynomially bounded (corrected paper Prop 2.5) | `growth` (growth of fibrewise suprema) |
+
+`HardnessBilevelUnconditional/Main.lean` restates, in namespace `Bilevel.Unconditional` and under the same names,
+every theorem of the table below that has an entry in the "assumptions" column, with the class binders removed:
+`valueFun_isExtSemialgebraic`, `pvalueFun_isExtSemialgebraic`, `thm212_eq_SA`, `thm215_supset`, `thm215_eq`,
+`thm218_main`, `thm220_supset`, `thm220_main`, `thm221_compact_sa_incl` (and `_pess`), `thm221_eq`, `pess_thm212`,
+`pess_thm215`, `pess_thm218`, `pess_thm220`, `pess_thm221`.
 
 ## Results
 
-| paper | Lean (namespace `Bilevel`) | file | assumptions |
+| paper | Lean (namespace `Bilevel`) | file | assumptions of the core statement (all proved, see above) |
 |---|---|---|---|
 | Thm 1.1 (C^∞ bilevel ⇒ any lsc function) | `exists_smooth_of_lowerSemicontinuous` | `Smooth/Thm11.lean` | none |
 | Cor 2.9 (compact lower level: lsc, real, bounded) | `cor29`, `lowerSemicontinuous_valueFun` | `Framework/Berge.lean` | none |
@@ -67,4 +89,6 @@ correctness are. See `blueprint.md` §5 for the confirmed errata in the paper th
 - `Gadgets/`: zero-locus and escape gadgets, box gadgets
 - `Smooth/`, `Unbounded/`, `Bounded/`, `Convex/`, `Hardness/`, `Pessimistic.lean`: the theorems
 - `Assumptions/`: the three classes
+- `HardnessBilevelUnconditional/`: proved instances of the three classes (`Instances.lean`) and assumption-free forms of
+  the main theorems (`Main.lean`)
 - `notes/`: research, audits and consolidation behind the blueprint; `notes/lean-reports/`: writer and audit reports per unit
