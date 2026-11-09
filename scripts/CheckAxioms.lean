@@ -1,7 +1,7 @@
 import HardnessBilevel
 
 /-!
-Axiom check for the main results. Run with `lake env lean scripts/CheckAxioms.lean`
+Axiom check for the main results. Run with `lake lean scripts/CheckAxioms.lean`
 (or `scripts/check.sh`). Every line must print only `propext`, `Classical.choice`, `Quot.sound`;
 the assumption classes A1–A3 are hypotheses of the theorems that need them, never axioms.
 -/

@@ -290,6 +290,11 @@ class HasGrowthBound : Prop where
     ∃ (B : ℝ) (M : ℕ), ∀ x, |f x| ≤ B + (1 + ∑ i, x i ^ 2) ^ M
 ```
 
+**Status (2026-11-09): all three assumptions are now proved** in the companion library `svaiter/Semialgebraic` (built on
+TauCeti); proved instances and assumption-free corollaries live in the separate library `HardnessBilevelUnconditional` (see
+`PLAN.md` §6). The policy below still binds the core library `HardnessBilevel`, with "no instance" read as "no instance in the
+core library and no unproved instance anywhere".
+
 **No-instance policy (binding).**
 1. There is **no `instance`** of `HasSemialgebraicProjections`, `HasFinitenessTheorem` or `HasGrowthBound` anywhere in the library
    — not even a `sorry`ed one (typeclass search would silently use it, and a corollary stated without the binder would depend on

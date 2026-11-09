@@ -22,4 +22,4 @@ rev = "1b1ccf4b088b32fa3f23f2de1127433254a81e1e"
 [[require]]
 name = "Semialgebraic"
 git = "https://github.com/svaiter/Semialgebraic"
-rev = "757f29c914cc594c0dc4fa7e9d700f1cb82837b3"
+rev = "6a8030bd1f9f53f5ad2128e073871655bad19495"

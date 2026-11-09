@@ -10,7 +10,8 @@ Lemma ids (`fw.*`, `sa.*`, `gad.*`, `t11.*`, `berge.*`, `t212.*`, `t215.*`, `t21
 | item | value |
 |---|---|
 | Lean | `leanprover/lean4:v4.36.0-rc2` (`lean-toolchain`) |
-| Mathlib | commit `1df8067a8085b91c97a15373e1cf2d3c643ddbeb` (`lakefile.toml`, `rev`), cache via `lake exe cache get` |
+| Mathlib | commit `1b1ccf4b088b32fa3f23f2de1127433254a81e1e` (`lakefile.toml`, `rev`; moved on 2026-11-09 from `1df8067a` to the pin of the `Semialgebraic` companion and of TauCeti), cache via `lake exe cache get` |
+| Semialgebraic | `svaiter/Semialgebraic`, commit pinned in `lakefile.toml`; it pins TauCeti `2c9b12be` |
 | library | `HardnessBilevel` (root module `HardnessBilevel.lean` re-exports every file) |
 | options | `autoImplicit = false` project-wide |
 
@@ -25,10 +26,13 @@ Smoke test before any code: a file importing `Mathlib` builds with `lake build` 
    becomes `Bilevel.valueFun_eq_of_isLeast` (section prefixes are dropped; the id is cited in the docstring).
 3. **No `sorry`, no `axiom`, no `native_decide`, no `decide` on large goals, no `unsafe`.** `#print axioms` of every
    top-level theorem must show only `propext`, `Classical.choice`, `Quot.sound`.
-4. **Assumptions A1–A3** live only in `HardnessBilevel/Assumptions/Classes.lean` as `class … : Prop`. **No `instance`
-   of them anywhere** (not even sorried); consumers take `[HasSemialgebraicProjections]` etc. as explicit binders.
-   `HardnessBilevel/Assumptions/Unsafe.lean` (imported by nothing) is the only place a sorried instance may live, and it
-   is not created in this plan.
+4. **Assumptions A1–A3** live only in `HardnessBilevel/Assumptions/Classes.lean` as `class … : Prop`. **No unproved
+   `instance` of them anywhere** (amended 2026-11-09; the original rule was "no instance"): the core library
+   `HardnessBilevel` declares no instance at all and its consumers take `[HasSemialgebraicProjections]` etc. as explicit
+   binders; the only instances are the three **proved** ones of `HardnessBilevelUnconditional/Instances.lean`, obtained
+   from the `Semialgebraic` companion library (TauCeti-based), in a separate `lean_lib` that the core library does not
+   import. A sorried or axiomatized instance is forbidden everywhere. `scripts/check.sh` enforces all of this and prints
+   the axioms of the instances and of the assumption-free corollaries (§6).
 5. **Statements are the blueprint's statements.** A theorem may be strengthened (weaker hypotheses, stronger
    conclusion) but never weakened or re-typed; definitions are the blueprint's (e.g. `valueFun` is the `⨅` in `EReal`,
    boxes have `EReal` endpoints). Any deviation is written in the file header with a reason and reported to the auditor.
@@ -138,3 +142,28 @@ Optional, after everything: `t220.euclid_remark`, `s3.coeff_bound`, `sa.closure`
 
 After each milestone: full build, audits resolved, commit and push to `claude/elegant-maxwell-o2ppx8`, short status in
 the session.
+
+## 6. Discharging the assumptions (added 2026-11-09)
+
+The three assumptions are proved over `ℝ` in the companion library `svaiter/Semialgebraic` (its own `PLAN.md` and
+`notes/` document the routes, research and audits), which depends on TauCeti and not on this repository:
+
+| id | interface theorem of the companion (namespace `Semialgebraic.Interface`) | source |
+|---|---|---|
+| A1 | `image_comp_inl` | TauCeti's Tarski–Seidenberg theorem (cylindrical algebraic decomposition) |
+| A2 | `exists_eq_iUnion_iInter_nonneg` | weighted Łojasiewicz inequality on closed semialgebraic sets, finiteness theorem for open sets |
+| A3 | `growth` | polynomial growth of fibrewise suprema of semialgebraic plane sets |
+
+Integration (this repository):
+
+* `lakefile.toml` requires the companion at a pinned commit and Mathlib at the companion's pin; a second `lean_lib`
+  `HardnessBilevelUnconditional` is a default target next to the core library.
+* `HardnessBilevelUnconditional/Instances.lean` declares the three proved instances (each is the interface theorem
+  with no glue, because `Bilevel.IsSemialgebraic` and `TauCeti.IsSemialgebraic` have the same body);
+  `HardnessBilevelUnconditional/Main.lean` restates Prop 2.6, Thms 2.12, 2.15, 2.18, 2.20, 2.21 and their pessimistic
+  twins with no class binder, in namespace `Bilevel.Unconditional`.
+* The core library is unchanged: binder-form statements, no instance.
+* `scripts/check.sh`: build of both libraries, forbidden-token scan, no instance in the core library, exactly the
+  three proved instances in the unconditional library, `#print axioms` of the core theorems
+  (`scripts/CheckAxioms.lean`) and of the instances and corollaries (`scripts/CheckAxiomsUnconditional.lean`), all
+  equal to `[propext, Classical.choice, Quot.sound]`.

@@ -2,7 +2,7 @@ import HardnessBilevelUnconditional
 
 /-!
 Axiom check for the assumption-free forms of the main theorems (library `HardnessBilevelUnconditional`).
-Run with `lake env lean scripts/CheckAxiomsUnconditional.lean` (or `scripts/check.sh`). Every line must print
+Run with `lake lean scripts/CheckAxiomsUnconditional.lean` (or `scripts/check.sh`). Every line must print
 exactly `[propext, Classical.choice, Quot.sound]`: the three real-algebraic-geometry facts A1–A3 are proved
 (Semialgebraic companion library on top of TauCeti), not assumed.
 -/
