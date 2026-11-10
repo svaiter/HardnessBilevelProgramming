@@ -13,6 +13,12 @@ only on `propext`, `Classical.choice`, `Quot.sound` (run `scripts/check.sh`).
 
 NOTE: this is a work in progress, fully auto-formalized without human intervention on the Lean 4 code.
 
+## Visual paper
+
+Explore the paper's results, proof dependencies, and links to the Lean formalization in the
+[published visual paper](https://samuelvaiter.com/publications/bolte2025geometric/).
+The generator and instructions for building it locally are in [visual-paper/](visual-paper/README.md).
+
 ## Toolchain
 
 Lean `leanprover/lean4:v4.36.0-rc2`. Pinned in `lakefile.toml` / `lake-manifest.json`:
