@@ -1,0 +1,44 @@
+[
+  {
+    "id": "prop26.idea.2",
+    "verdict": "supported",
+    "reason": "The cited finite-value graph formula is exactly a lower-bound condition plus feasible values within every positive epsilon, with no attainment assumption.",
+    "claim_hash": "607bbdaa7e492212c9ebebb429a436d97357892dc1c527e117c51e79fcdcb047",
+    "evidence_hash": "8c181d9290950ff97360dc8125f7e5d515725c120e8de751196103d5c780f68a"
+  },
+  {
+    "id": "thm215.uses.prop24",
+    "verdict": "supported",
+    "reason": "Both cited passages give finite unions of finite intersections of weak polynomial inequalities, respectively for the graph closure and the closed semialgebraic epigraph. Finiteness is read as the named representation result, not mere cardinal finiteness.",
+    "claim_hash": "c70096607af0e6ea62bb9abc739fa37ce069cc471faf8d0f22fe87b329c97e57",
+    "evidence_hash": "d95e780eeb5d752673ccfcf12b5c150d12956ddd4124a923e6871de9e6f29fcd"
+  },
+  {
+    "id": "thm215.uses.bp",
+    "verdict": "supported",
+    "reason": "The normalization passage explicitly rescales P by the strictly positive polynomial factor; the optimistic-infimum definition preserves this positive scaling for each fixed upper variable.",
+    "claim_hash": "8419b29422d80792241d2cd7b76167dec7361a3e5d3e6ed20dde7c8c00ed649f",
+    "evidence_hash": "034fc78d07e15d5e800147633b6767c9a1b3643d03746361c0fe1cab622e7917"
+  },
+  {
+    "id": "thm220.uses.thm215",
+    "verdict": "supported",
+    "reason": "The source explicitly credits the earlier bounded-box theorem for the second inclusion and introduces its polynomial-piece shift as similar to that theorem’s proof.",
+    "claim_hash": "832197d8604fa7cc1a5406f372aaf90b357553c8f492bb3f5034ac83b4b4eb1e",
+    "evidence_hash": "f1c2ba6087eece3abcf3d110be40d49372e8b9a01392ada1753ef7e8a0c3a10c"
+  },
+  {
+    "id": "pessimistic.uses.bp",
+    "verdict": "supported",
+    "reason": "The defining displayed formula uses the supremum over lower minimizers. This claim does not repeat the source’s erroneous blanket uniqueness assertion.",
+    "claim_hash": "9228218c532ed1db3a45e8246dfed93be75ccabf21eaac0d3e26b9ffbaa79644",
+    "evidence_hash": "3ee0049cf8a15e0983562ea547b0eb6f46477b637b2923eba0b31ca30f67a79f"
+  },
+  {
+    "id": "thm32.step.1",
+    "verdict": "supported",
+    "reason": "The source explicitly derives the hardness theorem from the lemma, which maps YES to negative optimal value and NO to zero and supplies the polynomial encoding-size argument.",
+    "claim_hash": "139f04a01fc5e7b393d3a64387bb873a8482865242e5e1f878d8f59b5dbd0593",
+    "evidence_hash": "10a05c9a42e5fc30b7b9ce3a00b94a0fca4f258d7b3edc0ab71734e555e7f870"
+  }
+]

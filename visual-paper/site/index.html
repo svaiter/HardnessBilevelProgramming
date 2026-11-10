@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geometric and computational hardness of bilevel programming | Visual Paper</title>
+  <meta name="description" content="An interactive proof map for Geometric and computational hardness of bilevel programming.">
+  <meta property="og:title" content="Geometric and computational hardness of bilevel programming">
+  <meta property="og:description" content="An interactive proof map and reading companion.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./vendor/katex.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./vendor/cytoscape.min.js"></script>
+  <script defer src="./vendor/dagre.min.js"></script>
+  <script defer src="./vendor/cytoscape-dagre.js"></script>
+  <script defer src="./data.js"></script>
+  <script defer src="./vendor/katex.min.js"></script>
+  <script defer src="./math.js"></script>
+  <script defer src="./figures.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#result-heading">Skip to reading panel</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+    <a class="wordmark" href="https://samuelvaiter.com/">Samuel Vaiter</a>
+    <nav class="site-navigation" aria-label="Site"><a href="https://samuelvaiter.com/publications/">Publications</a><a href="https://samuelvaiter.com/teaching/">Teaching</a><a href="https://samuelvaiter.com/map/">Map</a><a href="https://samuelvaiter.com/about/">About</a></nav>
+    <button class="icon-button theme-button" type="button" id="toggle-theme" aria-label="Switch to dark theme" title="Switch to dark theme"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="paper-navigation">
+    <nav class="primary-nav" aria-label="Main">
+      <a href="#/overview" id="nav-overview">Overview</a>
+      <a href="#/map" id="nav-map" aria-current="page">Proof map</a>
+      <a href="#/corrections" id="nav-corrections">Corrections</a>
+      <button type="button" id="open-notation">Notation</button>
+    </nav>
+    <div class="header-tools">
+      <button class="search-trigger" type="button" id="open-search" aria-label="Search results">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span>Search</span><kbd>/</kbd>
+      </button>
+    </div>
+    </div>
+    <section class="hero" id="hero" aria-labelledby="paper-title">
+      <div class="hero-intro">
+        <div class="overline"><span class="status-dot"></span> A VISUAL COMPANION</div>
+        <h1 id="paper-title">Geometric and computational hardness of bilevel programming</h1>
+        <p class="authors" id="paper-authors"></p>
+      </div>
+      <aside class="hero-aside" aria-label="About the companion">
+        <p>Trace how the results fit together, read the paper’s statements and proofs, and follow the links to Lean.</p>
+        <div class="hero-links">
+          <a id="paper-link" href="https://arxiv.org/abs/2407.12372">Read the paper <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+          <a id="repo-link" href="https://github.com/svaiter/HardnessBilevelProgramming">Lean repository <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="workspace" id="map-workspace" aria-labelledby="map-title">
+      <div class="workspace-head">
+        <div class="workspace-title"><span class="workspace-index" aria-hidden="true">01</span><h2 id="map-title">Proof map</h2><span id="map-stats" class="map-stats"></span></div>
+        <div class="workspace-tools">
+          <div class="section-filter"><label class="sr-only" for="section-select">Filter by section</label><select id="section-select"><option value="">All sections</option></select><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></div>
+          <button class="subtle-button" id="toggle-reading" type="button" aria-pressed="false" title="Toggle reading mode (G)"><svg class="icon" aria-hidden="true"><use href="#i-reading"/></svg><span>Reading mode</span></button>
+        </div>
+      </div>
+      <div class="mobile-tabs" role="group" aria-label="Map or reading">
+        <button type="button" id="mobile-map" aria-pressed="true">Proof outline</button>
+        <button type="button" id="mobile-reading" aria-pressed="false">Reading</button>
+      </div>
+      <div class="workspace-panes" id="panes" data-mobile="map">
+        <section class="map-pane" aria-label="Proof diagram">
+          <div class="graph-toolbar">
+            <div class="segmented" role="group" aria-label="Graph view">
+              <button id="view-whole" type="button" aria-pressed="true">Whole map</button>
+              <button id="view-focus" type="button" aria-pressed="false">Focus</button>
+            </div>
+            <span class="graph-scope" id="graph-scope" aria-live="polite"></span>
+            <button type="button" id="toggle-outline" class="text-button outline-trigger" aria-expanded="false" aria-controls="proof-outline">Outline</button>
+            <button type="button" id="toggle-expand" class="icon-button expand-button" aria-label="Expand graph" aria-pressed="false" title="Expand graph"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></button>
+          </div>
+          <div class="graph-body">
+            <div id="graph" aria-hidden="true"></div>
+            <p id="graph-empty" class="graph-empty" hidden>No results in this view.</p>
+            <div id="proof-outline" class="proof-outline"></div>
+            <div class="graph-controls" role="group" aria-label="Graph zoom">
+              <button id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+              <button id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg></button>
+              <button id="zoom-fit" type="button" aria-label="Fit diagram" title="Fit diagram"><svg class="icon" aria-hidden="true"><use href="#i-fit"/></svg></button>
+            </div>
+          </div>
+          <div class="graph-legend">
+            <span class="legend-edge" title="Dashed arrows summarize dependencies across sections"><svg aria-hidden="true" viewBox="0 0 25 12"><path d="M1 6h21m-5-4 5 4-5 4"/></svg>A is used to prove B</span>
+            <span class="legend-formalized"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Lean formalized</span>
+            <span class="legend-partial"><span aria-hidden="true">◐</span>Reduction only</span>
+            <span class="legend-correction"><span class="correction-dot"></span>Correction</span>
+            <label id="external-control" class="external-control" hidden><input type="checkbox" id="show-external" checked> Companion links</label>
+          </div>
+        </section>
+
+        <div class="splitter" id="splitter" role="separator" tabindex="0" aria-label="Resize map and reading panes" aria-orientation="vertical" aria-valuemin="28" aria-valuemax="70" aria-valuenow="54"></div>
+
+        <section class="reader-pane" id="reader" aria-label="Reading panel" tabindex="-1">
+          <div class="reader-toolbar">
+            <div class="reader-back">
+              <button type="button" class="icon-button" id="result-back" aria-label="Previous result" title="Previous result" disabled><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg></button>
+              <button type="button" class="icon-button" id="result-forward" aria-label="Next result" title="Next result" disabled><svg class="icon" aria-hidden="true"><use href="#i-forward"/></svg></button>
+              <span id="reader-section"></span>
+            </div>
+            <div class="reader-size" role="group" aria-label="Reading text size">
+              <button type="button" id="font-smaller" aria-label="Decrease reading text size" title="Decrease reading text size">A−</button>
+              <button type="button" id="font-larger" aria-label="Increase reading text size" title="Increase reading text size">A+</button>
+            </div>
+          </div>
+          <article id="result" class="reader-content"><h2 id="result-heading" tabindex="-1">Select a result</h2></article>
+        </section>
+      </div>
+    </section>
+
+    <section class="alternate-view" id="overview-view" aria-labelledby="overview-title" hidden></section>
+    <section class="alternate-view" id="corrections-view" aria-labelledby="corrections-title" hidden></section>
+
+    <footer class="site-footer">
+      <span id="footer-copyright">© Bolte, Lê, Pauwels &amp; Vaiter</span>
+      <span class="footer-right"><span id="footer-version"></span><a href="./THIRD_PARTY_LICENSES.txt">Third-party licenses</a></span>
+    </footer>
+  </main>
+
+  <dialog id="search-dialog" class="dialog" aria-labelledby="search-title">
+    <div class="dialog-head"><h2 id="search-title">Find a result</h2><button class="icon-button" data-close-dialog type="button" aria-label="Close search"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <div class="search-field"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input id="search-input" type="search" autocomplete="off" placeholder="Search titles, numbers, or keywords…" aria-label="Search titles, numbers, or keywords"></div>
+    <p id="search-count" class="search-count" aria-live="polite"></p>
+    <ul id="search-results" class="search-results"></ul>
+  </dialog>
+  <dialog id="notation-dialog" class="dialog" aria-labelledby="notation-title">
+    <div class="dialog-head"><h2 id="notation-title">Notation</h2><button class="icon-button" data-close-dialog type="button" aria-label="Close notation"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <div id="notation-content" class="notation-content"></div>
+  </dialog>
+
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15.3A8.7 8.7 0 0 1 8.7 4 8.7 8.7 0 1 0 20 15.3Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M13 5h6v6m0-6-9 9m-2-9H5v14h14v-3"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-reading" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M10 4v16m4-10h3m-3 4h3"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 4H4v5m11-5h5v5m0 6v5h-5m-6 0H4v-5"/></symbol>
+    <symbol id="i-contract" viewBox="0 0 24 24"><path d="M4 9h5V4m6 0v5h5m0 6h-5v5m-6 0v-5H4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 12h16M7 9l-3 3 3 3m10-6 3 3-3 3M4 5h16M4 19h16"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+    <symbol id="i-forward" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8v.2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6a10 10 0 0 0-9-2v15a10 10 0 0 1 9 2 10 10 0 0 1 9-2V4a10 10 0 0 0-9 2Zm0 0v15"/></symbol>
+  </svg>
+</body>
+</html>

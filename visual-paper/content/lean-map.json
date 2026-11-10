@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/svaiter/HardnessBilevelProgramming",
+  "nodes": {
+    "bp": {
+      "declaration": "Bilevel.argminSet",
+      "file": "HardnessBilevel/Framework/Basic.lean",
+      "status": "formalized"
+    },
+    "thm11": {
+      "declaration": "Bilevel.exists_smooth_of_lowerSemicontinuous_proper",
+      "file": "HardnessBilevel/Smooth/Thm11.lean",
+      "status": "formalized"
+    },
+    "def22": {
+      "declaration": "Bilevel.IsExtSemialgebraic",
+      "file": "HardnessBilevel/Semialgebraic/Ext.lean",
+      "status": "formalized"
+    },
+    "thm23": {
+      "declaration": "Bilevel.instHasSemialgebraicProjections",
+      "file": "HardnessBilevelUnconditional/Instances.lean",
+      "status": "formalized"
+    },
+    "prop24": {
+      "declaration": "Bilevel.instHasFinitenessTheorem",
+      "file": "HardnessBilevelUnconditional/Instances.lean",
+      "status": "formalized"
+    },
+    "prop25": {
+      "declaration": "Bilevel.instHasGrowthBound",
+      "file": "HardnessBilevelUnconditional/Instances.lean",
+      "status": "formalized"
+    },
+    "prop26": {
+      "declaration": "Bilevel.Unconditional.valueFun_isExtSemialgebraic",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized"
+    },
+    "cor29": {
+      "declaration": "Bilevel.cor29",
+      "file": "HardnessBilevel/Framework/Berge.lean",
+      "status": "formalized"
+    },
+    "thm212": {
+      "declaration": "Bilevel.Unconditional.thm212_eq_SA",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized"
+    },
+    "thm215": {
+      "declaration": "Bilevel.Unconditional.thm215_eq",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized"
+    },
+    "lem219": {
+      "declaration": "Bilevel.lemma219_exists",
+      "file": "HardnessBilevel/Convex/Lemma219.lean",
+      "status": "formalized"
+    },
+    "thm218": {
+      "declaration": "Bilevel.Unconditional.thm218_main",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized"
+    },
+    "thm220": {
+      "declaration": "Bilevel.Unconditional.thm220_main",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized"
+    },
+    "thm221": {
+      "declaration": "Bilevel.Unconditional.thm221_eq",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized"
+    },
+    "pessimistic": {
+      "declaration": "Bilevel.Unconditional.pess_thm221",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized"
+    },
+    "ssi": {
+      "declaration": "Bilevel.SSI.Yes",
+      "file": "HardnessBilevel/Hardness/SSI.lean",
+      "status": "formalized"
+    },
+    "lem33": {
+      "declaration": "Bilevel.SSI.lemma33",
+      "file": "HardnessBilevel/Hardness/Analysis.lean",
+      "status": "formalized"
+    },
+    "thm32": {
+      "declaration": "Bilevel.reduce_correct",
+      "file": "HardnessBilevel/Hardness/Reduction.lean",
+      "status": "reduction-only"
+    }
+  }
+}

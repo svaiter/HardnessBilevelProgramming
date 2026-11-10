@@ -1,0 +1,33 @@
+[
+  {
+    "id": "thm215.uses.bp",
+    "text": "In the paper\u2019s normalization step, the optimistic infimum recovers the original value when the upper objective is multiplied by the positive normalizing factor.",
+    "evidence": [
+      "287c7822c1f9464e71d62142ec0f618e5557e61288646fa2a2fa876f30d909df",
+      "f0ece41be216aeeab508269b0d76c8bb41cd350ff54bc792b7e09dd32094c9e1"
+    ],
+    "claim_hash": "8419b29422d80792241d2cd7b76167dec7361a3e5d3e6ed20dde7c8c00ed649f",
+    "evidence_hash": "034fc78d07e15d5e800147633b6767c9a1b3643d03746361c0fe1cab622e7917"
+  },
+  {
+    "id": "thm220.uses.thm215",
+    "text": "The paper uses the bounded-box classification for the upper inclusion and draws on its proof to motivate shifting the polynomial pieces.",
+    "evidence": [
+      "9f9d20cec5bb7d349ab8c249cb8034e7ebc6ea91293de3dc70b7a4dc860e1ca4",
+      "0b70bacdc14bef87a8e07c7b7a928fa9a5d72d096220a232d107148e54bf9f14",
+      "9de2ace4942b38a5c0a5dde56ac696332c2669e7f7ccf6ce05ff26bb4aa2f306"
+    ],
+    "claim_hash": "832197d8604fa7cc1a5406f372aaf90b357553c8f492bb3f5034ac83b4b4eb1e",
+    "evidence_hash": "f1c2ba6087eece3abcf3d110be40d49372e8b9a01392ada1753ef7e8a0c3a10c"
+  },
+  {
+    "id": "pessimistic.uses.bp",
+    "text": "The pessimistic representation statements use the supremum of the upper objective over the lower minimizers.",
+    "evidence": [
+      "2515ec75551427c6114fd4bc66b7b6806c90b8bd0d6ace218670a893f4f2d850",
+      "5325478897d7ef42cec0e7416e5357f22b0f3e680fea532ae2ef0cfe73abf12c"
+    ],
+    "claim_hash": "9228218c532ed1db3a45e8246dfed93be75ccabf21eaac0d3e26b9ffbaa79644",
+    "evidence_hash": "3ee0049cf8a15e0983562ea547b0eb6f46477b637b2923eba0b31ca30f67a79f"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda",
+    "file": "../blueprint.md",
+    "start": 155690,
+    "end": 156333,
+    "text": "| **E-1** | Prop 2.5 (growth bound) | **False as stated** for $n\\ge 2$: $f(x_1,x_2)=1/(x_1-x_2)$ off the diagonal, $0$ on it, has semialgebraic graph $\\{t(x_1-x_2)=1\\}\\cup\\{(x_1-x_2)^2+t^2=0\\}$ but $|f(C+\\varepsilon,C)|=1/\\varepsilon\\to\\infty$ with $\\|x\\|\\ge C$. True for $n=1$; true for $f$ bounded on bounded sets. (The cited source [51, \u00a74.12] was not checked.) | Assume A3 = corrected statement (\"bounded on bounded sets\", shape $B+(1+\\sum x_i^2)^M$, \u00a72.5); never cite Prop 2.5 as stated; derivation from A1 documented (`sa.growth_proof`). For polynomials (Thm 2.20 obs. 2) no growth bound is needed (`t220.normalise`, `sa.poly_bound`). |\n"
+  },
+  {
+    "id": "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831",
+    "file": "../blueprint.md",
+    "start": 159514,
+    "end": 160150,
+    "text": "| **E-8** | \u00a72.1 (before Prop 2.6) | The displayed graph of $\\varphi|_{{\\rm dom}\\varphi}$, $\\{(x,P(x,y))\\mid x\\in{\\rm dom}\\varphi,\\ y\\in\\Theta(x),\\ \\forall y'\\in\\Theta(x),\\ P(x,y)\\le P(x,y')\\}$, presupposes that the infimum is **attained**. Counterexample: $\\mathcal Y=\\mathbb R^2$, $Q=(1-y_1y_2)^2$, $P=y_1^2$: $\\Theta=\\{y_1y_2=1\\}$, $\\varphi\\equiv0$, never attained, displayed set empty. (The paper's definition of ${\\rm dom}\\varphi$ with $\\delta,\\varepsilon$ is correct.) | Graph $=\\{(x,t)\\mid(\\forall y\\in\\Theta(x),\\,t\\le P(x,y))\\wedge\\forall\\varepsilon>0\\,\\exists y\\in\\Theta(x),\\,P(x,y)<t+\\varepsilon\\}$ = `fw.value_eq_coe_iff`. |\n"
+  },
+  {
+    "id": "093602cb83fc7a15e965e85b39a6a3d336467c97e56dc62ef7712d410406b4a5",
+    "file": "../blueprint.md",
+    "start": 64869,
+    "end": 65437,
+    "text": "\u2200 \u03b5, \u03b5 \u2264 0 \u2228 \u2203 y, (x,y) \u2208 \u0398 \u2227 P x y < t + \u03b5}` (`fw.value_eq_coe_iff`, with `EReal.coe_eq_coe_iff`). **No attainment is used\nanywhere**: the paper's displayed graph formula `{(x,P(x,y)) | y \u2208 \u0398(x), \u2200 y' \u2208 \u0398(x), P(x,y) \u2264 P(x,y')}` is wrong without\nattainment (erratum E-8; counterexample `Y = \u211d\u00b2`, `Q=(y\u2081y\u2082\u22121)\u00b2`, `P=y\u2081\u00b2`: `\u03c6 \u2261 0`, never attained, displayed set empty). The\npaper's own definition of `dom \u03c6` with \u03b4, \u03b5 is correct. Pessimistic version: `pvalueFun P Q Y = -valueFun (-P) Q Y`\n(`fw.pvalue_eq_neg_value_neg`) and `sa.ext_neg`, or dualise (`\u2a06`, `>`) verbatim.\n"
+  }
+]

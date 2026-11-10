@@ -1,0 +1,34 @@
+[
+  {
+    "id": "q1",
+    "text": "Proposition 2.5 remains valid for every semialgebraic function in dimensions at least two."
+  },
+  {
+    "id": "q2",
+    "text": "The corrected growth hypothesis is boundedness on bounded sets."
+  },
+  {
+    "id": "q3",
+    "text": "In the nonattainment example, the bilevel value is strictly positive."
+  },
+  {
+    "id": "q4",
+    "text": "The compact convex lower-level class includes the empty feasible set without affecting its characterization by real-valued functions."
+  },
+  {
+    "id": "q5",
+    "text": "All minimizers of every extended-real construction in Theorem 2.12 give the same upper-level value."
+  },
+  {
+    "id": "q6",
+    "text": "The formalized reduction proves total degree at most four."
+  },
+  {
+    "id": "q7",
+    "text": "For the example with Q=(1-y₁y₂)² and P=y₁², the value is zero and the infimum is not attained."
+  },
+  {
+    "id": "q8",
+    "text": "Theorem 3.2 requires only the degree upper bound five."
+  }
+]

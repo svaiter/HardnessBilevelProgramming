@@ -1,0 +1,2329 @@
+[
+  {
+    "id": "bp.title",
+    "text": "Bilevel value functions",
+    "evidence": [
+      "b83c6b24caf96e1b76b1eb9e0e164facef3e09e15003f4e4fe7f8f2375a59b44",
+      "0f73ddc21749cb4852fb52d953e0504a9704626681f62b182b136fe9fc0a2fb4"
+    ],
+    "claim_hash": "92f664a8877c1f4d1e6cfeefcca7bbdf1648eee277de2898f92b9b1c16a7b661",
+    "evidence_hash": "50c6cefb7b4e8888381908a021828ab650792a9c2025b47350879e9c0f6c1c02"
+  },
+  {
+    "id": "bp.summary.1",
+    "text": "At each upper-level point, the lower objective selects a set of minimizers, and the upper objective is evaluated over that set.",
+    "evidence": [
+      "b83c6b24caf96e1b76b1eb9e0e164facef3e09e15003f4e4fe7f8f2375a59b44",
+      "4050c6eac1e5760b631a5e3ab31acc589d015e1b24d1c763035e50b4bc396595"
+    ],
+    "claim_hash": "361c564040e499130a9f7f82b5e06bcb68b0d7619ac684e3337bbea3bfe0cd30",
+    "evidence_hash": "05c959aece519cb527b711519a42e6548c457a2883bca7f45e56630b0ed1c843"
+  },
+  {
+    "id": "bp.summary.2",
+    "text": "The optimistic value takes the infimum and the pessimistic value takes the supremum, with opposite infinite values when the minimizer set is empty.",
+    "evidence": [
+      "baf3fbf9e76b30cd2cbb121934ac570ab72d1ddc6f43da6ec99ed73afa08c579",
+      "6339d47233dc0b974fc95165ead4d40bb718f1c2b5b7b17754efe2845e994abd"
+    ],
+    "claim_hash": "c7425b98d440c162e85c3652a0cf128f8b0cbf854d1eb44c652fc51fde33aa32",
+    "evidence_hash": "172320a24e19033e9964d0e9df7aaeff9c6cf4b60cb2da030c006a9ac2dcb9c6"
+  },
+  {
+    "id": "thm11.title",
+    "text": "Smooth realization of lower semicontinuous functions",
+    "evidence": [
+      "4d123fa07e4afb1232ddb0879dd1917da2c598df3260c37232ea79b75963e748",
+      "872ec045354d4368f6176e99854f667f59f709fa24c7e24e6df355d259ac8d35"
+    ],
+    "claim_hash": "cf97b759577d52035a0140f79fdc6941a11f5c06f3d11efd005c789cb41d61c0",
+    "evidence_hash": "2f91c3a8153752cd8642010c3032cec4b65c246257eaa6fa9e630604b25c0338"
+  },
+  {
+    "id": "thm11.summary.1",
+    "text": "Every proper lower semicontinuous function with values in the reals or positive infinity and a closed effective domain is the optimistic value of a smooth bilevel problem with lower feasible set ℝ³.",
+    "evidence": [
+      "4d123fa07e4afb1232ddb0879dd1917da2c598df3260c37232ea79b75963e748",
+      "872ec045354d4368f6176e99854f667f59f709fa24c7e24e6df355d259ac8d35"
+    ],
+    "claim_hash": "1a0955b211952df3cb28f9b11f8adb0fe02ecb36b704fc9a215bd98ed3067bfb",
+    "evidence_hash": "2f91c3a8153752cd8642010c3032cec4b65c246257eaa6fa9e630604b25c0338"
+  },
+  {
+    "id": "thm11.idea.1",
+    "text": "Use smooth functions vanishing on the epigraph and on the effective domain to build a lower objective that is a sum of squares.",
+    "evidence": [
+      "5d976ef5e5bea7144adb3d9f42825aa5b6183d5ede92272a9d0e348393b3e860"
+    ],
+    "claim_hash": "286ecebff02deaa9bade72ee851ead8e9bec04c42447116cf10e75b856974d21",
+    "evidence_hash": "5ce8f29db3f09eb8294fdbecf23aad0b2f224e24441640babfe186ef0a8d584a"
+  },
+  {
+    "id": "thm11.idea.2",
+    "text": "The epigraph determines the finite value, and an unattained lower infimum produces positive infinity outside the domain.",
+    "evidence": [
+      "daac5241601ee9f8a0515aca18572db65b9d4ea1199e11d678eeeb7557f96dc9"
+    ],
+    "claim_hash": "095aef6126bd75a172af692ef3fb1d2847a194681ceedb213e7d3a235b0ac744",
+    "evidence_hash": "a1696e689810eef531633f2d3737bfbf0fd43c951f5965cfd8637a07e9cdaf23"
+  },
+  {
+    "id": "thm11.step.1",
+    "text": "Choose smooth functions whose zero sets encode the epigraph and domain",
+    "evidence": [
+      "d07977ccbd9f1475b96982b5c4bbe14565f9abc2dafaf789b996c48a92d50233"
+    ],
+    "claim_hash": "615a332ebf00649778fe38bb65093551313adb3783c259eae7da2de6909ef5ea",
+    "evidence_hash": "93704128fcfeb76289dc544184f340ad7b84c57cd112b3231bda3d9da71c58d2"
+  },
+  {
+    "id": "thm11.step.2",
+    "text": "Construct the upper and lower objectives",
+    "evidence": [
+      "ed2b070983d8b15ac3d83983731f862a2c4cb5be35c6eab8d7a5db4896dc7cda"
+    ],
+    "claim_hash": "efba6cdf06191092fb04266f25c394d05b0e4ea517bc01de4e30749094c1e95b",
+    "evidence_hash": "9c799d09684d9b7b747f86d51fc1bb0a41b552c8d75e62f223c5e44c00e87386"
+  },
+  {
+    "id": "thm11.step.3",
+    "text": "Read the value from the epigraph on the domain",
+    "evidence": [
+      "6867ced6966ae89b06a98833eb7b989bb9d8d14a4f78a31176e29662bfae29d5"
+    ],
+    "claim_hash": "db0250ef1c18cb1476e2282c891966e646f5401e346ecf202f681450b06f41fe",
+    "evidence_hash": "8421996dec431ceb4f5af67d8146d9362818e0ce1c0e3c530a9203d1e61b9ea8"
+  },
+  {
+    "id": "thm11.step.4",
+    "text": "Produce positive infinity by a lower infimum that is not attained",
+    "evidence": [
+      "3db9dbc20a3dfc7fa53ba44cd13c1cd1698cdd61e44169f6976f625d0ed5ca4f"
+    ],
+    "claim_hash": "5ca75eb1cf70e8385dfcdb9dba3cf0ecb240cdbafb0dbd2bf0fa73cea6a731d6",
+    "evidence_hash": "62f09985860970f8ac2509b2e02066432bdc0ed31825a1008105c0227d0e3599"
+  },
+  {
+    "id": "thm11.uses.bp",
+    "text": "The optimistic infimum reads the bottom of the permitted vertical epigraph slice.",
+    "evidence": [
+      "007a38fb65eeb9cec84fdc35a058f4606887dc1611be66aeea7eeba112b18ef7",
+      "523bc750adff9b15ab4b3b9818e5bb944fbe6dce6b81f3078ecdf8ab2946dd79"
+    ],
+    "claim_hash": "58dfca9d6b6b909ae10c613702c82e5fab53cb7332a3268d85ef1f2bf0b2d51d",
+    "evidence_hash": "0a29db0808d4f98036b7a1dc6a8c7b81ffc247c41249fbc2e04261f0c60edd1c"
+  },
+  {
+    "id": "correction.e14.body",
+    "text": "On the effective domain, the lower minimizers satisfy the epigraph condition in their output coordinate and the reciprocal relation in the two auxiliary coordinates.",
+    "evidence": [
+      "b6602d5dec97b13ae75b4bec2911136382e5fa3b6bde53b89a5e496bde4c7957",
+      "763f322c04e063d39d59017d0218cdaa1445f4629654d7c6f577e4f472fe3f3c",
+      "defeb11e8fa5287871c1a397f69abb7326a084eb2ecb1204be881e3559c599dc"
+    ],
+    "claim_hash": "6b84e3020f404fdf0b680c1c08ef91acf969dfd2fc71e97e00c4b64af511ad98",
+    "evidence_hash": "8bc5dfb4113ad8efa805213e05ee2a01dc473f1ad1ea55a50de80a0e3c3634ca"
+  },
+  {
+    "id": "correction.e32.body",
+    "text": "The separability argument concerns the square of the epigraph-defining function.",
+    "evidence": [
+      "d52f1b618a34a6871012b728bd2799a87e400501d2b56534dbb1989b9000fd29",
+      "694359563f6c9772021c7c4417521ef98f8ca3d1238dd1ccbd6fa486d52d563b",
+      "0aebd1f8c5ccf5eaaa8f097f7b02cd7561fc5582406a53457d13362de0590ca3"
+    ],
+    "claim_hash": "1420c23f34b5d372b227bcb25302e0507039b357383c41981bfdd96cac07c86c",
+    "evidence_hash": "6773be9e3893f711fd9fa0393e8cc12788be4c27b9a309f497fb45565dcf76fb"
+  },
+  {
+    "id": "correction.e34.body",
+    "text": "The proof needs the closed real epigraph of the lower semicontinuous extended-real function.",
+    "evidence": [
+      "9946fdde4ef16d38b5ae36f2ec04eaf734d75ebc71d9b643d567b9e046cd9813",
+      "10ede86767253307fefc84ae27de046a0f02fa321da6099ea6b91b2e858c86c2",
+      "ec90a0c73c48fec51b1f05b88c3f1d6db763d670a78f317d8d3db3e8c587ec5c",
+      "eceba1325c5cf0bf7df07cb314be187e7c7f78ef25454a1b0c1f4458a6cfc465"
+    ],
+    "claim_hash": "dbe9e867421e02c442c8dabc74274fa7388c96e29e70293608bdac0550b13501",
+    "evidence_hash": "708c39fa7b4a3ba63684e11241eb4b27c89b7417556f401a2d364317afe248a6"
+  },
+  {
+    "id": "def22.title",
+    "text": "Extended-real semialgebraic functions",
+    "evidence": [
+      "ff7167cbdd40d889b981abbfa901cb2b1b2e4e38f6c2a386e11ddf06bf09d8cf",
+      "a2fa997c0dad350f6d4dfb21fef0d3127a3b6a91a5c3cb8019c999408f08fa44"
+    ],
+    "claim_hash": "3cfb3ecb0a77630a0ba0c96e2e58682d87ff801052d43dad0877646ca5d5ed13",
+    "evidence_hash": "d5929ccce14b8936c746a970100154436b366f4f8f52a20c71a34d1e9c72d8a9"
+  },
+  {
+    "id": "def22.summary.1",
+    "text": "The two infinite-value loci and the graph over the finite-valued domain determine extended-real semialgebraicity.",
+    "evidence": [
+      "ff7167cbdd40d889b981abbfa901cb2b1b2e4e38f6c2a386e11ddf06bf09d8cf",
+      "a2fa997c0dad350f6d4dfb21fef0d3127a3b6a91a5c3cb8019c999408f08fa44"
+    ],
+    "claim_hash": "41254fdabb0b8334476c083183454da3383ec015f7983e43ec9e1dad146c977f",
+    "evidence_hash": "d5929ccce14b8936c746a970100154436b366f4f8f52a20c71a34d1e9c72d8a9"
+  },
+  {
+    "id": "def22.summary.2",
+    "text": "The finite-valued domain is the complement of the union of the infinite-value loci.",
+    "evidence": [
+      "994599881168fddc814481726c370528109ebf8baa9d2e69d0d6beea548b0bbb",
+      "a2fa997c0dad350f6d4dfb21fef0d3127a3b6a91a5c3cb8019c999408f08fa44"
+    ],
+    "claim_hash": "1c6f9d7315a158a2cc5b97a4047aa2883740ab6c6d790f7e82508fcb735b026b",
+    "evidence_hash": "8767848945da034b72646e69b9daae650c09f0742a1009c3381cc5ecc57d6213"
+  },
+  {
+    "id": "correction.e13.body",
+    "text": "The graph lives over the finite-valued domain, and padding an outer union requires empty basic sets or duplicates.",
+    "evidence": [
+      "e1572194d3dbc2e5e1cd5d0b9c672b0cccbd229e5b505d9368eb82ca51d53324",
+      "dce56ec51360f610f30cccbcf5affc40d37ca724e9905766c50acbc747f0cfc7"
+    ],
+    "claim_hash": "6c9ddbe0a955033cb2bdd147220422482c4d47f117fda5d8acf3d42ec5a455ee",
+    "evidence_hash": "d8df34193a0b5ba7a7adab0be96f17d85f94bcebe767c1de72fccca1527c62e6"
+  },
+  {
+    "id": "thm23.title",
+    "text": "Tarski–Seidenberg projection",
+    "evidence": [
+      "df65c06497237941b3ce77d1e85021d5efbe9bf4c5470a267c2de218ef7c111b",
+      "bc9865220f3f60822623ea14fb2baa0ee5f73f6042000ce7285302da1a3bb929"
+    ],
+    "claim_hash": "8805c5f82b16ae95340eb966cdce67d93116e95d066b85beb76d0e5393dff285",
+    "evidence_hash": "2ee85798d411ab482d4e4be4bc5d325d98b405b0102aa9d3b9a89eaed1b504ed"
+  },
+  {
+    "id": "thm23.summary.1",
+    "text": "Coordinate projection preserves semialgebraicity.",
+    "evidence": [
+      "8b20aa61cfe661a584f18a7e54829ce76f98f2acc54fbf40fe9a395c9aacbc5a",
+      "ec0e7381abbe6682f6c1a8b9c56901fe4987c473ffbc0db1469b9ce946bb174f"
+    ],
+    "claim_hash": "ac881f4a90ced5406f15ab30c06f96ec70fcda929cd616ec4e4f92c807011cf7",
+    "evidence_hash": "69c9c95c30074d11bcbe98e85d27f19e66f113e7096895559067eaffc678b020"
+  },
+  {
+    "id": "prop24.title",
+    "text": "Finiteness for closed semialgebraic sets",
+    "evidence": [
+      "c41f21b7c02c83b2c29dae6496ab50b51a1e450965f103dd6ac832c57e4365ae",
+      "73364b003f1178afc5e5d7c3728f8f6cf1bdaa8d541e454053fb77eaf74999ad"
+    ],
+    "claim_hash": "3afd2fdeb565eaab1b99e855045521d3614e5067beab63999079ce4b491b907f",
+    "evidence_hash": "5836ffccbfc035ee182c0f99ad5a4cf2f7b86739b62cbc67ec1c158aee248bf6"
+  },
+  {
+    "id": "prop24.summary.1",
+    "text": "A closed semialgebraic set is a finite union of finite intersections of nonstrict polynomial inequalities.",
+    "evidence": [
+      "cf82d5fd101ec5fd77a3811439a128fd2cc1bbbc24a2107c1fad27a0a6977229",
+      "73364b003f1178afc5e5d7c3728f8f6cf1bdaa8d541e454053fb77eaf74999ad"
+    ],
+    "claim_hash": "91985561f974faa7586b964ebf92846ded1795d9505aac146263cc6d050d3860",
+    "evidence_hash": "d508649fbae6955c9a23f341b92cd328e05fa7b7071d2430b086d1b8da716a6d"
+  },
+  {
+    "id": "prop24.summary.2",
+    "text": "Taking complements gives the open-set version with strict polynomial inequalities.",
+    "evidence": [
+      "c8a562ceb937b7cc5d001a9ede19f30126ae5ed2744b0c8d4be14e5a5a4f47ea"
+    ],
+    "claim_hash": "f49146ae724f577b5ae8e32672d461883edd50479c93a396470a6f87b8bb367e",
+    "evidence_hash": "573038eff04764cc77ca4a734ee8eedfbc90c1f9f3ea229e80ac459a63b6b879"
+  },
+  {
+    "id": "prop25.title",
+    "text": "Corrected polynomial growth bound",
+    "evidence": [
+      "17e6396e4bceb769dd73085d235e8d63d0b1395778fcf5527b8a184e01583912",
+      "c289ba18315ae6419907dd33be03f046d6ef662518bef53713d2131203ee02be"
+    ],
+    "claim_hash": "3c5cd5ca9657ba6a95402add2f7f3b1c39497e557b28e29214ab72bdcdd5ad05",
+    "evidence_hash": "d61e88e105dfe6b5ebcfa6c765aeb61d9a44446c07ca903b7ae5cc1d8f6cb026"
+  },
+  {
+    "id": "prop25.summary.1",
+    "text": "A real semialgebraic function that is bounded on bounded sets admits a global polynomial upper bound on its absolute value.",
+    "evidence": [
+      "fe819089e67e18369755f836ffa796cf0de0cda2f130d2cc327fc9f9221ddad5"
+    ],
+    "claim_hash": "c9730b727236de77030cd342487dfddf017599084b5c323a4513e5296a876866",
+    "evidence_hash": "aaf9cd73adbefc6ff1f2671af78748215c0031d7d351b3344309378e567ec8ac"
+  },
+  {
+    "id": "prop25.summary.2",
+    "text": "A reciprocal singularity along the diagonal gives a semialgebraic counterexample to the published hypothesis in dimensions at least two.",
+    "evidence": [
+      "beffbe66a411aa29c17805e5ab1b929d5400e606022dd3f5434bc34522129f25",
+      "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda"
+    ],
+    "claim_hash": "6a16b6df4cdb20671d8d044a6716ac40fc7ef60aa293b066b54a54bf9affa03b",
+    "evidence_hash": "7133ffce72927a9aa4f85193f49af55180459920a50993675bd35cc6b0dee4eb"
+  },
+  {
+    "id": "correction.e1.body",
+    "text": "Use a bound on the absolute value and require the real semialgebraic function to be bounded on bounded sets.",
+    "evidence": [
+      "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda",
+      "fe819089e67e18369755f836ffa796cf0de0cda2f130d2cc327fc9f9221ddad5",
+      "b174b3211f0def573dcf007b11df14125e28a8fa6b5802470442709164103779"
+    ],
+    "claim_hash": "c344f81e62831f10c5bab54713aad0f9385ae8c82fdc6a45d071105c474b1af9",
+    "evidence_hash": "f8c7809c1eb6344aecfe7b91f3b5fc1b126d5aa0b0894391ef280273ddd5145d"
+  },
+  {
+    "id": "prop26.title",
+    "text": "Polynomial bilevel values are semialgebraic",
+    "evidence": [
+      "0565f7dfe658b21458b9a9182c53b5d83fe738c7fb979fd3b277e5e8ed7f9ffa",
+      "13b4711395717fe1ef8a78e71eccb4323863bb5057dab354d0f95c5c811ea752"
+    ],
+    "claim_hash": "9bd10c1910d64b6aa26a16e75250307f52682cc4e4caf9647e3a989ac9732464",
+    "evidence_hash": "191dd747c7aae7c9604b35bc647b23b7e9473a96c20c695e319b12a09f5b2783"
+  },
+  {
+    "id": "prop26.summary.1",
+    "text": "Polynomial objectives and a semialgebraic lower feasible set give an extended-real semialgebraic optimistic value function.",
+    "evidence": [
+      "0565f7dfe658b21458b9a9182c53b5d83fe738c7fb979fd3b277e5e8ed7f9ffa",
+      "13b4711395717fe1ef8a78e71eccb4323863bb5057dab354d0f95c5c811ea752"
+    ],
+    "claim_hash": "69d70fa9a2c42239384ecf23ad69ad8797ed807cbcb34166bcb76044d040dc4f",
+    "evidence_hash": "191dd747c7aae7c9604b35bc647b23b7e9473a96c20c695e319b12a09f5b2783"
+  },
+  {
+    "id": "prop26.idea.1",
+    "text": "Describe the minimizer graph and the two infinite-value loci using quantified polynomial conditions.",
+    "evidence": [
+      "1ee635d97ae82062ac12fa79bffb36da1923cf6c484a318e2cd8633e95a09804"
+    ],
+    "claim_hash": "762020875d307fb30b191f756142e8fbb94a85c9b2d9c664e38dbb7cbf53d60c",
+    "evidence_hash": "8c181d9290950ff97360dc8125f7e5d515725c120e8de751196103d5c780f68a"
+  },
+  {
+    "id": "prop26.idea.2",
+    "text": "For finite values, characterize the infimum by a lower bound and arbitrarily close feasible values.",
+    "evidence": [
+      "1ee635d97ae82062ac12fa79bffb36da1923cf6c484a318e2cd8633e95a09804"
+    ],
+    "claim_hash": "607bbdaa7e492212c9ebebb429a436d97357892dc1c527e117c51e79fcdcb047",
+    "evidence_hash": "8c181d9290950ff97360dc8125f7e5d515725c120e8de751196103d5c780f68a"
+  },
+  {
+    "id": "prop26.step.1",
+    "text": "Describe finite values and the two infinite-value loci",
+    "evidence": [
+      "0f3aa8929ef8f88ac7b656236cd9ef21d0aaafc1da9f01d47e89bb9aa8d5ac4d"
+    ],
+    "claim_hash": "327f99de96f820733926e999b6b2c8d06698726f62a6943ab01d6d30ee344660",
+    "evidence_hash": "00d3cff9489b7a5e47fedd752860231ebeea67460ca7df9c4f5db30beb2dc81b"
+  },
+  {
+    "id": "prop26.step.2",
+    "text": "Express lower minimizers and examine the finite graph formula",
+    "evidence": [
+      "3af460da724b4b29536c0474874d03fd6e001d02d5d323d96f2b36890e4fb67a"
+    ],
+    "claim_hash": "e86cf727cb1b7d12a2edc861e1143679fe7d7c31efe42e1d59d0b74c287618a2",
+    "evidence_hash": "0aec7fd8e650a61a6563ac199781a35be9dcf1540270a23e7c6dd5a1386debf6"
+  },
+  {
+    "id": "prop26.uses.bp",
+    "text": "The minimizer set and the optimistic infimum provide the conditions to translate.",
+    "evidence": [
+      "a58a80e02a739a52cbef0074292d1c1aa676f3ad3c81d0ed72a2586d46470f67",
+      "ecaea64106621f18f42f1dd44c091e279a829ddc46469f6cc177ffef3cd9c500"
+    ],
+    "claim_hash": "f252c9a9ff44d591ac70d8e0b71b6f1d77322cc63914a65af40d2ea3ced9ce01",
+    "evidence_hash": "3a28bd94a14c2d2a51c751e9123705f9d407a6f547a0892b19a4584b86262c5d"
+  },
+  {
+    "id": "prop26.uses.def22",
+    "text": "The description covers the two infinite loci and the finite graph.",
+    "evidence": [
+      "c0f8fcc4a365d655efaff59d5773bd37358d9e4045f3735b8fde49e394340621",
+      "0f3aa8929ef8f88ac7b656236cd9ef21d0aaafc1da9f01d47e89bb9aa8d5ac4d"
+    ],
+    "claim_hash": "16c49cc0606020872e3e1b463dbe8dba1758e5cf1950d00eaa1a6ee260f53023",
+    "evidence_hash": "6001fd6eb30d7a60aefa7b6951a7414ed2dd271df74cee921ba1e3d77ed82a58"
+  },
+  {
+    "id": "prop26.uses.thm23",
+    "text": "Projection and complements eliminate quantifiers over polynomial conditions.",
+    "evidence": [
+      "de6ac17afa7179888fd8ad13b1504e7c109347f7d9ee32a98708c952cdcedf1d",
+      "3af460da724b4b29536c0474874d03fd6e001d02d5d323d96f2b36890e4fb67a"
+    ],
+    "claim_hash": "a638fe4b631fe83c3a976ef1158021491a4e0b19289f1a0f650a01a0f1a481be",
+    "evidence_hash": "8ca618a466220021c0424ac77f17fd42904e2177963909aa836edb42fb12d3dc"
+  },
+  {
+    "id": "correction.e6.body",
+    "text": "Apply Proposition 2.6 to a semialgebraic feasible set and combine it with Corollary 2.9 for the compact convex inclusion.",
+    "evidence": [
+      "9eec91e541e03e804568431f71653d536252b1a58923dd55e6df7198a605ab1c",
+      "f7fd5255e1e3dfc428c40b04441988155a3fa3ee9098c2a1ecd0cff25593d965",
+      "e6a87d6674e5e7349321004855062c4019ef9830143f55b7ff8afd130fa47cd0"
+    ],
+    "claim_hash": "31298ab6382d829d295239eaff9e90714166d6a2487961c42fc59ad9b12d3b91",
+    "evidence_hash": "dd764965f86cd8968f524fe872d66f825b7198882ddfe8ef00cbe5c6b536814d"
+  },
+  {
+    "id": "correction.e8.body",
+    "text": "A finite value is a lower bound on all feasible upper outputs with feasible outputs arbitrarily close above it.",
+    "evidence": [
+      "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831",
+      "093602cb83fc7a15e965e85b39a6a3d336467c97e56dc62ef7712d410406b4a5",
+      "c0d56949bde0370849bad94213a2fa9241f6663848ebfed5306cc0508c7f9ba1"
+    ],
+    "claim_hash": "360af01c1f621b2b7bec306e606420f029041bd6cf767268190dd093909603a0",
+    "evidence_hash": "d591e36dddc37d0b03438f2fc77fcfddcb29d89a2f78feca940f42f1afd32dae"
+  },
+  {
+    "id": "cor29.title",
+    "text": "Compact lower feasible sets give lower semicontinuity",
+    "evidence": [
+      "89764f9a72d5a891d76490cce282b41b33cf559db08c4de70bbe322a8e75c5c8",
+      "311f1ad344bd5a1e0581adc102c50dcb4e6a4aed3941d0486d2edc05b028c11c"
+    ],
+    "claim_hash": "e6debc31b79a75c2c5301383ee7cd72d7bbf78a93b545bff3adaba79d4e47a70",
+    "evidence_hash": "bc91088a29441fc6fea110dabcea26a8e8154bea6b9881714884649f37dadab3"
+  },
+  {
+    "id": "cor29.summary.1",
+    "text": "With jointly continuous objectives and a nonempty compact lower feasible set, the optimistic value is real-valued, lower semicontinuous and bounded on compact sets.",
+    "evidence": [
+      "89764f9a72d5a891d76490cce282b41b33cf559db08c4de70bbe322a8e75c5c8",
+      "311f1ad344bd5a1e0581adc102c50dcb4e6a4aed3941d0486d2edc05b028c11c"
+    ],
+    "claim_hash": "582bf1ae90b465f2e4f1bcf7d3cae5a4594ac71b0717db11b36054d800560c58",
+    "evidence_hash": "bc91088a29441fc6fea110dabcea26a8e8154bea6b9881714884649f37dadab3"
+  },
+  {
+    "id": "cor29.paperIdea.1",
+    "text": "At nearby upper points, use attainment to choose lower minimizers giving the optimistic values.",
+    "evidence": [
+      "5e25df675562521fe2095d3398a7f1c8e030ac2c9c2a09ab27eb4a2bf8e65ce7"
+    ],
+    "claim_hash": "2f08acf42170da5b07d70f1f7e7831696ffcb3a65288aa1f0ecfb853a27870f2",
+    "evidence_hash": "d0acdde494a30261797197958221504ee34381b96aeb84974498170384a8805d"
+  },
+  {
+    "id": "cor29.paperIdea.2",
+    "text": "Take a subsequence of lower minimizers converging in the compact feasible set and use outer semicontinuity to get the limit-inferior inequality.",
+    "evidence": [
+      "5eb224e8be9c775c2ba3a13bc1ffb88adfb7e518502c1695bdc81ed797c453ce"
+    ],
+    "claim_hash": "9a56b6275ae05112461ecd9df07cda16e6c36a2a9147dd7b34919bb7e72fff23",
+    "evidence_hash": "43bf303e1536d2a9c3141ea9feb828a48bdb75c05c49e48ff4086924c4056ea1"
+  },
+  {
+    "id": "cor29.step.1",
+    "text": "Use compactness to attain both objectives",
+    "evidence": [
+      "1564442cdec3c13c2058a4b24f7567e1dd8d8eb764b85db9baa7cc9a75e0ea2d"
+    ],
+    "claim_hash": "09759a9125b5377e8cafd43215fe92e0ac82499e83f88a8f0cf4f0a29ae22457",
+    "evidence_hash": "5460d466a1c6d8c801405abe738cceafedc750ee6d880411e7cd28344679d750"
+  },
+  {
+    "id": "cor29.step.2",
+    "text": "Use outer semicontinuity and a subsequence to bound the limit inferior",
+    "evidence": [
+      "5eb224e8be9c775c2ba3a13bc1ffb88adfb7e518502c1695bdc81ed797c453ce"
+    ],
+    "claim_hash": "2079b8ff09fd5250b97bb5dac7196cce8b74f60122207175b5a1c4aede0e21d9",
+    "evidence_hash": "43bf303e1536d2a9c3141ea9feb828a48bdb75c05c49e48ff4086924c4056ea1"
+  },
+  {
+    "id": "cor29.step.3",
+    "text": "Bound the value on a compact set of upper points",
+    "evidence": [
+      "0d23144f74f0d901d373c77d13815a051051d0e978a222e0a075ec141a249116"
+    ],
+    "claim_hash": "f7c9cf8df0cdbb5dd0abe8e210577d532510e1a633b834fba6d016feff6c0302",
+    "evidence_hash": "0bf59d933f26bad33adeebb830bc977e3ea59b58835707e5a45e35195aaea895"
+  },
+  {
+    "id": "cor29.uses.bp",
+    "text": "Attainment turns the optimistic infimum into the value of an upper objective at a lower minimizer.",
+    "evidence": [
+      "3563a3a1a7d6834932ff342da006c65e8d50411d1d1c61860189ec9815a0956c",
+      "311f1ad344bd5a1e0581adc102c50dcb4e6a4aed3941d0486d2edc05b028c11c"
+    ],
+    "claim_hash": "4d3f42fd072f8a683dab5efbe7d49217c49a2b1f4e2522d3fd4879b031869b52",
+    "evidence_hash": "5ad73afadb60930f75502accc5fc57022c7067be6b1425a1e61f43c91d5bd731"
+  },
+  {
+    "id": "correction.e9.body",
+    "text": "Compactness alone gives lower semicontinuity, and nonemptiness is needed for real-valuedness and boundedness on compact sets.",
+    "evidence": [
+      "9e6fd58ab67d884878f9b61b0b6f02c3a0f33cf9a2f329f115ada1bd4d6ff992",
+      "369d41de94173bff4367254109db38125c8fc2f3416c7052e490365901b17e65",
+      "3e3a4692d10da421a1549b987ee3beff15bb6e721edbe3f8757d4580e5a1debd"
+    ],
+    "claim_hash": "b8563174ec104e765667752bfa57f45def8d6875fa43833153642cdf05da0fba",
+    "evidence_hash": "55ed33a221e3f209955d915f9d2fb339398e2f03e94c1cdf786e6506f0ca952e"
+  },
+  {
+    "id": "cor29.idea.1",
+    "text": "Compactness supplies minimizers for both objectives and makes the projections of closed sublevel sets closed.",
+    "evidence": [
+      "2c7412823bfc79d4345e43b912cd8baa59a6ab5673ee4eedd3577c15d61d6b42"
+    ],
+    "claim_hash": "5878eb721cd2a9ab92c2e2fe49ac3d8b12cdd6a905e4901b48eb6f36d301816d",
+    "evidence_hash": "344a3010cbbec7833d54c56c3c1327e5195a15bfb85ba73265c334f64a80e7cc"
+  },
+  {
+    "id": "thm212.title",
+    "text": "Unbounded boxes realize extended-real semialgebraic functions",
+    "evidence": [
+      "6ce9da45e5f1d71133eb75391226a2e3266f36e8b449501ac34ee11c838347e1",
+      "8d2e928d0d98ae5616a7d7744c819c78825e515bc86e32aba8f5e5bbcd3b3742"
+    ],
+    "claim_hash": "8c2d684e8981d01c3b1cf4f93dc25ad34bc1531ada4a7c4aa78da765c984f48a",
+    "evidence_hash": "7ca1664fcb9c8f5cd591993fe72511ba3f318a041bf26fac09175e4e8a461c78"
+  },
+  {
+    "id": "thm212.summary.1",
+    "text": "Extended-real semialgebraic functions are exactly the optimistic values of polynomial bilevel problems over unbounded boxes.",
+    "evidence": [
+      "6ce9da45e5f1d71133eb75391226a2e3266f36e8b449501ac34ee11c838347e1",
+      "8d2e928d0d98ae5616a7d7744c819c78825e515bc86e32aba8f5e5bbcd3b3742"
+    ],
+    "claim_hash": "8e9b4123ef1737ba0efd92eaacefa12953e49068249497223d7a018f287b5b0c",
+    "evidence_hash": "7ca1664fcb9c8f5cd591993fe72511ba3f318a041bf26fac09175e4e8a461c78"
+  },
+  {
+    "id": "thm212.summary.2",
+    "text": "The construction can take the entire lower Euclidean space as its feasible set.",
+    "evidence": [
+      "057a0b728c73ae13ee90cfc8cb934daf50ce657d30ecb5ee1c69fb4c9aa028ce",
+      "feb17ddd9b5ccaa787a689aa20359ad4bcc27ce677ccb94ea64fc4250174b7d0"
+    ],
+    "claim_hash": "160214d1bd37a84d82c818d08462d244b6b4904eb628c368602527e923ff91da",
+    "evidence_hash": "9006010833bc94a3fcc170dccbc191b1d0157adaff0a29d616a0c4c7b1229b32"
+  },
+  {
+    "id": "thm212.paperIdea.1",
+    "text": "Polynomial zero tests encode the finite graph and the value loci.",
+    "evidence": [
+      "059fe24d1e4dc0f09d15fbc30b1bfaa2e53e7165e9362c9480bd560185eb27a0"
+    ],
+    "claim_hash": "406574bd3cf043e4eae53aa8680fe14c297b0b8a59e90282d5a0c06b31880135",
+    "evidence_hash": "6c5d7ac53f0b2d14e0c1aa0fdd7ee3684f2368d1771eb62c4f9f66aaba4450fd"
+  },
+  {
+    "id": "thm212.paperIdea.2",
+    "text": "At positive infinity, a reciprocal pair makes the lower infimum unattained. At negative infinity, every real output is possible.",
+    "evidence": [
+      "09ea5f14303a088302ea900ee68d768a7aa7e855394cd78eee4b2a9e448086c5"
+    ],
+    "claim_hash": "79df2c28eefdc5a8f3dd0485e2588e78e1337a23c7c7332b6890183cc973799a",
+    "evidence_hash": "99c6586f57fd00ff68bf4a4648d9b13bfe6179e2dccd68617cde441963d1e800"
+  },
+  {
+    "id": "thm212.step.1",
+    "text": "Present the finite graph and the value loci by polynomial conditions",
+    "evidence": [
+      "4c4754cd2e7e603e25e846830db4ad3d9144e9187dadea4a6e784dfc472f54a5"
+    ],
+    "claim_hash": "df851415b8a124d6cc69527e38ed20fd34025b0be81cec2ba0e7999dece54aad",
+    "evidence_hash": "cee7ec0d67c625ea06f3c3dbab10e8e214d28c00ba3b8659cd01c17a0ce48c5b"
+  },
+  {
+    "id": "thm212.step.2",
+    "text": "Encode graph membership by zeros of a nonnegative polynomial",
+    "evidence": [
+      "5af4127a308c4b86d57e965157af91ad958c2cc85f57e55af0b27a0228023278"
+    ],
+    "claim_hash": "85e7f0d53fcdf666c39a68d70cd9aa8918bd854448a61de24b2022801f64c806",
+    "evidence_hash": "c5b0fcd4ac13380b6e303205114fbdb331f1537a89673f543ade072be7e9741d"
+  },
+  {
+    "id": "thm212.step.3",
+    "text": "Build corresponding zero-set tests for the value loci",
+    "evidence": [
+      "b3eb23e6bfe9c3b264b9eaf6e21744c4db8d6069096b044b9000067a504d2e69"
+    ],
+    "claim_hash": "9dedd49fb8c4a4625bfb7c1a4be9be3a54fcf19cc2436f3f85e1a5efd6f6d63f",
+    "evidence_hash": "3b3b621f3bb015a54cc3bce875e7884b5d9b83b8f0ca55152cf91e57ba788e7e"
+  },
+  {
+    "id": "thm212.step.4",
+    "text": "Combine the tests with a term that can make the lower infimum unattained",
+    "evidence": [
+      "ca885d45f2425ba927d61c1821fb19d9f7f011eef8bdc9576553dfd1a01aace2"
+    ],
+    "claim_hash": "92b4ed08387ffd36b2ce6c13a136fcf9c44486efb4befaaa172e77ffd3a10f34",
+    "evidence_hash": "e4f9a92e1a1376a91490785a78fc12fce531cd6b6998ed22f8c291d8b0b29c5d"
+  },
+  {
+    "id": "thm212.step.5",
+    "text": "Read the finite, positive-infinite and negative-infinite values",
+    "evidence": [
+      "86ae00129a02aa05b33900241336da2fc73ea16109e4e36b7009aba2ef8a4d79"
+    ],
+    "claim_hash": "a212b4f8a98baafe7676fd1a822594235946c879ebe5edaf21a4895844c1566f",
+    "evidence_hash": "4a2995a49fab90cf5a3523531f66b750dba534b8fd2dbfe8c37e29afa0a7dd4e"
+  },
+  {
+    "id": "thm212.uses.def22",
+    "text": "The construction uses semialgebraicity of the finite graph and of the negative-infinity locus.",
+    "evidence": [
+      "ce3f1539db4aec35e97157d9d815e3cec1bf281f0a9dccc3b5bcc8f106a3e071",
+      "8679fa5130400655053ab9ea9917421e4e0295bcd200673ecc05fb7097329e8f"
+    ],
+    "claim_hash": "4c166fb395434d3ac0bd2595856eac29379be2eda38785d93a517f56b8a1b5d0",
+    "evidence_hash": "d74856c0cea42e3f7814415fadda0c2b98a7bee9bd874c5e7ba7dd97a917457b"
+  },
+  {
+    "id": "thm212.uses.prop26",
+    "text": "The reverse inclusion follows because polynomial bilevel values over unbounded boxes are semialgebraic.",
+    "evidence": [
+      "6ce9da45e5f1d71133eb75391226a2e3266f36e8b449501ac34ee11c838347e1"
+    ],
+    "claim_hash": "f0aac3c8936398a979dce3f3a5340999b8732c8afa5de44bd454f7a3a46ffb54",
+    "evidence_hash": "aa4a8bdf8c3dd60e8d21b15c0be0199db3e74879a72ce482be9089bac3e1ea83"
+  },
+  {
+    "id": "correction.e2.body",
+    "text": "A sign cell is either contained in or disjoint from each set being decomposed, with negative signs written as strict positivity of the negated polynomial.",
+    "evidence": [
+      "2ef8a993be26a0023b825d3dc19fd553f4714550ea3875225e99da1ee4768036",
+      "a20c457b0d2904ecf99d1d1e0aca1b20b66da01fb6e6df79ba9d45e2eca9761b"
+    ],
+    "claim_hash": "50107639357a6e1c83013fb0ba3c552d0830ff6acbed31013f3a934fd571618a",
+    "evidence_hash": "89b3ae4cf3e03f1682d6a377a6e9f3e0283845b55a79cee75d692bdf1d35a3fc"
+  },
+  {
+    "id": "correction.e3.body",
+    "text": "Allow positive and negative infinity in the unbounded-box class so that its codomain agrees with the semialgebraic class.",
+    "evidence": [
+      "6b54a93faf0fb4d95e3985fb2754ce4e129408636b0bb6e44ae43b80483764bb",
+      "1368917a48ba1b6c6cd6ab1e41c99ee885a89b26880be21de6351c4f0df7c2ee"
+    ],
+    "claim_hash": "76312a80b5ebac056bfff6bda368ec60db2d056927df7c4a430f1820750cb70b",
+    "evidence_hash": "56da0a3b547927d77eebb5e29c67cb6989fe474b92e980a1b537ed9bd0ac5db6"
+  },
+  {
+    "id": "correction.e10.body",
+    "text": "The positive and negative blocks in the unbounded construction must use their respective semialgebraic sets and variable blocks.",
+    "evidence": [
+      "397a203db78ffd1221a168496176542a74daf2aa8b6ddbf52ac524b0e7a8897e",
+      "7f55f1b08e781c41111a1b2eff8d14bb4fd4838e27b7f1aed5d5150756f63120"
+    ],
+    "claim_hash": "0d8013c646f4a14821f1d00a9c0f16c8abefc558ffb3a633f1dfa57feb7fb889",
+    "evidence_hash": "f39a854044a1e4597c5b81131b071fb3bcf0fc74bdf25e65e50bbb630dcfca96"
+  },
+  {
+    "id": "correction.e11.body",
+    "text": "In the extended-real unbounded construction, a negative-infinite target permits every real output on the minimizer set, so taking a supremum gives positive infinity there.",
+    "evidence": [
+      "3cd21f2ab67127d0377206c9e56d54aa6e78e0bba175fe2be95fe8f4e0362133",
+      "1834e4b940b50393dc6b83b7ef28315e6420b6343e871b8a8f16f46bc880c9c7",
+      "c54e052febd5ba02e3ccae03bf0ef9a4dee6bd31e7ea6bb7bb50bbbd976f6264"
+    ],
+    "claim_hash": "02d552f4a46cccad55de233cc852996eef203c2d667ef4dbe746480dc9738c8f",
+    "evidence_hash": "cb25733d7cae7c38083119d3994bed6ea2f002aabddbf8022a6684f51a0f7bae"
+  },
+  {
+    "id": "thm212.idea.1",
+    "text": "Use polynomial zero sets to encode the finite graph and the negative-infinity locus, and use an unattained lower infimum for positive infinity.",
+    "evidence": [
+      "3f57eb75b99a5cdf394a3b78ad61414433840b8445db51b23c5da26c4ac43d6a",
+      "9c0aceafd215d3792c37530ea6b03498b1568e08444ef92257ea0d6131e229d5"
+    ],
+    "claim_hash": "f24e0d01bf4224f0d740a4d198d1dd20fdf8fd0c82eecf8586cce9c3df5883fc",
+    "evidence_hash": "24a6fe68f13b157755bd4a1e4c947c33ca0611da0aff622b014bbbbfd2231284"
+  },
+  {
+    "id": "thm215.title",
+    "text": "Bounded boxes characterize semialgebraic lower semicontinuous values",
+    "evidence": [
+      "6a08a42d1dd9962746e76c2a921ccf1ca9b44e13f315c1165255b47d8cd275fd",
+      "b8cac51692843d10d7dc62d89d796ec671254c11629a29bf7739d265a6626396"
+    ],
+    "claim_hash": "7974e1348ea1e76864bb5f180101715b3a22be4e49d998e963f16c6aeac518ca",
+    "evidence_hash": "d48f554a6ce4fb0ad5a9462c2ade66998c68f6f9bcf4b871bb0197d10724aafc"
+  },
+  {
+    "id": "thm215.summary.1",
+    "text": "The optimistic polynomial bilevel values over bounded boxes are precisely the real semialgebraic, lower semicontinuous functions bounded on compact sets.",
+    "evidence": [
+      "6a08a42d1dd9962746e76c2a921ccf1ca9b44e13f315c1165255b47d8cd275fd",
+      "b8cac51692843d10d7dc62d89d796ec671254c11629a29bf7739d265a6626396"
+    ],
+    "claim_hash": "e3d70c2a87d2076a6bb0c2daafb34a74e6b1439d2812015c3bca91162902a035",
+    "evidence_hash": "d48f554a6ce4fb0ad5a9462c2ade66998c68f6f9bcf4b871bb0197d10724aafc"
+  },
+  {
+    "id": "thm215.paperIdea.1",
+    "text": "Use the closure of the graph to identify the smallest allowed height at each upper point.",
+    "evidence": [
+      "47727a7b10598c998f5753925d48f4b2aed31fd262b219133d9f2558eb0f3d72"
+    ],
+    "claim_hash": "026a03da92e4eaf2dd2975c9397772a1e9098dabfd09ca6a9bae0f8d2c4386a6",
+    "evidence_hash": "3ba507a10e06f67549a06cbb19b9c4319584b137c89abd67df3c744c4fd5c83f"
+  },
+  {
+    "id": "thm215.paperIdea.2",
+    "text": "Encode nonstrict polynomial inequalities by zeros of square terms with bounded auxiliary coordinates.",
+    "evidence": [
+      "083eeae6112e5549c65572bff021815594e42776fd147c4a961c749d340767f6"
+    ],
+    "claim_hash": "63f4baba323dfe389198b917450641e324fe7a6075c81e66f6438b0e6ab1cdde",
+    "evidence_hash": "99b175cad85428c0b4a68886ee88d71e1c0cf890f71b4cb9d78dfa4cc80f18c0"
+  },
+  {
+    "id": "thm215.step.1",
+    "text": "Use semialgebraicity and compactness for one inclusion",
+    "evidence": [
+      "df12ab80866258abedd68a7a59dc9a17d7fd3c90c484aa959474b0bdfc1f5b35"
+    ],
+    "claim_hash": "a1705a91ce19eb182d659fe67312d00e60168831abafc9ab0ed2f4c858ca19b4",
+    "evidence_hash": "1c6b8a9c78c67fa267f73ead0ed54bd1fc6826162d692547f7bbded9f16ad193"
+  },
+  {
+    "id": "thm215.step.2",
+    "text": "Describe the graph closure and scale the target to a bounded interval",
+    "evidence": [
+      "49c5272683ab6dd29aaeb09457cd955e69a11b67d705e80c4b3576d352b146d9"
+    ],
+    "claim_hash": "5470ecf3eb8ed907ff59cb54b30e175f73d28a6550f3c055a8385247421cae65",
+    "evidence_hash": "6ddd57cd5ed7caa54ef19d8cf10f760664fe7232199409b7d32db106e12a84e6"
+  },
+  {
+    "id": "thm215.step.3",
+    "text": "Test nonstrict polynomial inequalities with a bounded variable",
+    "evidence": [
+      "1bcd874c961e921430e58d22446ec16d5fcd4f3d45135ef70b219fd064db37da"
+    ],
+    "claim_hash": "c00a9a88122b074bbc5f342272b89a4296fa51cce52ec512dc6222aab4b2f410",
+    "evidence_hash": "372babc4e1c783dd475c327b38d6d99fef3a227dc776c0775120fce3746b8a2f"
+  },
+  {
+    "id": "thm215.step.4",
+    "text": "Combine the tests into the bounded lower objective",
+    "evidence": [
+      "5f0edd16ecd0141d0e0725eb7e7ecda12b03b818d77dd1d87ff6eaeac2d67b5d"
+    ],
+    "claim_hash": "e891f8ae7a3a5f23063b3d5c7bfef72955499f91bfea01cd6af42bff44109bed",
+    "evidence_hash": "491cc87d90c3ef9dbe6dee24990d2cbfc5182e17f088e338d455b471ad56e225"
+  },
+  {
+    "id": "thm215.step.5",
+    "text": "Recover the least height from the lower minimizers",
+    "evidence": [
+      "29d42ca4b0b66ef0ae6bcb38cb8ecbffaf1ddddcbfe15e17706513a74c5bc437"
+    ],
+    "claim_hash": "e1656837a0a27bf0fc7d58df6eabc914c1ea7ec71841f5a5d6af912ed08346f9",
+    "evidence_hash": "88a0077818a1ab611e72efb6c46d46d1ac57dfeecf1a495a57950251c540f471"
+  },
+  {
+    "id": "thm215.uses.prop24",
+    "text": "Finiteness gives a polynomial inequality description of the graph closure in the paper and of the closed epigraph in the repository proof.",
+    "evidence": [
+      "7f12f3b54cc4bb1cf608248ed13e7900d0f098ec3327659f0c41005bff4af12c",
+      "de5d3dddfdc5c4664a66d4b45e2c3912fced1a78752e5278b6a070142a58c47e"
+    ],
+    "claim_hash": "c70096607af0e6ea62bb9abc739fa37ce069cc471faf8d0f22fe87b329c97e57",
+    "evidence_hash": "d95e780eeb5d752673ccfcf12b5c150d12956ddd4124a923e6871de9e6f29fcd"
+  },
+  {
+    "id": "thm215.uses.prop25",
+    "text": "The corrected growth bound gives a positive polynomial majorant.",
+    "evidence": [
+      "6fa228ea83fd482322f7609da47481ace916f50f6d90b80824069f5559c16fce",
+      "f0ece41be216aeeab508269b0d76c8bb41cd350ff54bc792b7e09dd32094c9e1"
+    ],
+    "claim_hash": "2d12ba17b4eb849ae1f51358727839855605eab88d5b6d4c0eddce48063f7781",
+    "evidence_hash": "690c834f271ae968b4f7e88c327b7f0f82ba44143d112bdf20c4739029191c10"
+  },
+  {
+    "id": "thm215.uses.thm23",
+    "text": "Projection from the graph and a polynomial inequality gives the semialgebraic epigraph.",
+    "evidence": [
+      "69ac0c040b51afc2b10378e7211f2cbefe5430894ecc848eaa745a662f0541a6"
+    ],
+    "claim_hash": "ba68b8e207aaf7d0e0bd3230118e07a8271bf90dfe9ea25cfec75f68d250bca7",
+    "evidence_hash": "f9b9cf207df9264be47e3ffd674d87e6341749a622025a9ebd3b1edd1bc8e408"
+  },
+  {
+    "id": "thm215.uses.prop26",
+    "text": "The converse uses semialgebraicity of polynomial bilevel values.",
+    "evidence": [
+      "390a3c7da8794e17162ca5f069c459090476d2dbaf0eca218d18f3795da99d1e",
+      "05ea789dea2239b65703c6d557194aeb971a1b2b1711773c6a66dfcc16a6a433"
+    ],
+    "claim_hash": "8575ff4dde2aeca9d09a920917f9680f0af4e2e112ea51b2d06b0ce4c18cb14d",
+    "evidence_hash": "e62ffe4793691db63c800347d1ffa5e631f9bd2f58100de8d836417196c55848"
+  },
+  {
+    "id": "thm215.uses.cor29",
+    "text": "A bounded box gives real values, lower semicontinuity and boundedness on compact sets.",
+    "evidence": [
+      "390a3c7da8794e17162ca5f069c459090476d2dbaf0eca218d18f3795da99d1e",
+      "05ea789dea2239b65703c6d557194aeb971a1b2b1711773c6a66dfcc16a6a433"
+    ],
+    "claim_hash": "dc391118973f6974c7fcee2faa4e63a5fa6ad1f66ba8eccc562985b6aca0ef6f",
+    "evidence_hash": "e62ffe4793691db63c800347d1ffa5e631f9bd2f58100de8d836417196c55848"
+  },
+  {
+    "id": "thm215.uses.bp",
+    "text": "In the paper’s normalization step, the optimistic infimum recovers the original value when the upper objective is multiplied by the positive normalizing factor.",
+    "evidence": [
+      "287c7822c1f9464e71d62142ec0f618e5557e61288646fa2a2fa876f30d909df",
+      "f0ece41be216aeeab508269b0d76c8bb41cd350ff54bc792b7e09dd32094c9e1"
+    ],
+    "claim_hash": "8419b29422d80792241d2cd7b76167dec7361a3e5d3e6ed20dde7c8c00ed649f",
+    "evidence_hash": "034fc78d07e15d5e800147633b6767c9a1b3643d03746361c0fe1cab622e7917"
+  },
+  {
+    "id": "correction.e4.body",
+    "text": "The normalization step requires an absolute-value bound by a positive polynomial, and the proof opening should refer to Theorem 2.15.",
+    "evidence": [
+      "ab17b654d0c8e982bcd45517662048294b43e24978c51cde5ec8abc6eb27380a",
+      "8c9276d3073a19a0632d3b3d788c5be54ad36198063f55332c6d7641a1a00232"
+    ],
+    "claim_hash": "2ee0c2a6e9ad6e463caa4acd8b899f36171cc20a663e1c240a76a7a9d11b2af7",
+    "evidence_hash": "9e493810b6fafba057cc87712128dd182d11d6cb36cbd303eb8efe1350e205a4"
+  },
+  {
+    "id": "correction.e5.body",
+    "text": "The repository uses the closed semialgebraic epigraph and substitutes the scaled output into its polynomial description.",
+    "evidence": [
+      "3ad414c4a7a5ee5ee8dc00d4b5d14db0eae5027fc90d65eb2babba26ab24e50c",
+      "90a10b1fd3a37c5a43240dc8b7db36d435bc8f6462da1d96786748abf149fbff",
+      "fc2793c01bf6473a3c1468fbe731c3d803013f299836987a3229135948ac45af"
+    ],
+    "claim_hash": "27a2ffc719ab670a3e1cb016f728cec950f280984c839c5cd9262c7d426ca9a4",
+    "evidence_hash": "677f8c10768fb18f46b9aa813977dc8c0601c88ea00ed9026f2d0fd99d699453"
+  },
+  {
+    "id": "thm215.idea.1",
+    "text": "A positive polynomial bound rescales the candidate output so that a bounded lower coordinate can represent it.",
+    "evidence": [
+      "6fa228ea83fd482322f7609da47481ace916f50f6d90b80824069f5559c16fce",
+      "bdc939003ff5987747a78d43e25672124f29aef145a1c59a9d885a76342d98d5"
+    ],
+    "claim_hash": "423081b72f8e7c97e9ae4a38e3f7a6ba83397f039c68d5dd353793e540654422",
+    "evidence_hash": "cd1736fc011c68fa3e585b7fd8262c4f048b490cfbb6992e6e9f1493342c9f0e"
+  },
+  {
+    "id": "thm215.idea.2",
+    "text": "The repository route encodes the closed epigraph by a bounded polynomial zero-set construction.",
+    "evidence": [
+      "90a10b1fd3a37c5a43240dc8b7db36d435bc8f6462da1d96786748abf149fbff",
+      "808844a90e1fd88450dc87c8069429bf4e98b43b0b5e47a1ff60abb091febfa9"
+    ],
+    "claim_hash": "47361ec5609c8dce68e5ef65d89a578b4ff20121a33c84d0545b304a2282cb95",
+    "evidence_hash": "2e7c8cdc08a3a6b43de8e74a475e093659d36abd3b4870da23439d0dcd2ecff4"
+  },
+  {
+    "id": "lem219.title",
+    "text": "Convex indicator construction",
+    "evidence": [
+      "8dd35309795347fa4c3e733b5e6a6b8fa1c7a0b185f957904c765577e10410d7",
+      "ee97c6a72dbe8d2225d73f2b4f31a6b796589f1a6d8c9953a1f789d94c966dcc"
+    ],
+    "claim_hash": "743bc6091057cb5b969cd50b90889e9e86b36c67b42af724ae44b5caaaf15b79",
+    "evidence_hash": "90f9a02f53848601ad10cdb2cf5c43d06dbcd0b64518273278ca1e36fccfecce"
+  },
+  {
+    "id": "lem219.summary.1",
+    "text": "The indicator of a basic semialgebraic set is the value of a polynomial bilevel problem with a convex lower objective over an unbounded box.",
+    "evidence": [
+      "8dd35309795347fa4c3e733b5e6a6b8fa1c7a0b185f957904c765577e10410d7",
+      "ee97c6a72dbe8d2225d73f2b4f31a6b796589f1a6d8c9953a1f789d94c966dcc"
+    ],
+    "claim_hash": "5d10ce2e34c2e8e48ae1a89b4eff544b1a7f8123b1f34f6f483504a54cf3c415",
+    "evidence_hash": "90f9a02f53848601ad10cdb2cf5c43d06dbcd0b64518273278ca1e36fccfecce"
+  },
+  {
+    "id": "lem219.summary.2",
+    "text": "The repository construction attains the same upper value at every lower minimizer.",
+    "evidence": [
+      "66f36459cd76fc7d5517fed1ec7d9f551ee30de200c9d70000a74baf3d1dcfcd",
+      "aa90a99e61e70ce265d9c1b8a309855560fd2c19a7ed3150cc3c36ca17ceb99b"
+    ],
+    "claim_hash": "93e1843f33fc96c69b59b09a9416c94cc83b39efd89c1c7abd970718ff50f3db",
+    "evidence_hash": "0bed282a0c1927df505fff56c25e2a9b9372cedab93aa71fd1afa54632e97cf3"
+  },
+  {
+    "id": "lem219.paperIdea.1",
+    "text": "Use separable convex terms to test the polynomial equality and each strict inequality.",
+    "evidence": [
+      "7f5bb1e8ce6edc81031a284f887090e9717e3c5cedf1eea9ac6a963c62c363a9"
+    ],
+    "claim_hash": "84ccdee39e15607d45eeb4dc65ff68ec51778a35a071b4349dec0cea45b35960",
+    "evidence_hash": "1630f8829237104bc6cfba895d433e98f9d62bd087f2167f84ccdc2550b53130"
+  },
+  {
+    "id": "lem219.paperIdea.2",
+    "text": "The product of the resulting indicators agrees with membership in the basic set.",
+    "evidence": [
+      "ac4ea553c8ffa3fd2dd0f332dd2e70b840f9dc8b3e10af3bcb13e2c108aed268"
+    ],
+    "claim_hash": "35a8213e260d0e51f07227f311272dc1d3533a3e19c26370ca89e037cf7bdeff",
+    "evidence_hash": "3d65fad45dd9f6fef66cd8cf1a8547eaa5ef2050810eb5ff0cd24bb8eda2572d"
+  },
+  {
+    "id": "lem219.step.1",
+    "text": "Construct a convex lower problem for an indicator",
+    "evidence": [
+      "6d88f3555b30b1d523f7a78d9cc7812b2e728d3bf3588d5cb8aa70ce8ed0f57e"
+    ],
+    "claim_hash": "975e63b5e1d5b3f1f303d5426f2e5fc21d7ff5a4dafd905b754fc974ab7086e2",
+    "evidence_hash": "d235af4c95e2af789d593b098693e5e8c98877e0be0d4bc24f5346cfeef40669"
+  },
+  {
+    "id": "lem219.step.2",
+    "text": "Solve the separate scalar lower problems",
+    "evidence": [
+      "f64a4a57e5d451ee5b15187fee84392de25e57d6efabf0346d8472bd19c2ea65"
+    ],
+    "claim_hash": "142a102f6ee5ba0773f145e2e4d378a97da3762d9e180ced26e0d364893c5ace",
+    "evidence_hash": "165912d275e3b49ce6b29c818856d665b1b9d1db857a28648a41f5184fef7e98"
+  },
+  {
+    "id": "lem219.step.3",
+    "text": "Multiply the indicators of the equality and strict inequalities",
+    "evidence": [
+      "ac4ea553c8ffa3fd2dd0f332dd2e70b840f9dc8b3e10af3bcb13e2c108aed268"
+    ],
+    "claim_hash": "c912e0526980a19065f64d1526dbe1a1ac95f3a5dbe8930d050d7a5c363590b1",
+    "evidence_hash": "3d65fad45dd9f6fef66cd8cf1a8547eaa5ef2050810eb5ff0cd24bb8eda2572d"
+  },
+  {
+    "id": "correction.e18.body",
+    "text": "Each strict-inequality block has its own linear term in the original lower objective.",
+    "evidence": [
+      "f0b4ae7883a29476172d4a483e1fa97e3ea2728bb905ad7bde4c9aa03c1b23be",
+      "1ac3beb9b287825d9ab7b800548ac6dafade87578ef0904bfba2ab70623b16e7",
+      "d53c27d0f2d8e0ef483ac535a618e9d21b4ae7bba13aaec81c80e7d2862e5631"
+    ],
+    "claim_hash": "8904041cf47795b68da106fb7e2ac737fb608121d81c7c5f938c4b51724d4c9f",
+    "evidence_hash": "ed16c79c0bd6d692d744db7f538839266854d7653bda926198015b4ac20cd020"
+  },
+  {
+    "id": "correction.e19.body",
+    "text": "The proof combines arbitrary-sign polynomial weights, so the indicator output must equal the indicator at every lower minimizer.",
+    "evidence": [
+      "e966d3448fb52e1f44cce7a74ebf8c4e99da14c81c62965ae3f3fa50d1e52f82",
+      "66f36459cd76fc7d5517fed1ec7d9f551ee30de200c9d70000a74baf3d1dcfcd",
+      "5b70539a0840e2460f1fba4f1046b2045c2076d7276fda126d1a178bd6aae97e"
+    ],
+    "claim_hash": "f4f8d611f35283731d72b3346415266feeb433e64bd6ca88169020863609622d",
+    "evidence_hash": "aded53ff97468bc82c362945c672c1c5437b9b64bae555ccc3bbd318df3aafd3"
+  },
+  {
+    "id": "correction.e31.body",
+    "text": "The indicator construction can have many lower minimizers, and its upper objective agrees on all of them.",
+    "evidence": [
+      "d389ebd53a1b8618fc28becf7f86e0ced31cf4f4c24dfb7b7482ef572fff1cbd",
+      "66f36459cd76fc7d5517fed1ec7d9f551ee30de200c9d70000a74baf3d1dcfcd",
+      "c1d2c3170c16155366d44e40fbd856f9f5a6b4ab2b54f6f26215fd0b01878f89",
+      "ee4c680a7dd97a371f4d3b340cae662330eb84644be551726026c0fac805ecfc"
+    ],
+    "claim_hash": "cb83190a2a3c9be17b54d71828b02ed7febde58e90a9749f8a4cba3c392896b4",
+    "evidence_hash": "9f529787f0d55b39fae3be0eadd3be4f560f0513c0f8f68af2a02576dac3d653"
+  },
+  {
+    "id": "lem219.idea.1",
+    "text": "Minimize one convex quadratic per condition and multiply their upper-level indicators.",
+    "evidence": [
+      "76c55101183584ecd608ad15d4c0f161318c11ddadfe999759ab7133e6cba40a",
+      "45545cabde92214676f3ff4467e8e6406bf730c5c459e1649af223d2afb17736"
+    ],
+    "claim_hash": "e941b3c1af1a654ae9c912309d6690633598d7b39ba6f9ba77209fb55d7f4d7d",
+    "evidence_hash": "244efd3dc3d8268f8402438af8b83e50b44288c639dd60cdd4126d9b3d7961e8"
+  },
+  {
+    "id": "thm218.title",
+    "text": "Unbounded convex lower levels realize piecewise polynomials",
+    "evidence": [
+      "7bdd3cd5ffbd461fafc3ebdcb1d516b682fce4234b9119bc89f448bc4f1c76bb",
+      "410cc7ea8ed08288d719561e3bbc9afa202eedb021f5defb72c6d879456fc5b0"
+    ],
+    "claim_hash": "159bd696aa766dc3679f82039c706eadcbe05edcc89c8abf680bc152c8ea95aa",
+    "evidence_hash": "a6b761f03ab4f8a0d35be14ef42213c8e0eff6f283a17efb2e4cbd3144338e66"
+  },
+  {
+    "id": "thm218.summary.1",
+    "text": "Every piecewise polynomial function is an optimistic value over an unbounded box with a convex polynomial lower objective.",
+    "evidence": [
+      "9e8b905993c9a9a86926771a7eed0015de7e6399bce925ea5d4923ed20ade391",
+      "d4fb0ac81140c1380f57bc20a8237aefc2ca69b8330e0339f152ce2da8317845",
+      "410cc7ea8ed08288d719561e3bbc9afa202eedb021f5defb72c6d879456fc5b0"
+    ],
+    "claim_hash": "5e06b3c56b459c82c5a868b2cb8c94615a32179d8adc785d12683479853f4e52",
+    "evidence_hash": "4bf4e6033bb59129d88ed83a17578749fd78a7003214b54b75a623c54b58f13c"
+  },
+  {
+    "id": "thm218.summary.2",
+    "text": "All values in that bilevel class are extended-real semialgebraic.",
+    "evidence": [
+      "318dc9a73d2913a58130b6bcbda33be2d0168ab1ed03ffa7afede1926f96d06e",
+      "ba5f8eba9e987277509f7437fe569fff57722506d53faa4a1e4c989c02cddb1b"
+    ],
+    "claim_hash": "9dd82f318f54404b364ab79f71d7820fa87a3981ad976f0fb7714d6304264338",
+    "evidence_hash": "caed7300821de09d004c23e885a4cdbaa6d089cd514efa3088fd8359a0abe5ba"
+  },
+  {
+    "id": "thm218.idea.1",
+    "text": "Encode the basic pieces by independent indicator blocks and combine their outputs with the corresponding polynomial pieces.",
+    "evidence": [
+      "161d806fd9d4a985bd1b769a08f4a3b4d75887e8b966bac306926ba3712ac7c8"
+    ],
+    "claim_hash": "69f9f3d86782911ea05edec0a64968e1a21ff84ebf198b852a1924dc4e55ed7a",
+    "evidence_hash": "38e90820f1d5f5a5355d6e55127e34854a6c2f20f941ef2889cdf8f0cd156bc8"
+  },
+  {
+    "id": "thm218.step.1",
+    "text": "Decompose the pieces and apply the indicator construction",
+    "evidence": [
+      "e0ce5071f13b32180faf7d315f63765c2a984867744e9aebfd15b0dab7211e7b"
+    ],
+    "claim_hash": "85b94a98745fe87b60cb145357922c35889593aa91a145cca41ea4324a2b541d",
+    "evidence_hash": "fa6c2677eb82e052451db34d55605e76d8b96fd9f1a768a12448609ee2ced0cb"
+  },
+  {
+    "id": "thm218.step.2",
+    "text": "Combine the lower problems as independent blocks",
+    "evidence": [
+      "72a061aa86681b8c4c44debe836a34e98bf1a9b79c84bf7f17400dfa36d795f7"
+    ],
+    "claim_hash": "a1b05bc51494e086a84819db84f07110f67ca7c233598076b91fca9b7e7eadf3",
+    "evidence_hash": "889e23dfa72aa9a0b61a64c0cdfb1c96be6dce016d6157a156af0fb6c713a621"
+  },
+  {
+    "id": "thm218.step.3",
+    "text": "Read the piecewise polynomial value from the indicators",
+    "evidence": [
+      "5b70539a0840e2460f1fba4f1046b2045c2076d7276fda126d1a178bd6aae97e"
+    ],
+    "claim_hash": "7d34ab53eccb548b2545f659638d2cd778f474a85878224ce01004f687f730e8",
+    "evidence_hash": "aac814c009103b9ff9028add4af12086b48c052cf701ac35fc8f70af633dc2ec"
+  },
+  {
+    "id": "thm218.uses.lem219",
+    "text": "Constancy on each lower minimizer set permits arbitrary-sign polynomial weights.",
+    "evidence": [
+      "b8b80b448952b4d20970659e20cb76ece81a00b072991ec80842c1c15cd53494",
+      "ef6a856065d959bc9b6bcf1949472fcd93b95c51805ecd870717f3ca15864bbe"
+    ],
+    "claim_hash": "a47128ecc883e75587925a1c8c71becf37f3b5dda4481aa09ce3420a0fb37591",
+    "evidence_hash": "4f07dfc2676f4ed4f838cb4fb4520967bd33e9e08200fdf491de7257cb408cf3"
+  },
+  {
+    "id": "thm218.uses.prop26",
+    "text": "Polynomial bilevel values are semialgebraic even over unbounded boxes.",
+    "evidence": [
+      "318dc9a73d2913a58130b6bcbda33be2d0168ab1ed03ffa7afede1926f96d06e"
+    ],
+    "claim_hash": "c5529060a0eb81f22a2a2ee6aacc8ea37bee201c112b7e66ec368890d1554051",
+    "evidence_hash": "58a1a0f6afd1aee724c0edd27be877d31be32d8aae02e95add66f0a042db332e"
+  },
+  {
+    "id": "correction.e17.body",
+    "text": "The repository constructions make the lower objective convex on the whole lower space for every upper point.",
+    "evidence": [
+      "0dd6856c03ee8283b64cb49dcf7ae38eb250f68c6de6f70809a4ba15bb61eec5",
+      "03262a65d7e044175c8264539442be9992741c41e3cbfbac1a7f7d5c2d3ae059",
+      "eb9f391e72e0d31de3cb7eb5a03bd8570dd003c9a09be210951c6c4e4b2283fd"
+    ],
+    "claim_hash": "2a7c98a352a13ab22ab1dc31a5fd7b9a205ef9da34b07b58ed5cd64bdacc8699",
+    "evidence_hash": "99d73ce8b44ac3370b3719873b0f1e5382a86bb1700bb1f8c22f7bd23f05287d"
+  },
+  {
+    "id": "thm220.title",
+    "text": "Bounded convex lower levels realize lower semicontinuous pieces",
+    "evidence": [
+      "a27557f0a1d3f8413ed9fb4242b84b5fe9be922cfd6f082fc29169688b208000",
+      "70dcb2bc24cd798b3f2ff1f6f231e10e27ed67e8ef2cda2053e768702c014bbd"
+    ],
+    "claim_hash": "fcad79f620773c9a700a1df540e60c0f1ae722b360107415afd976cf44d0967f",
+    "evidence_hash": "6a93006fa35ff023a38d741afa27fdbe7968d181a44aa50481e35370a847b8f0"
+  },
+  {
+    "id": "thm220.summary.1",
+    "text": "A lower semicontinuous piecewise polynomial function is representable by a polynomial bilevel problem over a bounded box with a convex lower objective.",
+    "evidence": [
+      "bb6023106765e3275aee9b1f33cddea0c68c9063f19735e379f5c9ffb4769328",
+      "ed6174febecb108016ce1b3278bfec805daa33b2470cabca6558a77b6e7a6cc4",
+      "70dcb2bc24cd798b3f2ff1f6f231e10e27ed67e8ef2cda2053e768702c014bbd"
+    ],
+    "claim_hash": "35ec8bd8fe5918e3eba0fac4f9c7dab6081ad23376ee8b894985d82cf5ab320c",
+    "evidence_hash": "d353c7cee38b5d5f3e64953782f6f172bbdb271cf5f7fbff129893d77252cc6f"
+  },
+  {
+    "id": "thm220.summary.2",
+    "text": "Every such bilevel value is semialgebraic, lower semicontinuous and bounded on compact sets.",
+    "evidence": [
+      "f13240e6904424d2eeaf5c8438843c513c2d22bd9638a3e7760b8deff991a95c",
+      "1dacaa3937547988c3c129b33265a64fc3ab2e50faeb2eacad35ab1aef3407d4"
+    ],
+    "claim_hash": "57b961708d3882c6cd935e57e74980ef63fea27f7167004c450fdd7644a325bc",
+    "evidence_hash": "952f99beaa277543adcbfe015924d03e14856d16357fa24add14162a3719ef89"
+  },
+  {
+    "id": "thm220.paperIdea.1",
+    "text": "Take the minimum of the polynomial pieces whose closures contain the upper point.",
+    "evidence": [
+      "86bce864f54f131d13fce06e4ebf7f084cfadadef1687be1bdd059b957812981"
+    ],
+    "claim_hash": "bfef408ffec00ecd3268da7a5395e019fec729028894f048493af54ed2988d17",
+    "evidence_hash": "9ec5c19b978652b21a807c67c26b04a9a1bae0ec8ae65ba93ee53956a8bc53d2"
+  },
+  {
+    "id": "thm220.paperIdea.2",
+    "text": "Use bounded sign tests and simplex weights to choose the smallest active piece.",
+    "evidence": [
+      "bbd018683f6335a9c0a5438d68569e771c3e4d3fe65b40b7eb43e818750057e5"
+    ],
+    "claim_hash": "4d25ef1b146ae065f02f16fdbb38806fad692ab4dc3f43d8fb6d4b35331d7617",
+    "evidence_hash": "52da9b84d6772e2fed0e80d3493c7a25d1ee8fdb7d8c549d15ded399943f6d17"
+  },
+  {
+    "id": "thm220.step.1",
+    "text": "Express the target using closed pieces and normalize the polynomial values",
+    "evidence": [
+      "84d2c8e944cec2f18e475311422b6cc14f18afe4408f37eb4500d91717dba11d"
+    ],
+    "claim_hash": "e6afec90978d548a969bf037f7a0434a5ae6823c8a8f83ef7fba469dc073ed08",
+    "evidence_hash": "b3c49620bfc8c3e5c08e6e427344383e87d6c941804fce326f3217cc32ff3cc4"
+  },
+  {
+    "id": "thm220.step.2",
+    "text": "Test the polynomial signs using bounded variables",
+    "evidence": [
+      "0ae1c2292ba1fcd591d1707803fb668801d7e891aa09f896799c3dae42caf56b"
+    ],
+    "claim_hash": "54cf2ee364ca654e5da7a73a02f4f0a51b042a852d3a4a7dc718f84b7feef8d5",
+    "evidence_hash": "9336e66fb4b1ea6f903d4ced0b41f7cea72847ff9fe3987e4906f65e2d195230"
+  },
+  {
+    "id": "thm220.step.3",
+    "text": "Add a convex objective that selects simplex weights",
+    "evidence": [
+      "d389a83e972402f7d734df2c1b3af75cb958e7e4e0b8b9121c60f352ac5abf34"
+    ],
+    "claim_hash": "a0d9f37b54eb119fd7eb5cebd9fe0d8e721f1ee7b4a698baea10068880a1f091",
+    "evidence_hash": "4573ece89a3da258b6aaf8aba674d1085e6c78ec9b3e3b061691ace25d09d710"
+  },
+  {
+    "id": "thm220.step.4",
+    "text": "Optimize the enabled outputs over the lower minimizers",
+    "evidence": [
+      "38589e5bbdfb0626811e63c598f82b828e7105bcac917106417958cf50c47b99"
+    ],
+    "claim_hash": "0c2966ae95269f7b91a1a32a96c5b6b52afc23cc56fc73f27ce15b648c252006",
+    "evidence_hash": "298c4161de6cf599e4854a51bcd8c9286a342c21f55fb3fc1f6d1914f6656b1b"
+  },
+  {
+    "id": "thm220.step.5",
+    "text": "Recover the minimum of the active polynomial values",
+    "evidence": [
+      "b84cf3ba14762b830ad04268c69c8dfc6bb12d384dbc380148a3e140f76dd6a7"
+    ],
+    "claim_hash": "2e2ec91795774c6e997029d0662447fe33d991995424fe016182c38a42df3bc3",
+    "evidence_hash": "16fee86f1d67a9625bcd45f3916faa474f8335f254981e88ac96b7a1786f74ba"
+  },
+  {
+    "id": "thm220.uses.prop24",
+    "text": "Finiteness writes the closed comparison sets as unions of basic closed sets.",
+    "evidence": [
+      "5f89157adcc99158ee004e0c43b1c6851de1264df4ab005c4cbd1092709e9823",
+      "5ba170cd51d82c682736a1a7c709ef9ec2559b8114bb53420bd155e34d111422"
+    ],
+    "claim_hash": "b8f75837a49bf559ffc261fdcfccc4fc0bc8c5c921bf8703ab15f3c4d307082a",
+    "evidence_hash": "9acd9d56a4bd2176e889b6a0ba543762630d07513d3ae4007add438a391b941b"
+  },
+  {
+    "id": "thm220.uses.cor29",
+    "text": "Compact boxes give lower semicontinuity and boundedness on compacts.",
+    "evidence": [
+      "2bf087f35c1476d5e386022920e5ae01b588ea932ac16ca354227d10bf93e30f"
+    ],
+    "claim_hash": "f480e86f35010dd4fc5cc610da2305bc723cfcbef50d01f24bc36b20d4ca284e",
+    "evidence_hash": "dbf66f3967e9596b7d201e82b4d023988067144f89f3d4f8b7ae3b7e6a7e6ddc"
+  },
+  {
+    "id": "thm220.uses.prop26",
+    "text": "Polynomial bilevel values are semialgebraic.",
+    "evidence": [
+      "2bf087f35c1476d5e386022920e5ae01b588ea932ac16ca354227d10bf93e30f"
+    ],
+    "claim_hash": "92eb4a0e51a78458085f989f7940a37648fc96b182d91c895299cb3ff709cbfa",
+    "evidence_hash": "dbf66f3967e9596b7d201e82b4d023988067144f89f3d4f8b7ae3b7e6a7e6ddc"
+  },
+  {
+    "id": "thm220.uses.thm215",
+    "text": "The paper uses the bounded-box classification for the upper inclusion and draws on its proof to motivate shifting the polynomial pieces.",
+    "evidence": [
+      "9f9d20cec5bb7d349ab8c249cb8034e7ebc6ea91293de3dc70b7a4dc860e1ca4",
+      "0b70bacdc14bef87a8e07c7b7a928fa9a5d72d096220a232d107148e54bf9f14",
+      "9de2ace4942b38a5c0a5dde56ac696332c2669e7f7ccf6ce05ff26bb4aa2f306"
+    ],
+    "claim_hash": "832197d8604fa7cc1a5406f372aaf90b357553c8f492bb3f5034ac83b4b4eb1e",
+    "evidence_hash": "f1c2ba6087eece3abcf3d110be40d49372e8b9a01392ada1753ef7e8a0c3a10c"
+  },
+  {
+    "id": "correction.e20.body",
+    "text": "Lower semicontinuity and continuity of the polynomial pieces identify the target as the least polynomial value among pieces whose closures contain the point.",
+    "evidence": [
+      "0afebcda0d929601825c8db1f1ad74163f31c9c2f7475de4550eded72aca8b41",
+      "35a7153f193287e2cca09f0dac13ae6d3cfd0ade95bad65823c10ea0361b5673",
+      "0300412ce71a2d01d47035aad18a9eee675647361b95567e5728d0c3e1e0b980"
+    ],
+    "claim_hash": "7f0cb23e099c86132455d980b77f7fdd1118209b460cb597785442b0bf0143d3",
+    "evidence_hash": "d1c5ec4d75e707a3ad512a596b0e13e4467ea96e51917fc1b62dfd4bdb83b3b4"
+  },
+  {
+    "id": "correction.e21.body",
+    "text": "A polynomial formed from a sum of squares bounds the pieces from above and avoids invoking the general growth proposition.",
+    "evidence": [
+      "e567dc9e75ee4d54dc6394d243c6ed3e39138d90c5068d708042ff4af0fc04fe",
+      "c236597124a026f4304813a70bb40e0f5928281a3c84565dfe544e2f8dc0b3f0",
+      "9de2ace4942b38a5c0a5dde56ac696332c2669e7f7ccf6ce05ff26bb4aa2f306"
+    ],
+    "claim_hash": "5df597c1ea8a9e9a0227a77a6be21adf1e1a2c1ab946a5edcb9e38b5632bf020",
+    "evidence_hash": "2526f3670171d6120b5fe0cdf98d6413185b8d2323bfb99a1115f447628d5649"
+  },
+  {
+    "id": "correction.e23.body",
+    "text": "The selector and the sign variables minimize separately, and the nonpositive normalization ensures that disabled pieces cannot lower the value.",
+    "evidence": [
+      "d18f9a4f92c77f194e883b89e4f62a39e4198b02a89bb222e40d4753559f8748",
+      "0cff4c913a690c05c91d608da0edf0c423ebd495b4763e6ead83dc088f176630",
+      "455beff1773cd5446b9ffa2514413c489239760b789c498e3af39e35bbd1f0d0"
+    ],
+    "claim_hash": "845ce807abeaeeb356d6fdc2114838895ddeea135ff4e5284e32a55bba668bcd",
+    "evidence_hash": "a2e65b4e18ff43653afe1db033ffd6c5ccd8819855fed57d4ff5d701f193c6a5"
+  },
+  {
+    "id": "thm220.idea.1",
+    "text": "Use simplex weights to select the least among polynomial pieces enabled by nonstrict sign tests.",
+    "evidence": [
+      "5e10089ea4728ef42d864c18b51b42a86f03a10d1f413578fc28ac35b69c7226"
+    ],
+    "claim_hash": "f2a814bcebc31cc5f142ef44cc5b9620b5d55980f7a9831bbf396262d7ee7f0a",
+    "evidence_hash": "eda3e868996dd459efd952167bd41c88c1625e0965c2c2cd79a3c92258a61146"
+  },
+  {
+    "id": "thm220.idea.2",
+    "text": "The repository uses closed sets defined by comparing the target with each polynomial piece.",
+    "evidence": [
+      "86514cf6af1a8f8545156b64205d330cb4de6074c56e48312bd2dd26ae43ddbb"
+    ],
+    "claim_hash": "d59d68a29ed0a029dff4b1fde68193f891a27ea92a73d10d30bb76f37072da31",
+    "evidence_hash": "da82e876ef3abb3306d2c7cfe3956f3c97146f470cdc27d2d944075c92684af6"
+  },
+  {
+    "id": "thm221.title",
+    "text": "Compact convex semialgebraic lower sets",
+    "evidence": [
+      "8405134e36b87b2d871d468f2871f3744b4405cb62f83018e7cdd26160518646",
+      "5378363e85b46d1ef8ed0b4716ac02b7b8396594cfe69c9b23ccf3c8df48235a"
+    ],
+    "claim_hash": "21ecd0c6418b44a76c559176f0f9c5498d70088dce234bc92a63e03ea43f02d7",
+    "evidence_hash": "01ed5657746812b80a5d3a3d7a84c16f19121451901d6c41fb61691ea3f86c7b"
+  },
+  {
+    "id": "thm221.summary.1",
+    "text": "With a nonempty compact convex semialgebraic lower feasible set and a convex polynomial lower objective, the optimistic value class is exactly the real semialgebraic, lower semicontinuous functions bounded on compact sets.",
+    "evidence": [
+      "845fe01f05b7dd32fa80d0523efb70588be64f63e2e17664dc40426420440ae9",
+      "6a08a42d1dd9962746e76c2a921ccf1ca9b44e13f315c1165255b47d8cd275fd",
+      "5378363e85b46d1ef8ed0b4716ac02b7b8396594cfe69c9b23ccf3c8df48235a"
+    ],
+    "claim_hash": "bb6fc557a4d6de38ff15beb164b4adff38c04acf40a1f5e1a9842e423232138a",
+    "evidence_hash": "5733852fc0c5a33673537dd98bb0ae781c05373efa04a9b82ef899d158fe775e"
+  },
+  {
+    "id": "thm221.idea.1",
+    "text": "Replace lower variables by their monomial vector and take the convex hull of its image, so both objectives become linear in the new variables.",
+    "evidence": [
+      "2cbdf829f7f9d4094e9bfe1fba44f8fa5a16781391a63a6eb9daa4b2a0d326ea",
+      "13144b65267f5aab82a6eb466e5f63226a61cfbd3cd9eaf0a8b87127c18c0847"
+    ],
+    "claim_hash": "9e406531e9a8541ac9c357088251c162148b699a5b96821123c138c83e6b383d",
+    "evidence_hash": "76fe606f026d927d111e91a3212afd720aa98155bc15a6a171e3654597c5b9f1"
+  },
+  {
+    "id": "thm221.idea.2",
+    "text": "Every lifted minimizer is a convex combination of lifted original minimizers, which preserves the optimistic and pessimistic values.",
+    "evidence": [
+      "05174b361496f9379477f7431e085428acacd3684a42b544623342a40bb28b77"
+    ],
+    "claim_hash": "914a4294966bdcdbba49cb7bfe01fdb14036644cbed991977e6c06fde5e323cd",
+    "evidence_hash": "8d1ef8f761d468f223f00b2f52326bdc02b26bdc816319693db16d99ea7a416d"
+  },
+  {
+    "id": "thm221.step.1",
+    "text": "Lift a polynomial optimization problem to a linear objective on a convex hull",
+    "evidence": [
+      "6161a1113ec25050a2cb978927a032ea242a8d5a915cdc317c756f1c1efd8268"
+    ],
+    "claim_hash": "f8d73daddce3ff0118b98ade1991bc2f0df7709aa1d935295416abd0ed000af1",
+    "evidence_hash": "4252847a13b9bdab8107dc7c37b74033357f5e3ce4e0b07bdd4ba98f1efc0452"
+  },
+  {
+    "id": "thm221.step.2",
+    "text": "Apply the lift to the bounded-box representation",
+    "evidence": [
+      "756afd1c955d29af45761639ca2eaeac21c433e96420a75f29aaaffeebafbe78"
+    ],
+    "claim_hash": "38152178ee8cdb625e89187b1d6758fdb42dac8512870cd6971a027bb5e39762",
+    "evidence_hash": "275350845da0d3124f843d8ef81fa27f750c4c7eea815e1e4cac9ac8109c7c78"
+  },
+  {
+    "id": "thm221.step.3",
+    "text": "Use a finite convex combination to recover the upper value",
+    "evidence": [
+      "c27514076964fb3e9ab67d6195cf7f2fffaf4e770d2fac55dac305dc06ef7938"
+    ],
+    "claim_hash": "e232874e3bb2f5dfe845d1ec9afd409525070a4d9a684060ed262bbd7441775f",
+    "evidence_hash": "f81c059b540dab28b1fa28a2c520dd575ac24cf70cc56845e335d689af683706"
+  },
+  {
+    "id": "thm221.uses.thm215",
+    "text": "The bounded-box theorem provides the polynomial representation to lift.",
+    "evidence": [
+      "d43442be02f6ec58ee51c2d213738ab9e486ec3626d27a737c173a6a10d18f86",
+      "d86ccc2b26a68eb4fe9b3d0aaba4fba57b417c1f5805723394aabc5cf0189b7f"
+    ],
+    "claim_hash": "d4b4b917c1ab166eb6fa6bf0e510b104277321b97962b6d3d667d7d05aa9c2c6",
+    "evidence_hash": "8f8d1ceb663390c1023bd73a0966edbee3469d0dba1bd94191b1b50117802e96"
+  },
+  {
+    "id": "thm221.uses.prop26",
+    "text": "The semialgebraicity argument applies to the general semialgebraic lower set.",
+    "evidence": [
+      "308b862cbc391364c978b8a8cc225fc0ce43e0184d25052b726704908dc28969"
+    ],
+    "claim_hash": "19d5bb21046a3a6b7bb8fb039505443d192e0bc31e00005c78dfa4e224d468a7",
+    "evidence_hash": "a06e44c014b4dee8707a550d5bd560dd2eaba470a4632ff70ccb2a0abd27fcee"
+  },
+  {
+    "id": "thm221.uses.cor29",
+    "text": "A nonempty compact lower set gives lower semicontinuity and boundedness.",
+    "evidence": [
+      "308b862cbc391364c978b8a8cc225fc0ce43e0184d25052b726704908dc28969"
+    ],
+    "claim_hash": "1825010cde0cc61baf74a72585cf988ca07916db16134207cab2242d22865432",
+    "evidence_hash": "a06e44c014b4dee8707a550d5bd560dd2eaba470a4632ff70ccb2a0abd27fcee"
+  },
+  {
+    "id": "thm221.uses.thm23",
+    "text": "A finite convex-combination formula and projection give semialgebraicity of the hull.",
+    "evidence": [
+      "1ba0adcca9c8e8f4c97e05850d0a10401a925e09c6205140ac75cff6b477b72b",
+      "2444acd3c81cab66a812754beac49919ba33194a379ba710d3179b9c6a98cd89"
+    ],
+    "claim_hash": "b39c08f9eaad3734fb5a56113d7b7dee46389a2e218600d21df66794e2387b53",
+    "evidence_hash": "636466718af260a5dd883170af911d71b8816d337ace1116afbc166d9114d418"
+  },
+  {
+    "id": "correction.e7.body",
+    "text": "An empty lower feasible set gives an identically positive-infinite optimistic value, so nonemptiness is part of the compact convex class.",
+    "evidence": [
+      "010a06866960ddbd379362ece07eb3fcff4fd966efcbb82f52ed8da2feb099bd",
+      "428df3922894a48b892eacf09503243abeff6400aef11b0b1ee2ee0a4e9acfdd"
+    ],
+    "claim_hash": "36172b1566731c125db7fadd5520d40c2a4f6180f0109bc283de4aa8e0883bfc",
+    "evidence_hash": "0fbeb10260bd1d4fbbe2e1626c12bd8a5c9fb836b70f362019f85c8499e3c447"
+  },
+  {
+    "id": "correction.e15.body",
+    "text": "The coefficients of lower monomials depend polynomially on the upper variables.",
+    "evidence": [
+      "b5b8a90dd76d4dbfbd2031467e43322021ab93ce1ac1b7b9725b3cb102e14aeb",
+      "e2186c855174de121365950e811ef6ce4d80bee2b847c57e0c1f539d50c4c687",
+      "b55000b71801f82b2f3dd8c00bf0be1881d8ce49213976d2f0ee18cd525f199c"
+    ],
+    "claim_hash": "3f494197f01ca874abdbec65cd32e87ea777999bb17172a5bbf039e275478b76",
+    "evidence_hash": "845cae247c425a260e739436e4fbde872584f735efa188484021b653aa79e219"
+  },
+  {
+    "id": "correction.e16.body",
+    "text": "In a lifted minimizer, an original point must minimize the lower objective whenever its convex-combination weight is positive.",
+    "evidence": [
+      "e6e5b3cd0a6b0a9e2d989525dc4c01e94fd83cf31836636ea28a1688078b4b64",
+      "c30a06a743bfd691ee6ec2c6efdc3b4097f8a8b91c2daa89e78f607d43b2abd2",
+      "c51a79681a5a947c6f24680a97cc05d4813d7ca61dd83f082b3984d5f857e0cd"
+    ],
+    "claim_hash": "6feef087253d41f2bed118dd6a0bb6da2a7d37d3054bcb37aae277006dc25b77",
+    "evidence_hash": "bb3a0c326771edd9b77fd474b72b5bd7957baad17ecdc957eb940db1cfffc064"
+  },
+  {
+    "id": "pessimistic.title",
+    "text": "Pessimistic representation by negation",
+    "evidence": [
+      "c02e15ebd5eb3a749fc3832f1c36dd3cfa54d9fbdfff14aee7fe26b7bc7e98e5",
+      "c54e052febd5ba02e3ccae03bf0ef9a4dee6bd31e7ea6bb7bb50bbbd976f6264"
+    ],
+    "claim_hash": "4a47403ab706cf62748a21c3bcbde3bcf684c4f1c6f0cd95de5cde2948023921",
+    "evidence_hash": "80c71b5a469e4f92214b38b93fb5fffb80b979563146db4e69b64e2b444f4cc1"
+  },
+  {
+    "id": "pessimistic.summary.1",
+    "text": "For the geometric representation results, pessimistic values exchange upper and lower semicontinuity where those conditions occur.",
+    "evidence": [
+      "56edb2a8ae1828e44b7068c095a705f4ae977a163ac2e5259fe74cea63de7b73",
+      "c54e052febd5ba02e3ccae03bf0ef9a4dee6bd31e7ea6bb7bb50bbbd976f6264"
+    ],
+    "claim_hash": "ab723c938c0709bf8bc16614ceb7ddda746ed1ee7c69f8fc8e1e2cdc1c021ce5",
+    "evidence_hash": "b2c8451496b8cb83a0e99acb2abebf42009672e1ff74e21fdd79761031379124"
+  },
+  {
+    "id": "pessimistic.summary.2",
+    "text": "The unbounded polynomial class still represents all extended-real semialgebraic functions.",
+    "evidence": [
+      "e2f0b61581313eda57749c3ba8647a9409162748cb97b925494b7a9ce4636416",
+      "ee4c680a7dd97a371f4d3b340cae662330eb84644be551726026c0fac805ecfc"
+    ],
+    "claim_hash": "dea634ea246560871a329ab01933556f41a8e5ae7a7051fe0b5655b328b633b9",
+    "evidence_hash": "09d6b5733c3814dd6f1125f2e7c64295fc332111f755748b1f1899673a8ed138"
+  },
+  {
+    "id": "pessimistic.idea.1",
+    "text": "Apply the optimistic theorem to the negative target and negate the resulting upper objective.",
+    "evidence": [
+      "defff95c389c810e40be35fdcd2ab3c0c7e33cc23728c79b430b410ae2eedac9",
+      "56edb2a8ae1828e44b7068c095a705f4ae977a163ac2e5259fe74cea63de7b73"
+    ],
+    "claim_hash": "89bc25bbf83cbec64f7d30bad4f8a6752224e8186c46ef6a632c86fb80cce822",
+    "evidence_hash": "b32a546c0834254e007df90ceaa611dbdb48abeb1053de2a6bff1c75f9933f9d"
+  },
+  {
+    "id": "pessimistic.uses.thm11",
+    "text": "Negation transfers the smooth realization to upper semicontinuous targets.",
+    "evidence": [
+      "4fd56d432cb7430a1666fdaed150b57383f206fc13ca0e3a1971f4b78c67258e"
+    ],
+    "claim_hash": "a68ba7ec8eac1b18a81d295521cfebe5b8b7415221e5f8416923c4a4ef082cae",
+    "evidence_hash": "32b55e63a2901b65ece21dea9b4717e3ecfe875f70d66b945598ecd4e64602bf"
+  },
+  {
+    "id": "pessimistic.uses.cor29",
+    "text": "Negation transfers compactness and semicontinuity to the pessimistic value.",
+    "evidence": [
+      "df5310c8c980560c5eb4c8a9383a5dfe8c91467d8a1068fd19a814741059d48e"
+    ],
+    "claim_hash": "d5a1233b775a509861c136bb06585799d99ac6762970e3dd25f274b56629dee7",
+    "evidence_hash": "839df397be1d0d82eae8dd5361e1d0f0242cae12635155cb41fb20d88df5cb47"
+  },
+  {
+    "id": "pessimistic.uses.thm212",
+    "text": "Negation transfers the unbounded-box characterization.",
+    "evidence": [
+      "e2f0b61581313eda57749c3ba8647a9409162748cb97b925494b7a9ce4636416",
+      "ed9c65e0129d4dc39f2d73e3c5168646c654f293a444b5fc35f1561df5027718"
+    ],
+    "claim_hash": "17e3a3e718df28ee963170e1b8a344eccd86b73bde7b10852530bd00ba85472b",
+    "evidence_hash": "a64158c60d5cbabb12a5dcae99ae5e01fb27d77e26df975ddb9d79d375ef3184"
+  },
+  {
+    "id": "pessimistic.uses.thm215",
+    "text": "Negation transfers the bounded-box characterization.",
+    "evidence": [
+      "392a9906588e951f9b4d045038f81f92ee7bbe97435274d8a71c36e8b2186019",
+      "c54e052febd5ba02e3ccae03bf0ef9a4dee6bd31e7ea6bb7bb50bbbd976f6264"
+    ],
+    "claim_hash": "afd0b3585c32be01843fe1fbfc419c132843d641a4ab764d98f647158779eae4",
+    "evidence_hash": "f551451e085b94ef3f4ea704a8d49fdfed1b8e68b2a8560e9aac5437e40f0657"
+  },
+  {
+    "id": "pessimistic.uses.thm218",
+    "text": "Constancy or negation gives the unbounded convex inclusion.",
+    "evidence": [
+      "519d793ee8d0276bd5c6debb0cea1a2137ac47ed0764bb5e89a36a3f9db76e57",
+      "ed9c65e0129d4dc39f2d73e3c5168646c654f293a444b5fc35f1561df5027718"
+    ],
+    "claim_hash": "ff04ea19c6eb6c57e8fb4f1d011dfee1cf9f0f36fdef54e94b51d18a2db06b19",
+    "evidence_hash": "00bc911f5a6a9fe8457d9edb5af2574698b264d6199852d33cb88ec2676d13d3"
+  },
+  {
+    "id": "pessimistic.uses.thm220",
+    "text": "Negation transfers the bounded convex inclusions.",
+    "evidence": [
+      "fab4c0576a2dcf82603612c09b1dcf776c653718c8576d12a3f4524ec57223f0",
+      "c54e052febd5ba02e3ccae03bf0ef9a4dee6bd31e7ea6bb7bb50bbbd976f6264"
+    ],
+    "claim_hash": "c99e17aa28a7981e3a353501a5d827b2d974cabca06bf344a8c5ea684711bc37",
+    "evidence_hash": "43fec2537c3ff4688ecafb3db2cbf30a1927168a69477171b746cc589c6a27b1"
+  },
+  {
+    "id": "pessimistic.uses.thm221",
+    "text": "Negation transfers the compact convex characterization.",
+    "evidence": [
+      "212b32115f4f201023303eeb0bcd88843415ae15a39456b9e9272ac9ffbea11b",
+      "c54e052febd5ba02e3ccae03bf0ef9a4dee6bd31e7ea6bb7bb50bbbd976f6264"
+    ],
+    "claim_hash": "d352e3652ca147543fd43f9966c9f14ca092c93dbce0e7ba698315c7bb219290",
+    "evidence_hash": "2f536a536550a8dd9b9c5f12946c404f651e0cb49d60223250b27db8888e819f"
+  },
+  {
+    "id": "pessimistic.uses.bp",
+    "text": "The pessimistic representation statements use the supremum of the upper objective over the lower minimizers.",
+    "evidence": [
+      "2515ec75551427c6114fd4bc66b7b6806c90b8bd0d6ace218670a893f4f2d850",
+      "5325478897d7ef42cec0e7416e5357f22b0f3e680fea532ae2ef0cfe73abf12c"
+    ],
+    "claim_hash": "9228218c532ed1db3a45e8246dfed93be75ccabf21eaac0d3e26b9ffbaa79644",
+    "evidence_hash": "3ee0049cf8a15e0983562ea547b0eb6f46477b637b2923eba0b31ca30f67a79f"
+  },
+  {
+    "id": "ssi.title",
+    "text": "Subset sum interval problem",
+    "evidence": [
+      "fd2d1621f08dd44fd40e7cdace532edfd1943fd957694c2655166d6b04ead3b1",
+      "2bc02d824c02455a2fe26518af94d18d64f4d53cce27214f2d73a8335aacf7f7"
+    ],
+    "claim_hash": "43eec3fda3483143a0081eee63983079ccaf70d270fd517e52b31bb360cefb65",
+    "evidence_hash": "a1008b0faa7411bdc1a29d86dfc5d9c0bf9fb0cde0225c89245004ac38a1f97e"
+  },
+  {
+    "id": "ssi.summary.1",
+    "text": "Given positive integer data, ask whether some integer in the prescribed interval is missed by all subset sums.",
+    "evidence": [
+      "e917c828888ed7ecc3785d22414ad63df72d653aaee69d94983dd1a560dca139",
+      "2bc02d824c02455a2fe26518af94d18d64f4d53cce27214f2d73a8335aacf7f7"
+    ],
+    "claim_hash": "2d2f9668a49dee2e3ec5f106309ac3aa50467f6619aa0be564dc3fa7ee8aa2b6",
+    "evidence_hash": "1c09232bf7f35aea265e47a7de7be8fe765a22c8d3f08b779b2d926fa67a91f0"
+  },
+  {
+    "id": "correction.e30.body",
+    "text": "In the complementary condition, every integer in the interval must admit a subset with that sum.",
+    "evidence": [
+      "eb90ab218d5d58b877ce8fe009b617add18fe61cde133d619f8dbbf73b7f173b",
+      "66946c59bc54447564b47f9c6d1dc407982f51ffdd819be74428e1aa209cbc8e",
+      "611d941333981a37b2a4e52a300531e0b4a662801b4b759aa642d5eec2326057"
+    ],
+    "claim_hash": "7f04ca1ac7e97c18fee466a28c772a8121eda8ee37e12beb2e82c81102e8bdfe",
+    "evidence_hash": "e41508e4cb6e8563e26cb18a253004f913de67caae967036adff7987e00aeef9"
+  },
+  {
+    "id": "lem33.title",
+    "text": "Encode a missing subset sum as a negative value",
+    "evidence": [
+      "f71d60824dc0b86b4f856bc5c7f4eff04749e09a684e3db3f5629fd5bab4a7da",
+      "e4e1750ebccba1edd7aaf830f18836246b0eb9b22e22bd394d57911edf97757d"
+    ],
+    "claim_hash": "cef052c1437211340b3152bd52e64eadd12b2971514d41f4e22167cab8d72a71",
+    "evidence_hash": "ecd0b2f40015abe38503427fa15d90f2bac7fec4cddc18bd4c76bc1708ac6b13"
+  },
+  {
+    "id": "lem33.summary.1",
+    "text": "The constructed polynomial bilevel instance has a negative optimistic optimum exactly when the subset sum interval instance is a yes instance.",
+    "evidence": [
+      "f71d60824dc0b86b4f856bc5c7f4eff04749e09a684e3db3f5629fd5bab4a7da",
+      "e4e1750ebccba1edd7aaf830f18836246b0eb9b22e22bd394d57911edf97757d"
+    ],
+    "claim_hash": "2f9bf76e5f83daeb121d14fd23f1ef52c502da145588bb702e969b4f3fa2ae72",
+    "evidence_hash": "ecd0b2f40015abe38503427fa15d90f2bac7fec4cddc18bd4c76bc1708ac6b13"
+  },
+  {
+    "id": "lem33.summary.2",
+    "text": "The construction uses integer coefficients, a bounded box, and polynomials of degree at most five.",
+    "evidence": [
+      "8692911c007d612e9d18978e1e20959a91019f6b5fba5694a4b3c2a8efdf820f",
+      "50c0b4ad22a727e85da8500cede9aafd1986f8568f16b91add7de1d4b1b39d18",
+      "522e095cd8e4c94ce38e354d87164d0471d9c0ad090e000978ff86acb2944253"
+    ],
+    "claim_hash": "e9dbc71ab1a17a78f2da28e185ac1ec07ceccbaef00515812fa5b2920f87087d",
+    "evidence_hash": "8b6325f9cceb0c18aebfa3af3a2ae9a8d1bcd977816bd699b679d457104eb55a"
+  },
+  {
+    "id": "lem33.idea.1",
+    "text": "A scalar lower switch allows a negative value only at a binary upper vector, and a sum of squares detects whether its target is a subset sum.",
+    "evidence": [
+      "acadc508ef1e0e893cff5ca1af9e909066386302fc5e1164fcef6587ce795a19",
+      "66729040768960a1c3179a15ef7e33fa99f8e0c7b445a0c2ac2f30942327923a"
+    ],
+    "claim_hash": "ef014dd61ae9b0912920cc242cfe84af5ed309ef92571275885831356dd03017",
+    "evidence_hash": "78998e797e8ccb4310b96accf036608abddf74ac652141edf9eef4fb624f1b5a"
+  },
+  {
+    "id": "lem33.step.1",
+    "text": "Encode interval elements and subset sums",
+    "evidence": [
+      "b0f8d87dd7dee37a8984fd934a0a883cd5010b4e3065b5322c124c6848caaaf5"
+    ],
+    "claim_hash": "630432893202861de9873e2bf6ceea96aa5c9db9b10d958402623a53584e0884",
+    "evidence_hash": "09872948e5f738d69b52ad9b4d4bb4365a6026d86b15c8d53ac0da594f4ad877"
+  },
+  {
+    "id": "lem33.step.2",
+    "text": "Construct the two bounded-box polynomials and bound their coefficients",
+    "evidence": [
+      "78ab20e111eecb69e8aba80fcb04571c7215f899238970d23b9b645e371f7ffa"
+    ],
+    "claim_hash": "4ee056df35a1cec14ea8a4638b775a57dab1ef7a96412aa51bf5ef838c4c0c52",
+    "evidence_hash": "e50ea6a5635ccac17731c39335f058cbccdbd4c025b2be6113fb135ba17ac546"
+  },
+  {
+    "id": "lem33.step.3",
+    "text": "Separate the lower minimizers and read the value at binary points",
+    "evidence": [
+      "b2196cc187764646c06a56cd7a9e0efaff6e3809cb0da0957a0f7b3b881ec0f3"
+    ],
+    "claim_hash": "26506a48fa50f39e5905d2ef2b797c76fc5af80da741f4c4c0230f4d6c25d236",
+    "evidence_hash": "44ac421acbd6ac5f396227a86bf76ca9e127b733e67e32b7f9a9dc812bd1b259"
+  },
+  {
+    "id": "lem33.step.4",
+    "text": "Distinguish a missing subset sum from a fully covered interval",
+    "evidence": [
+      "3487253640f5bbae6de95b8d1a815fc6e1af4faf6c83a20fcfbff9a3fe3cf983"
+    ],
+    "claim_hash": "09e50a754289046abdffbdb27899c86f8f7f21df69cc746eaffff3bc4a1eda04",
+    "evidence_hash": "e9a38505cb9c89f442b2899828bbc68b4c08716cf1a6b5c518ab7a5b009ebfcf"
+  },
+  {
+    "id": "lem33.uses.ssi",
+    "text": "The two directions correspond to a missed interval target and to all targets being representable.",
+    "evidence": [
+      "ee7252b105060bf41e136e20b973ae442486dc58e46df6a9084b26b496866ade",
+      "e4e1750ebccba1edd7aaf830f18836246b0eb9b22e22bd394d57911edf97757d"
+    ],
+    "claim_hash": "1a865ebb6e54cb5976d4863875bc24421ed97821a5bf77fb78b739cdfcd2ac4e",
+    "evidence_hash": "4fd0e6775268bd7ccb644be0492185e5a4e3a4feaa072b2a6ad4ca2826ac46f9"
+  },
+  {
+    "id": "lem33.uses.bp",
+    "text": "The value is the least upper output among the lower minimizers.",
+    "evidence": [
+      "72c4bf07d0bfb15b6ec1b6ffb49b35798c0562bda3d2da6c0ddbf7fb338fd0ae",
+      "e4e1750ebccba1edd7aaf830f18836246b0eb9b22e22bd394d57911edf97757d"
+    ],
+    "claim_hash": "cdfa771d01133b0a076593e602609fc46e9094f80822bd3cb816add7f497a656",
+    "evidence_hash": "cb21b49ebb264929a256cf2c75dcec903d75069776417608db0928d926555e84"
+  },
+  {
+    "id": "correction.e25.body",
+    "text": "The scalar lower switch minimizes at zero for all upper points and also at one exactly for binary upper points.",
+    "evidence": [
+      "874e5e47a6a9a537af6ef21ffd98bb335a1b20f70016e4b4b3c12735e61af207",
+      "1c666952758c672a4d709d90a0f2e3da5b2b5c8836730f6e02251956ac8cdeb9",
+      "7b5e25f3a1c07fbd402365362b7941e15a936d516238d3e201128fbb1989a3ef"
+    ],
+    "claim_hash": "83453b9433c5d4dad96d69c9e2735879f2a0854a0b82fe6535bbfb468a6915c9",
+    "evidence_hash": "c1ff97fa71ded7cdf97c225b1da060586455add47f5f7e0a435b67b56489c9ea"
+  },
+  {
+    "id": "correction.e27.body",
+    "text": "The scalar switch and subset variables are separate, and the optimistic value at a binary upper point is minus the minimum of the subset error objective.",
+    "evidence": [
+      "ec61f12a99861dd91e688f5534e12bf559847c0bd283c21ed47f73a3b1e9620f",
+      "72c4bf07d0bfb15b6ec1b6ffb49b35798c0562bda3d2da6c0ddbf7fb338fd0ae",
+      "6d0eae3bbed00877c15f40abb021f7ab3751a3cfe6a49c7f051d498f3e824cb2",
+      "99911d43255a9ccfd2adea47f703eb7b03b1a40def6ae536496a08132b5eee9c"
+    ],
+    "claim_hash": "2b3bfb7ade65e0863c68218027928ba3e514b4573e6846f98c9416ff58784264",
+    "evidence_hash": "f1983fe32c5f9cbe351bcdf21aca6e2eccf2292fd316db71b36d5014c8678ec7"
+  },
+  {
+    "id": "correction.e28.body",
+    "text": "The hardness theorem uses degree at most five, which is what the Lean degree bounds establish.",
+    "evidence": [
+      "d430ab32fd703f292cb630f7608835b3dd906ce5af2e11230de30b8082237383",
+      "50c0b4ad22a727e85da8500cede9aafd1986f8568f16b91add7de1d4b1b39d18",
+      "61762c121027dbb14cf4156533c04de13322a58770f65559977d41d5a66cbff8",
+      "01a626df10c28e059394e05517b4f6690216a87ea7a6d8b58d5da06e4aa7f181"
+    ],
+    "claim_hash": "e44c5930b4eb87337bd8207dcd710477b690984744420cdddc116b7736b10970",
+    "evidence_hash": "6efb924cd09ab7db5cb3d023fa94d3a3d35004a2903ea7d2843759cfda9dcc46"
+  },
+  {
+    "id": "correction.e29.body",
+    "text": "The informal complexity proof uses a logarithmic bit bound up to a constant factor.",
+    "evidence": [
+      "63667eda9df3c300a0108a6ba0f001ed0ca030d05f82338f5331eabd122f5388",
+      "4f15bb53e487209a1e152a4be35d12e30d87b8dea4c45894875b876da9d7024b",
+      "1f04fbb58b5dc158869776a88780d841ca69ded83473cbb444f7cb54a0669c6a"
+    ],
+    "claim_hash": "0228c8a865232356098abf67577ebe9a1fdda428dfdeae5d9cca478f1eb4d514",
+    "evidence_hash": "e7dcf793543ed586182b71a9983d900dada786374f7d2acfb978a835d3e2d02b"
+  },
+  {
+    "id": "thm32.title",
+    "text": "Hardness of deciding a strict threshold",
+    "evidence": [
+      "950538cedcb4fb433cccefe834a04a73d2f38ae112baa8635d934deef00a7152",
+      "2e54fd00bc5789b501b0fe76076f0050d1eb84aa25d9453c121e5d1ecc618136"
+    ],
+    "claim_hash": "9c660b4c155e6204ab7a470fcd1ad763af7e521fa3856182003886f5afe465ab",
+    "evidence_hash": "8500627d362b80db40b0b6db8a4110970c54d3ae44c94351a67f853255d56352"
+  },
+  {
+    "id": "thm32.summary.1",
+    "text": "Deciding whether the optimistic optimum is strictly below a given threshold is Σ₂ᵖ-hard for two polynomials of degree at most five and a bounded box lower feasible set.",
+    "evidence": [
+      "950538cedcb4fb433cccefe834a04a73d2f38ae112baa8635d934deef00a7152",
+      "2e54fd00bc5789b501b0fe76076f0050d1eb84aa25d9453c121e5d1ecc618136"
+    ],
+    "claim_hash": "2c7f82615ee9d23e90ea76ffa9bd4eb573dea21ea7f73214993e615fee789bcf",
+    "evidence_hash": "8500627d362b80db40b0b6db8a4110970c54d3ae44c94351a67f853255d56352"
+  },
+  {
+    "id": "thm32.summary.2",
+    "text": "Lean proves correctness of the reduction map and the degree bounds.",
+    "evidence": [
+      "d371f219a06b35db9e6c10efa8cf0b502208d34b481382dea33756d4b8f2491c",
+      "0b0e8b8e0fd0818ede236369ed41db3fd4d205c6de399bd94e80fd474040f46a",
+      "80c44afe93f50bd44ce6413d2e6d14caf99f90010c6eb328c1f39b4080494199",
+      "d7d0e7fab2e7faf48ee6ffc61e36ff15cc02e4b9c277fd584fd558ab7012854c"
+    ],
+    "claim_hash": "6c8f451e0dbbfb89e4c85098de4e6dcb8a224f70391e2d87308ebbf5bbe0eb21",
+    "evidence_hash": "01624e97bfecaa4c9b215adc8cd68028a99a7de1c2b81270216cc2796d282c0c"
+  },
+  {
+    "id": "thm32.idea.1",
+    "text": "Reduce the subset sum interval decision problem to the polynomial bilevel decision problem with threshold zero.",
+    "evidence": [
+      "c6e9b78b7123049f25c9f865e7f4117bc5f3f70c59bfecac1b912c18745192fe",
+      "09fb00ea5f12aca180dee908b869d12246098e12712e2edb50d83f4b00b5a6f5",
+      "80a8f4a146c3a58dc204415f2f7bd9c4dafda33e09711c8a913f798f738da64f"
+    ],
+    "claim_hash": "2cc3a5e8eb7dad987f7384e7171102cb003eb35615570388a1ef189021099446",
+    "evidence_hash": "76f3284deee42a8c9a148e7ba9fd53f845d40b34c11d89c95c01192e6c1f02cc"
+  },
+  {
+    "id": "thm32.step.1",
+    "text": "Derive strict-threshold hardness from the subset sum interval reduction",
+    "evidence": [
+      "95af968794c2b52f8c7bea63b60e0443b3fd42b0327ed228374f50aa22056abb",
+      "9451efc0fefd24e6a1ba3993085d2de7e1c5f9a4b0a96d4689f4a38af5550c96"
+    ],
+    "claim_hash": "139f04a01fc5e7b393d3a64387bb873a8482865242e5e1f878d8f59b5dbd0593",
+    "evidence_hash": "10a05c9a42e5fc30b7b9ce3a00b94a0fca4f258d7b3edc0ab71734e555e7f870"
+  },
+  {
+    "id": "thm32.uses.lem33",
+    "text": "The reduction matches yes instances with a negative optimum and meets the degree bound.",
+    "evidence": [
+      "4b42b457ab8965f416471e35a1ede3ab4ecc78fe6d2526d9fd74aff5cb42fd5f",
+      "95af968794c2b52f8c7bea63b60e0443b3fd42b0327ed228374f50aa22056abb"
+    ],
+    "claim_hash": "33e498702464a21a311dd34e241378952b72228f10b0f3dd4888274fb9961835",
+    "evidence_hash": "b79d296a974a3d6843e4bef962b1d3d0e3a09af45f04a3dcb9a414802d9b2aa2"
+  },
+  {
+    "id": "thm32.uses.ssi",
+    "text": "The reduction starts from the subset sum interval problem.",
+    "evidence": [
+      "80a8f4a146c3a58dc204415f2f7bd9c4dafda33e09711c8a913f798f738da64f",
+      "28b25adcd2f6c43c4a6a55f1cb8d4f6f97365b89f5ad27e8f23cd1bcf9b17c71"
+    ],
+    "claim_hash": "1f917ade580b0f682dd2e8eefd3386fde5ad42e03d0bc42e7179ffa98bb0f38c",
+    "evidence_hash": "61e2181d1b430893c6dc9650a8632135912b35a8252c4619800e2361d8dd07b9"
+  },
+  {
+    "id": "section.framework.title",
+    "text": "Bilevel framework and smooth realization",
+    "evidence": [
+      "06025b862f75a48f453c1aa9e715b558a419981dc019f87726d444f4975f5a3c",
+      "fe364bf396f5ea4fd214a206ad511f6ad1f9bc78e0303af02f02bb6171265e0a",
+      "31a08bbcefd02086c8aeb9bac49e33b3a01e94f5bb7e2186d785175c115a8e87"
+    ],
+    "claim_hash": "73afe62aa592b7c685499927d8d43ba52a8ffe662453bfcb95aeeff1b99782cc",
+    "evidence_hash": "7f0fc87272bdd691523144e11218601bfaadf95f39bbc6aba9c68f5bddb9ce3f"
+  },
+  {
+    "id": "section.geometry.title",
+    "text": "Geometric hardness and representation",
+    "evidence": [
+      "6ce9da45e5f1d71133eb75391226a2e3266f36e8b449501ac34ee11c838347e1",
+      "6a08a42d1dd9962746e76c2a921ccf1ca9b44e13f315c1165255b47d8cd275fd",
+      "6fc1aafaafcb136d19e32edb72f5bf38b1590e92064582ce4192a25bc8dbf99e",
+      "8405134e36b87b2d871d468f2871f3744b4405cb62f83018e7cdd26160518646",
+      "f7fad4e1cc563dbdf7f0f8c2744f4b2cc99aa4c48e60bb99309089fa49b71ba2"
+    ],
+    "claim_hash": "05746b4b5cf82abe2c1b9952b80f745f96008d5f20f76aa6bb62cf0f83065884",
+    "evidence_hash": "0f8a7aaade85370f1596961b87eebc4747a40dd921ec4e707d1d9260cdcf26f1"
+  },
+  {
+    "id": "section.complexity.title",
+    "text": "Computational hardness",
+    "evidence": [
+      "84ff2d285bfd127342e0c1d80ce512d868d85e6e9f67a4b228e7f080518b98b3",
+      "51a88c0baeda56dfd8c7a9c49c98fdf7e0880dc353243880e77a33cb6b189abd",
+      "f5186e37f163cbff52914cceb393e02577ee29f2d895ada2ccbf9a75ff166930"
+    ],
+    "claim_hash": "32ef471a0eecd0124cc304e972d755d2301d62a7cb37333a3c24d6772bfbc238",
+    "evidence_hash": "84a7499c5c1673df788a58cae162ecb8f3618051e2e2a80e10a16547a0d5ada5"
+  },
+  {
+    "id": "notation.theta",
+    "text": "The set of minimizers of the lower objective at the fixed upper point.",
+    "evidence": [
+      "279da7d8f35a7fad4dd63ef2f70841c53e6c8bc740da0595af420040c82e0448",
+      "13d1375d1cbc0a3cac95ff518529710d87e5eb35179818960528d5c9c9b0443a"
+    ],
+    "claim_hash": "d85526458ddf6a65088380e59518452074a6054a975d1286d58b09db12228ded",
+    "evidence_hash": "e7b561cadf9b20d0368dbfa991495a032fdbc7d3fa00be4db247ea3c19d18ed8"
+  },
+  {
+    "id": "notation.optimistic",
+    "text": "The infimum of the upper objective over the lower minimizer set.",
+    "evidence": [
+      "79bdd6a8c625210eb700c62945a11ab0d4d61aacfca20c50315c77d7aaf3c08c",
+      "23a17a4a328be2c3a45d9b0af2ea4367024410f82ff492446191c540ab1e6a45"
+    ],
+    "claim_hash": "b4db6446e78a9a6341c2b581311c124b399bced5ea2af418dc3c8f689499ac3f",
+    "evidence_hash": "7863193546c82c6a1456d625caf83c5f4faafa917240789702948f61ddd84304"
+  },
+  {
+    "id": "notation.pessimistic",
+    "text": "The supremum of the upper objective over the lower minimizer set.",
+    "evidence": [
+      "fab84d2511517ef51b9f992b6555d9b9325c8a45f1340604f72080cbe8fabefc",
+      "ec143fd82d7f7c7ff8d49d3b9bd072792b2377a76e7913bc06c320da37c8f8d2"
+    ],
+    "claim_hash": "25b2df1942d8c7ca4b180a99707a87f4b7096060c4334c903ab05a01bd5e0fdc",
+    "evidence_hash": "f6b9cf73670c30916047c72b58ec08348da6ca6c307d0c097e6f7927e5635117"
+  },
+  {
+    "id": "notation.p",
+    "text": "The upper-level objective evaluated at the upper and lower variables.",
+    "evidence": [
+      "f156df52b0546cc74377dc914c9f68c4d946386c3bcc0cc469a3f2fc5a6e21ac",
+      "4050c6eac1e5760b631a5e3ab31acc589d015e1b24d1c763035e50b4bc396595"
+    ],
+    "claim_hash": "85523653f50d81fd553a06f57f2236e560323375592f1f8285e5d880ee35d5c1",
+    "evidence_hash": "1520932bedc8ca55bf91938821052155140bf8c0565c2a6c2a00a60a6b0649b8"
+  },
+  {
+    "id": "notation.q",
+    "text": "The lower-level objective minimized over the lower feasible set.",
+    "evidence": [
+      "279da7d8f35a7fad4dd63ef2f70841c53e6c8bc740da0595af420040c82e0448",
+      "4050c6eac1e5760b631a5e3ab31acc589d015e1b24d1c763035e50b4bc396595"
+    ],
+    "claim_hash": "a84ac1bbdcb3460d3fee53b406d2c929f641e608620a36f24030f2df06aa51d2",
+    "evidence_hash": "289c6ffcfb71507117d5bc34a31579f6f7180f474b750b460aa051e08738f9d9"
+  },
+  {
+    "id": "notation.yset",
+    "text": "The feasible set for the lower variable.",
+    "evidence": [
+      "6ce9da45e5f1d71133eb75391226a2e3266f36e8b449501ac34ee11c838347e1",
+      "4050c6eac1e5760b631a5e3ab31acc589d015e1b24d1c763035e50b4bc396595"
+    ],
+    "claim_hash": "c7dde4bdf0f851b51a437c3e8650af12c1e1bc306809c383f8c5b5804b16c2c7",
+    "evidence_hash": "3a7d4c13a6c591e3e63b8c7fd5405fa9c7c1baf2f515b20fc16b5c73a6456282"
+  },
+  {
+    "id": "notation.sa",
+    "text": "The class of extended-real semialgebraic functions.",
+    "evidence": [
+      "ff7167cbdd40d889b981abbfa901cb2b1b2e4e38f6c2a386e11ddf06bf09d8cf",
+      "bd8dd8db4d1c013b3a8670b6c010ca440a8eda9bf9ddd7ee2754b024ffc922a8"
+    ],
+    "claim_hash": "13d4b3d8a067b5095575a18367162c1584aebc8c1b8b798b5f8cbd988bc6969c",
+    "evidence_hash": "215bf54aecff2b93c045ef4e73cc141bb4a70c6995902ebe101fefe76230d05a"
+  },
+  {
+    "id": "notation.lsc",
+    "text": "The class of lower semicontinuous functions.",
+    "evidence": [
+      "04ee5bfc22f38067404d5344f6d644edd48d7f371893bdfe085be9d32852292e",
+      "1e3bcbbbc286403b0154d7665d7bfc755e0a0f002bb139dca6f1bd6301813ad8"
+    ],
+    "claim_hash": "22920d6bdb715a88344dfe00a656bf8ab49b880c3c9d7cbc05a82b45a9331fd4",
+    "evidence_hash": "6cf5848789c855ba153e2324376069b29075d32104e8d2090c31bd72e8d56c4c"
+  },
+  {
+    "id": "notation.usc",
+    "text": "The class of upper semicontinuous functions.",
+    "evidence": [
+      "bb69a81983932e734ad55736ebc3dfb13344b4f326aaa7cc0d3f50f6f56192a4",
+      "ab6541fd5568c6e32aad2ac39f5cb928d115b255ce01e3fbabcf3b02d893c964"
+    ],
+    "claim_hash": "f8a8cb08b6aa67d02257559cd6ba96e639c9098d67a818d9a1f8482af6bef010",
+    "evidence_hash": "491f8e29587a0a4983313780f219e96e8742285245023efb379b8fdde72dd118"
+  },
+  {
+    "id": "notation.cb",
+    "text": "The class of functions bounded by real constants on each compact set.",
+    "evidence": [
+      "1ff1d3b2c53f3a031293264855bf19fe13af0cd469cd32abf535b7b729696cb7",
+      "1e3bcbbbc286403b0154d7665d7bfc755e0a0f002bb139dca6f1bd6301813ad8"
+    ],
+    "claim_hash": "388ad194653459e5583f6806aa88318a679206b0ac5ef225e62243f2991b2a1f",
+    "evidence_hash": "3e108cad6e54d2739660506719e3ce6b497d64c1884c32da2b75ace4476da396"
+  },
+  {
+    "id": "notation.pp",
+    "text": "The class of functions given by polynomial formulas on a finite semialgebraic partition.",
+    "evidence": [
+      "923e2bfd8c3e885440b281ee7a03a20e7bab4589331645145197d2f041648877",
+      "0a071f6db569971dc26e38efba3f4a8133b094ebae2119fb79662c15046675b5"
+    ],
+    "claim_hash": "33523661c54017e26443578736e51cfc88d113c0357e4838351fe7ed900848f9",
+    "evidence_hash": "2955c590cf57dd2db1c041fea11dae139dc70365ca397f9a409d267f23b3b0d7"
+  },
+  {
+    "id": "notation.p-unbound",
+    "text": "Optimistic polynomial bilevel values over unbounded boxes.",
+    "evidence": [
+      "6ce9da45e5f1d71133eb75391226a2e3266f36e8b449501ac34ee11c838347e1",
+      "cbc8502702583dd5780a9a432590912292d41bf04f33507117a31b3633cdba12"
+    ],
+    "claim_hash": "bbad5ed633caa141a5850df7bb0f54aa640f220608acc7319da6d25b8d7f9207",
+    "evidence_hash": "b7a2a0b3b427224e0b847cde49fd0a5d80c743769184603aa9a67c5162a1630e"
+  },
+  {
+    "id": "notation.p-bounded",
+    "text": "Optimistic polynomial bilevel values over bounded boxes.",
+    "evidence": [
+      "6a08a42d1dd9962746e76c2a921ccf1ca9b44e13f315c1165255b47d8cd275fd",
+      "cbc8502702583dd5780a9a432590912292d41bf04f33507117a31b3633cdba12"
+    ],
+    "claim_hash": "ae77984cad9261ea9945f0bfc8a7211380e7fc243b693af3abe23364e90b9a9f",
+    "evidence_hash": "0c029cc9c97068627265f89d80fbb085df2c1e51b7c008fee681144c3cbb7cd9"
+  },
+  {
+    "id": "notation.c-unbound",
+    "text": "Optimistic polynomial bilevel values over unbounded boxes with a convex lower objective.",
+    "evidence": [
+      "03262a65d7e044175c8264539442be9992741c41e3cbfbac1a7f7d5c2d3ae059",
+      "305f81b9e7740895a28837d49a73cfb6f816c290e60b5333c355ab4f20050372"
+    ],
+    "claim_hash": "48a2c4f6a7cf300ce0fa66ed9331623658870008532c58bc21c6f5a000c50c08",
+    "evidence_hash": "00e740cda5fedb36f4bf45f1047b76b66e3529b99130ce1a6858dbaab8fe6039"
+  },
+  {
+    "id": "notation.c-bounded",
+    "text": "Optimistic polynomial bilevel values over bounded boxes with a convex lower objective.",
+    "evidence": [
+      "03262a65d7e044175c8264539442be9992741c41e3cbfbac1a7f7d5c2d3ae059",
+      "305f81b9e7740895a28837d49a73cfb6f816c290e60b5333c355ab4f20050372"
+    ],
+    "claim_hash": "b87e4dca4f3f5c642b303f3e1cf64e6702f33ea0323cd75b3cf9ca3a52d39a2c",
+    "evidence_hash": "00e740cda5fedb36f4bf45f1047b76b66e3529b99130ce1a6858dbaab8fe6039"
+  },
+  {
+    "id": "notation.c-cc",
+    "text": "Optimistic polynomial bilevel values with a convex lower objective and a nonempty compact convex semialgebraic lower feasible set.",
+    "evidence": [
+      "8405134e36b87b2d871d468f2871f3744b4405cb62f83018e7cdd26160518646",
+      "428df3922894a48b892eacf09503243abeff6400aef11b0b1ee2ee0a4e9acfdd"
+    ],
+    "claim_hash": "890b9b42d00278c8cbd06f1a50df1fb2ecfba299fbe5ca79ff35df481d4f7aa9",
+    "evidence_hash": "6255e6a671e8f357a7da3a50298697aa12a172c104b29e7e6374cacfe938bef5"
+  },
+  {
+    "id": "notation.epigraph",
+    "text": "The pairs consisting of an upper point and a real height at or above the function value.",
+    "evidence": [
+      "ce1f91f65064bcf2992edd18c2d7af75843d0830e40ad1bdb1a4525ec8635449",
+      "ec90a0c73c48fec51b1f05b88c3f1d6db763d670a78f317d8d3db3e8c587ec5c"
+    ],
+    "claim_hash": "14f3fd95ab0849e4a606affab340f1c5e08c6e9e05045a19f5018f4156d8a8cc",
+    "evidence_hash": "69ed5489e9c9cb6da7d7a2fb1afd199c45ebbbcdea87e630744ad91c27a96ec3"
+  },
+  {
+    "id": "notation.sigma2",
+    "text": "The second existential level of the polynomial hierarchy.",
+    "evidence": [
+      "71cf527de04348d54e09f84104b39c49713334dfb8e6f847f42448dfe55f17cc",
+      "0b0e8b8e0fd0818ede236369ed41db3fd4d205c6de399bd94e80fd474040f46a",
+      "bf57f8c56df586ef0d7ad4b9bd225352983f2327b503105b9f5b8a8825c55b9e"
+    ],
+    "claim_hash": "708eadeafa7f8ba25d7ee35b64fe5740a6a4c9f547c6d660401a96510ac39518",
+    "evidence_hash": "c73dde37513bd3839c8191414137388fc57cc213bbb5b9eaacc7f40f9cadc8db"
+  },
+  {
+    "id": "notation.ssi",
+    "text": "The subset sum interval problem.",
+    "evidence": [
+      "fd2d1621f08dd44fd40e7cdace532edfd1943fd957694c2655166d6b04ead3b1",
+      "50b59efb9e191964549ed1162b4071a6a36bede422a2177db289bcfdc5c7e87a"
+    ],
+    "claim_hash": "31ba5cb00496fe0e33ee3aa416cc82bc6010a82dbb39419b002e19a112175336",
+    "evidence_hash": "318d7d2ea13f928f19d35053880d1dbbc4661d7e319594dd7580b0d67eed8947"
+  },
+  {
+    "id": "correction.e1.title",
+    "text": "Add local boundedness to the growth proposition",
+    "evidence": [
+      "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda",
+      "fe819089e67e18369755f836ffa796cf0de0cda2f130d2cc327fc9f9221ddad5",
+      "b174b3211f0def573dcf007b11df14125e28a8fa6b5802470442709164103779"
+    ],
+    "claim_hash": "065f6fd958c77b3b28764a8da37818971953633f821d1b763d38729a28201666",
+    "evidence_hash": "f8c7809c1eb6344aecfe7b91f3b5fc1b126d5aa0b0894391ef280273ddd5145d"
+  },
+  {
+    "id": "correction.e2.title",
+    "text": "Correct the sign-cell normal form",
+    "evidence": [
+      "2ef8a993be26a0023b825d3dc19fd553f4714550ea3875225e99da1ee4768036",
+      "a20c457b0d2904ecf99d1d1e0aca1b20b66da01fb6e6df79ba9d45e2eca9761b"
+    ],
+    "claim_hash": "0da0c6da948899679a26816a1eb1ef1637e90b9357f6aced1cac035720aaa414",
+    "evidence_hash": "89b3ae4cf3e03f1682d6a377a6e9f3e0283845b55a79cee75d692bdf1d35a3fc"
+  },
+  {
+    "id": "correction.e3.title",
+    "text": "Use extended-real representation classes",
+    "evidence": [
+      "6b54a93faf0fb4d95e3985fb2754ce4e129408636b0bb6e44ae43b80483764bb",
+      "1368917a48ba1b6c6cd6ab1e41c99ee885a89b26880be21de6351c4f0df7c2ee"
+    ],
+    "claim_hash": "8d1526b5b47d425a6510efd83ae15893f8b91e44d3e24c2a8cc41ce0d512e97d",
+    "evidence_hash": "56da0a3b547927d77eebb5e29c67cb6989fe474b92e980a1b537ed9bd0ac5db6"
+  },
+  {
+    "id": "correction.e4.title",
+    "text": "Use a two-sided bound in the bounded-box proof",
+    "evidence": [
+      "ab17b654d0c8e982bcd45517662048294b43e24978c51cde5ec8abc6eb27380a",
+      "8c9276d3073a19a0632d3b3d788c5be54ad36198063f55332c6d7641a1a00232"
+    ],
+    "claim_hash": "39c3f3fff0e517d6ea4569525aceeacadd8e4a90dabe31bcb6fc0bea4e041f97",
+    "evidence_hash": "9e493810b6fafba057cc87712128dd182d11d6cb36cbd303eb8efe1350e205a4"
+  },
+  {
+    "id": "correction.e5.title",
+    "text": "Justify the bounded-box normalization",
+    "evidence": [
+      "3ad414c4a7a5ee5ee8dc00d4b5d14db0eae5027fc90d65eb2babba26ab24e50c",
+      "90a10b1fd3a37c5a43240dc8b7db36d435bc8f6462da1d96786748abf149fbff",
+      "fc2793c01bf6473a3c1468fbe731c3d803013f299836987a3229135948ac45af"
+    ],
+    "claim_hash": "0ba3cd0aef4529333264e292b8158f344e2d6ed4e928189573784a9820c646c2",
+    "evidence_hash": "677f8c10768fb18f46b9aa813977dc8c0601c88ea00ed9026f2d0fd99d699453"
+  },
+  {
+    "id": "correction.e6.title",
+    "text": "Use the semialgebraicity result for arbitrary semialgebraic lower sets",
+    "evidence": [
+      "9eec91e541e03e804568431f71653d536252b1a58923dd55e6df7198a605ab1c",
+      "f7fd5255e1e3dfc428c40b04441988155a3fa3ee9098c2a1ecd0cff25593d965",
+      "e6a87d6674e5e7349321004855062c4019ef9830143f55b7ff8afd130fa47cd0"
+    ],
+    "claim_hash": "4816cbb6a43552de37c7abb5b1cb62d9d453b5934d698f3fed2b181bbc070795",
+    "evidence_hash": "dd764965f86cd8968f524fe872d66f825b7198882ddfe8ef00cbe5c6b536814d"
+  },
+  {
+    "id": "correction.e7.title",
+    "text": "Require the compact convex feasible set to be nonempty",
+    "evidence": [
+      "010a06866960ddbd379362ece07eb3fcff4fd966efcbb82f52ed8da2feb099bd",
+      "428df3922894a48b892eacf09503243abeff6400aef11b0b1ee2ee0a4e9acfdd"
+    ],
+    "claim_hash": "2ed8990f76d158b501b27b346fff71b5af83397a2ac34c496e6efe1111e2d7f9",
+    "evidence_hash": "0fbeb10260bd1d4fbbe2e1626c12bd8a5c9fb836b70f362019f85c8499e3c447"
+  },
+  {
+    "id": "correction.e8.title",
+    "text": "Describe an infimum without assuming attainment",
+    "evidence": [
+      "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831",
+      "093602cb83fc7a15e965e85b39a6a3d336467c97e56dc62ef7712d410406b4a5",
+      "c0d56949bde0370849bad94213a2fa9241f6663848ebfed5306cc0508c7f9ba1"
+    ],
+    "claim_hash": "6e822d8cd4823db88841842d9502c694c0b1ef6b2ab1b002c59a150a32275f89",
+    "evidence_hash": "d591e36dddc37d0b03438f2fc77fcfddcb29d89a2f78feca940f42f1afd32dae"
+  },
+  {
+    "id": "correction.e9.title",
+    "text": "Require nonemptiness for real values",
+    "evidence": [
+      "9e6fd58ab67d884878f9b61b0b6f02c3a0f33cf9a2f329f115ada1bd4d6ff992",
+      "369d41de94173bff4367254109db38125c8fc2f3416c7052e490365901b17e65",
+      "3e3a4692d10da421a1549b987ee3beff15bb6e721edbe3f8757d4580e5a1debd"
+    ],
+    "claim_hash": "4b79e4f582c9aec237ead7bb01f34f4021428cdd328dc282787962ccc73f1c12",
+    "evidence_hash": "55ed33a221e3f209955d915f9d2fb339398e2f03e94c1cdf786e6506f0ca952e"
+  },
+  {
+    "id": "correction.e10.title",
+    "text": "Use the matching infinite-locus indices",
+    "evidence": [
+      "397a203db78ffd1221a168496176542a74daf2aa8b6ddbf52ac524b0e7a8897e",
+      "7f55f1b08e781c41111a1b2eff8d14bb4fd4838e27b7f1aed5d5150756f63120"
+    ],
+    "claim_hash": "0b70b2073a349d07e8494a4703f8afcb2c1e2d177ba920390004cfc6a1f86022",
+    "evidence_hash": "f39a854044a1e4597c5b81131b071fb3bcf0fc74bdf25e65e50bbb630dcfca96"
+  },
+  {
+    "id": "correction.e11.title",
+    "text": "Treat pessimistic unbounded realization by negation",
+    "evidence": [
+      "3cd21f2ab67127d0377206c9e56d54aa6e78e0bba175fe2be95fe8f4e0362133",
+      "1834e4b940b50393dc6b83b7ef28315e6420b6343e871b8a8f16f46bc880c9c7",
+      "c54e052febd5ba02e3ccae03bf0ef9a4dee6bd31e7ea6bb7bb50bbbd976f6264"
+    ],
+    "claim_hash": "d48551bd53c2d57444da4e52cfc09012ea741c78f106fdc325e51a535a89d7f0",
+    "evidence_hash": "cb25733d7cae7c38083119d3994bed6ea2f002aabddbf8022a6684f51a0f7bae"
+  },
+  {
+    "id": "correction.e13.title",
+    "text": "Use the finite graph and valid padding",
+    "evidence": [
+      "e1572194d3dbc2e5e1cd5d0b9c672b0cccbd229e5b505d9368eb82ca51d53324",
+      "dce56ec51360f610f30cccbcf5affc40d37ca724e9905766c50acbc747f0cfc7"
+    ],
+    "claim_hash": "bd12c5963be6933199c562649297c5104abf24f9640de2f032e0f41ef3b0f5f2",
+    "evidence_hash": "d8df34193a0b5ba7a7adab0be96f17d85f94bcebe767c1de72fccca1527c62e6"
+  },
+  {
+    "id": "correction.e14.title",
+    "text": "Include every lower coordinate in the epigraph construction",
+    "evidence": [
+      "b6602d5dec97b13ae75b4bec2911136382e5fa3b6bde53b89a5e496bde4c7957",
+      "763f322c04e063d39d59017d0218cdaa1445f4629654d7c6f577e4f472fe3f3c",
+      "defeb11e8fa5287871c1a397f69abb7326a084eb2ecb1204be881e3559c599dc"
+    ],
+    "claim_hash": "b3cb2365b523c1d0006ea53a992e17f5311e38d4aa71e6f11d16ac15ef09cdbe",
+    "evidence_hash": "8bc5dfb4113ad8efa805213e05ee2a01dc473f1ad1ea55a50de80a0e3c3634ca"
+  },
+  {
+    "id": "correction.e15.title",
+    "text": "Keep upper variables in the lifted coefficients",
+    "evidence": [
+      "b5b8a90dd76d4dbfbd2031467e43322021ab93ce1ac1b7b9725b3cb102e14aeb",
+      "e2186c855174de121365950e811ef6ce4d80bee2b847c57e0c1f539d50c4c687",
+      "b55000b71801f82b2f3dd8c00bf0be1881d8ce49213976d2f0ee18cd525f199c"
+    ],
+    "claim_hash": "3fa91730e3d524a82055835f4edabfc0ce066b41fedc8027328eca6d2c047e48",
+    "evidence_hash": "845cae247c425a260e739436e4fbde872584f735efa188484021b653aa79e219"
+  },
+  {
+    "id": "correction.e16.title",
+    "text": "Use only positive-weight terms in the minimizer argument",
+    "evidence": [
+      "e6e5b3cd0a6b0a9e2d989525dc4c01e94fd83cf31836636ea28a1688078b4b64",
+      "c30a06a743bfd691ee6ec2c6efdc3b4097f8a8b91c2daa89e78f607d43b2abd2",
+      "c51a79681a5a947c6f24680a97cc05d4813d7ca61dd83f082b3984d5f857e0cd"
+    ],
+    "claim_hash": "2710454a28fc9df99816f27f11381e30a32286bb739138c174dcd4eca6d90395",
+    "evidence_hash": "bb3a0c326771edd9b77fd474b72b5bd7957baad17ecdc957eb940db1cfffc064"
+  },
+  {
+    "id": "correction.e17.title",
+    "text": "Make the convexity domain explicit",
+    "evidence": [
+      "0dd6856c03ee8283b64cb49dcf7ae38eb250f68c6de6f70809a4ba15bb61eec5",
+      "03262a65d7e044175c8264539442be9992741c41e3cbfbac1a7f7d5c2d3ae059",
+      "eb9f391e72e0d31de3cb7eb5a03bd8570dd003c9a09be210951c6c4e4b2283fd"
+    ],
+    "claim_hash": "90b61fa26451c18e607cebdefb796a46d31f88de8e3485c6441a6730ecdb25d0",
+    "evidence_hash": "99d73ce8b44ac3370b3719873b0f1e5382a86bb1700bb1f8c22f7bd23f05287d"
+  },
+  {
+    "id": "correction.e18.title",
+    "text": "Put the linear term inside the sum",
+    "evidence": [
+      "f0b4ae7883a29476172d4a483e1fa97e3ea2728bb905ad7bde4c9aa03c1b23be",
+      "1ac3beb9b287825d9ab7b800548ac6dafade87578ef0904bfba2ab70623b16e7",
+      "d53c27d0f2d8e0ef483ac535a618e9d21b4ae7bba13aaec81c80e7d2862e5631"
+    ],
+    "claim_hash": "a48682cb1ba9393af60ee6645c31958954acbfbc3b238851bc6cffc2ed72edb7",
+    "evidence_hash": "ed16c79c0bd6d692d744db7f538839266854d7653bda926198015b4ac20cd020"
+  },
+  {
+    "id": "correction.e19.title",
+    "text": "Use constancy of indicator outputs",
+    "evidence": [
+      "e966d3448fb52e1f44cce7a74ebf8c4e99da14c81c62965ae3f3fa50d1e52f82",
+      "66f36459cd76fc7d5517fed1ec7d9f551ee30de200c9d70000a74baf3d1dcfcd",
+      "5b70539a0840e2460f1fba4f1046b2045c2076d7276fda126d1a178bd6aae97e"
+    ],
+    "claim_hash": "db61050f07f7b05639ff39e7d74cde8ae44925542218b3b683fc6b3f953a9997",
+    "evidence_hash": "aded53ff97468bc82c362945c672c1c5437b9b64bae555ccc3bbd318df3aafd3"
+  },
+  {
+    "id": "correction.e20.title",
+    "text": "Justify the minimum over closed pieces",
+    "evidence": [
+      "0afebcda0d929601825c8db1f1ad74163f31c9c2f7475de4550eded72aca8b41",
+      "35a7153f193287e2cca09f0dac13ae6d3cfd0ade95bad65823c10ea0361b5673",
+      "0300412ce71a2d01d47035aad18a9eee675647361b95567e5728d0c3e1e0b980"
+    ],
+    "claim_hash": "1d97310b0ef3a8e68bafcf7237950cb4aa9f0a184f7f3124f2189c523180c992",
+    "evidence_hash": "d1c5ec4d75e707a3ad512a596b0e13e4467ea96e51917fc1b62dfd4bdb83b3b4"
+  },
+  {
+    "id": "correction.e21.title",
+    "text": "Normalize polynomial pieces directly",
+    "evidence": [
+      "e567dc9e75ee4d54dc6394d243c6ed3e39138d90c5068d708042ff4af0fc04fe",
+      "c236597124a026f4304813a70bb40e0f5928281a3c84565dfe544e2f8dc0b3f0",
+      "9de2ace4942b38a5c0a5dde56ac696332c2669e7f7ccf6ce05ff26bb4aa2f306"
+    ],
+    "claim_hash": "7ff78a47cd2029d3feba715fd0fa88fc63a48bec8573debf52c99291e3326279",
+    "evidence_hash": "2526f3670171d6120b5fe0cdf98d6413185b8d2323bfb99a1115f447628d5649"
+  },
+  {
+    "id": "correction.e23.title",
+    "text": "Account for the selector and sign normalization",
+    "evidence": [
+      "d18f9a4f92c77f194e883b89e4f62a39e4198b02a89bb222e40d4753559f8748",
+      "0cff4c913a690c05c91d608da0edf0c423ebd495b4763e6ead83dc088f176630",
+      "455beff1773cd5446b9ffa2514413c489239760b789c498e3af39e35bbd1f0d0"
+    ],
+    "claim_hash": "199b57106bf90d34fb03e64a6305a824b298c6ec6dfc6b2cabd3df31df82eb22",
+    "evidence_hash": "a2e65b4e18ff43653afe1db033ffd6c5ccd8819855fed57d4ff5d701f193c6a5"
+  },
+  {
+    "id": "correction.e25.title",
+    "text": "Exclude interior switch minimizers",
+    "evidence": [
+      "874e5e47a6a9a537af6ef21ffd98bb335a1b20f70016e4b4b3c12735e61af207",
+      "1c666952758c672a4d709d90a0f2e3da5b2b5c8836730f6e02251956ac8cdeb9",
+      "7b5e25f3a1c07fbd402365362b7941e15a936d516238d3e201128fbb1989a3ef"
+    ],
+    "claim_hash": "73c5dc56b3445b50924ada8598362ec635d6a4bdc02af3da546b34e9639c4318",
+    "evidence_hash": "c1ff97fa71ded7cdf97c225b1da060586455add47f5f7e0a435b67b56489c9ea"
+  },
+  {
+    "id": "correction.e27.title",
+    "text": "Use a scalar switch and the actual optimistic minimum",
+    "evidence": [
+      "ec61f12a99861dd91e688f5534e12bf559847c0bd283c21ed47f73a3b1e9620f",
+      "72c4bf07d0bfb15b6ec1b6ffb49b35798c0562bda3d2da6c0ddbf7fb338fd0ae",
+      "6d0eae3bbed00877c15f40abb021f7ab3751a3cfe6a49c7f051d498f3e824cb2",
+      "99911d43255a9ccfd2adea47f703eb7b03b1a40def6ae536496a08132b5eee9c"
+    ],
+    "claim_hash": "90a41c1eca3d87ae773a7aad5066f59e266d6de80cd479e027f2c0e6b2fb0576",
+    "evidence_hash": "f1983fe32c5f9cbe351bcdf21aca6e2eccf2292fd316db71b36d5014c8678ec7"
+  },
+  {
+    "id": "correction.e28.title",
+    "text": "State the degree as an upper bound",
+    "evidence": [
+      "d430ab32fd703f292cb630f7608835b3dd906ce5af2e11230de30b8082237383",
+      "50c0b4ad22a727e85da8500cede9aafd1986f8568f16b91add7de1d4b1b39d18",
+      "61762c121027dbb14cf4156533c04de13322a58770f65559977d41d5a66cbff8",
+      "01a626df10c28e059394e05517b4f6690216a87ea7a6d8b58d5da06e4aa7f181"
+    ],
+    "claim_hash": "412b9e45a938b19d2d13bc07db155393c1dda41b99d84690d8cf6e6b57ef97e5",
+    "evidence_hash": "6efb924cd09ab7db5cb3d023fa94d3a3d35004a2903ea7d2843759cfda9dcc46"
+  },
+  {
+    "id": "correction.e29.title",
+    "text": "State coefficient encoding size in big O notation",
+    "evidence": [
+      "63667eda9df3c300a0108a6ba0f001ed0ca030d05f82338f5331eabd122f5388",
+      "4f15bb53e487209a1e152a4be35d12e30d87b8dea4c45894875b876da9d7024b",
+      "1f04fbb58b5dc158869776a88780d841ca69ded83473cbb444f7cb54a0669c6a"
+    ],
+    "claim_hash": "89abcef25f46f5574ff31c703e0e4110ad1e80fe88182de818c175a6b505b1c5",
+    "evidence_hash": "e7dcf793543ed586182b71a9983d900dada786374f7d2acfb978a835d3e2d02b"
+  },
+  {
+    "id": "correction.e30.title",
+    "text": "Quantify subset sums over the interval",
+    "evidence": [
+      "eb90ab218d5d58b877ce8fe009b617add18fe61cde133d619f8dbbf73b7f173b",
+      "66946c59bc54447564b47f9c6d1dc407982f51ffdd819be74428e1aa209cbc8e",
+      "611d941333981a37b2a4e52a300531e0b4a662801b4b759aa642d5eec2326057"
+    ],
+    "claim_hash": "39077d1ed8056b4e56f1e14ad9cd85ee27a48b20e697a263ca6c68cd4f7d7f84",
+    "evidence_hash": "e41508e4cb6e8563e26cb18a253004f913de67caae967036adff7987e00aeef9"
+  },
+  {
+    "id": "correction.e31.title",
+    "text": "Separate value constancy from minimizer uniqueness",
+    "evidence": [
+      "d389ebd53a1b8618fc28becf7f86e0ced31cf4f4c24dfb7b7482ef572fff1cbd",
+      "66f36459cd76fc7d5517fed1ec7d9f551ee30de200c9d70000a74baf3d1dcfcd",
+      "c1d2c3170c16155366d44e40fbd856f9f5a6b4ab2b54f6f26215fd0b01878f89",
+      "ee4c680a7dd97a371f4d3b340cae662330eb84644be551726026c0fac805ecfc"
+    ],
+    "claim_hash": "01f6d801a24df500af4eaceafcbfa3981888e0ee9772d518101fc773cc195c5a",
+    "evidence_hash": "9f529787f0d55b39fae3be0eadd3be4f560f0513c0f8f68af2a02576dac3d653"
+  },
+  {
+    "id": "correction.e32.title",
+    "text": "Use the squared smooth term in the separable objective",
+    "evidence": [
+      "d52f1b618a34a6871012b728bd2799a87e400501d2b56534dbb1989b9000fd29",
+      "694359563f6c9772021c7c4417521ef98f8ca3d1238dd1ccbd6fa486d52d563b",
+      "0aebd1f8c5ccf5eaaa8f097f7b02cd7561fc5582406a53457d13362de0590ca3"
+    ],
+    "claim_hash": "4695fdf82a01a386509bab16309b8b6d18c7746afa92d7f07ce414a326875874",
+    "evidence_hash": "6773be9e3893f711fd9fa0393e8cc12788be4c27b9a309f497fb45565dcf76fb"
+  },
+  {
+    "id": "correction.e34.title",
+    "text": "Use the real epigraph of the extended-real target",
+    "evidence": [
+      "9946fdde4ef16d38b5ae36f2ec04eaf734d75ebc71d9b643d567b9e046cd9813",
+      "10ede86767253307fefc84ae27de046a0f02fa321da6099ea6b91b2e858c86c2",
+      "ec90a0c73c48fec51b1f05b88c3f1d6db763d670a78f317d8d3db3e8c587ec5c",
+      "eceba1325c5cf0bf7df07cb314be187e7c7f78ef25454a1b0c1f4458a6cfc465"
+    ],
+    "claim_hash": "4d06b87ee7e580afb686ed7aa60360b8d0b954b3f66c67f970e5eb41275aa6ab",
+    "evidence_hash": "708c39fa7b4a3ba63684e11241eb4b27c89b7417556f401a2d364317afe248a6"
+  },
+  {
+    "id": "figure.growth.title",
+    "text": "A diagonal singularity at large radius",
+    "evidence": [
+      "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda"
+    ],
+    "claim_hash": "e624302b59706c8efc7b1cadb207f57648c3d1951a11128147874563c2c19249",
+    "evidence_hash": "7d59789b1591248302d5c373dbf0829f158ae7d70929cf3fdd57e2db0bdaf8d6"
+  },
+  {
+    "id": "figure.growth.caption",
+    "text": "Moving toward the diagonal off it sends the reciprocal value to positive infinity while the point stays outside the chosen radius.",
+    "evidence": [
+      "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda"
+    ],
+    "claim_hash": "52b6cec23151a5bb6fa8c51e820af915b940dd36c26ca3aae28d6ed7407cea18",
+    "evidence_hash": "7d59789b1591248302d5c373dbf0829f158ae7d70929cf3fdd57e2db0bdaf8d6"
+  },
+  {
+    "id": "figure.growth.formula",
+    "text": "$f(C+\\varepsilon,C)=1/\\varepsilon$ for $C>0$ and $\\varepsilon>0$.",
+    "evidence": [
+      "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda"
+    ],
+    "claim_hash": "29c1f36d9e0553970c24b449225a326f1c3b798b0937276b1171b9d5518bb02a",
+    "evidence_hash": "7d59789b1591248302d5c373dbf0829f158ae7d70929cf3fdd57e2db0bdaf8d6"
+  },
+  {
+    "id": "figure.nonattainment.title",
+    "text": "Approaching an infimum along a hyperbola",
+    "evidence": [
+      "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831"
+    ],
+    "claim_hash": "f5e37eea8ad0798e4f2c17168a4f4258b96a20ab8a91a02de6e986538a57ffe9",
+    "evidence_hash": "6d320d240af8a2de54a5a0603c36203be189e7a050082c2f09e1b74b10dc8ed1"
+  },
+  {
+    "id": "figure.nonattainment.caption",
+    "text": "Along the positive branch of the lower minimizer hyperbola, the square of the first coordinate approaches zero as the second coordinate grows, while every upper output is positive.",
+    "evidence": [
+      "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831",
+      "093602cb83fc7a15e965e85b39a6a3d336467c97e56dc62ef7712d410406b4a5"
+    ],
+    "claim_hash": "449664cbbc9f4f2d2a31c437c74283255b74d9da4ee5832fc365919d855d1774",
+    "evidence_hash": "bd9b01d2d77216e597aecc6d5362f54abde52533553668374111cf801401365d"
+  },
+  {
+    "id": "figure.nonattainment.formula",
+    "text": "$y_1=t$, $y_2=1/t$, and $P(y)=t^2$ for $t>0$.",
+    "evidence": [
+      "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831",
+      "093602cb83fc7a15e965e85b39a6a3d336467c97e56dc62ef7712d410406b4a5"
+    ],
+    "claim_hash": "324723094be8898cfff934e8b7120787709363ae7b86bcd5864fd43d81f462c4",
+    "evidence_hash": "bd9b01d2d77216e597aecc6d5362f54abde52533553668374111cf801401365d"
+  }
+]

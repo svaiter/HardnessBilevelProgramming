@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/svaiter/HardnessBilevelProgramming",
+  "commit": "d1032f4c70da9b037605c2f444ce2450900e5a76",
+  "dirty": false,
+  "mode": "working-tree",
+  "baselineCommit": "d1032f4c70da9b037605c2f444ce2450900e5a76",
+  "mapSha256": "86792ec4351edba738d217b8a622e344b52ff76e4a3014ba904c57878aeea85e",
+  "baselineSha256": "6d86bcdd83b2354f10d15932eb08f9e4fb36e80b7c0ff0afe853638efe232dcb",
+  "files": {
+    "HardnessBilevel.lean": "6375f12ae899125dd89fe6af6bba744691d5d8f970e6200cdcfb167a43ba3508",
+    "HardnessBilevel/Assumptions/Classes.lean": "dd5571cccbc5d4ab8d1745732662bae8d51bbbd85cad9447576199c51033891b",
+    "HardnessBilevel/Bounded/Thm215.lean": "459ec55559be33332ee5f2519007e10d2be333be459f4f107410b4f49e7b53c4",
+    "HardnessBilevel/Bounded/Thm215Core.lean": "addb7155f5204fc47fa34a7bdc5963e0987bfa121f40b258851af8053c907465",
+    "HardnessBilevel/Convex/Hull.lean": "1a7f267bb6f36e15997663e509f07ebe53f198059a83a866014493a1295581da",
+    "HardnessBilevel/Convex/Lemma219.lean": "c859d8eb973c06621faef768d5f612291651fe7411b63d2681278e1124c43c22",
+    "HardnessBilevel/Convex/Linearize.lean": "4405cc80656e6d952dfc7ddfadf13f5e24a1b8ef11b500327a90055d30b064da",
+    "HardnessBilevel/Convex/Thm218.lean": "6f966b7a5411d11bf7a5a5401f64d87e99ecccfa62398110c680f268e3b332ad",
+    "HardnessBilevel/Convex/Thm220.lean": "62fe41f3dd726124e85c2b6e13cb12e72fb381099d9bb3f11dab99aa1166d2d6",
+    "HardnessBilevel/Convex/Thm220Core.lean": "c797f6b9e14a887ebe905f0a203ffd2ca21c305674e47cdab3624b707a8b6757",
+    "HardnessBilevel/Convex/Thm221.lean": "9fbf0606b49521649717ec81b9db7a7453e16e53dd54a6c306c5f33234cc6575",
+    "HardnessBilevel/Convex/Toolkit.lean": "8c170e2887a6ec80e57fc80161732a5f6553e495f6c6564c3f4c821373262882",
+    "HardnessBilevel/Framework/Basic.lean": "46ba0f018089d84dd609b2785923e39e2615d784a660cfb5b7804b604177a9cd",
+    "HardnessBilevel/Framework/Berge.lean": "9b1b4d28c4b4eb91a544f2fa35528cdd1de750f00c3cbd061fe5511e6f1ad7d2",
+    "HardnessBilevel/Framework/Box.lean": "f2172e76ff4abc77dbc8f40ae24221ea9f51113a970f1d7d7ef5b4d09aae3586",
+    "HardnessBilevel/Framework/Classes.lean": "5deb6be2e2bd24c010747c2da0a6714e72525a4bda341d81b5de33fb033d6f88",
+    "HardnessBilevel/Framework/Poly.lean": "e913b1dc73509127b5b184aad43a1e93f20f37b49eb677cb3c5e84b46e200db4",
+    "HardnessBilevel/Framework/Semicont.lean": "96303e9ed5598a2caa0a8b52f80890f34b9189b03545af07aa8d7f4e1d73caed",
+    "HardnessBilevel/Framework/Separable.lean": "e5e31935955befae9198ce65f700ce4b70fee0f25da70fed299a7f2497a6246a",
+    "HardnessBilevel/Framework/Value.lean": "f739b4f681a2fdf2b2b19ae7cd170e8bfe3f87433c5b04b4f9d8f4ae2e46360c",
+    "HardnessBilevel/Gadgets/Box.lean": "d47cb6a1651d4b084ff7e5156c412da9571a6f748959a96f78d4ab132d8978d9",
+    "HardnessBilevel/Gadgets/Scalar.lean": "4a0bf60dfd8eea314200ef8d94f301e1a3d39c65c4e050f8cea685e9e7f6ffe4",
+    "HardnessBilevel/Gadgets/ZeroLocus.lean": "60b1b3530123045b73aa2d41ea450ca60689e9fb77c51c35fc96c0377b1d159e",
+    "HardnessBilevel/Hardness/Analysis.lean": "cf724232cc6eabea90a39098ecf68c5a29e9034a1560df21747cbec425882e78",
+    "HardnessBilevel/Hardness/Construction.lean": "2546e233fba66c92d7961cf9c698fee070a2d5541779ceacc33e99d7f0199fb9",
+    "HardnessBilevel/Hardness/Reduction.lean": "8365a9b67f5d5cfbc3cd94101262c331862892a0677ec55fe03627ce02007926",
+    "HardnessBilevel/Hardness/SSI.lean": "e1ad7a865c72789b35ed242e5184a69d46ea9774619192703131125abfde7953",
+    "HardnessBilevel/Pessimistic.lean": "a998a5a85b621884783f391e997f946ec2e20c994cd2bbd7b0141c14fec5b542",
+    "HardnessBilevel/Semialgebraic/Basic.lean": "1c3aa64002c0d9d552f5446968928eaf4361ef6957546520ef365d5d907bf476",
+    "HardnessBilevel/Semialgebraic/Ext.lean": "86b3529aa11b09511d0dac13e3ae69ec93fea879fb44b83bf8767724573dff9b",
+    "HardnessBilevel/Semialgebraic/Hull.lean": "2f0680d2ab7db5ddeb9339521a7c8cac28d1055e34a4b6cc96c18e07b88a9155",
+    "HardnessBilevel/Semialgebraic/Poly.lean": "5a4d3930cdd8c257889c11496d79ba8d32e85686997d2cc0dabf9e421d09bb1d",
+    "HardnessBilevel/Semialgebraic/Projection.lean": "325b9767df8c68dc38d3964af86180c5b4fb37d2dc215e3ceb36a8ab2766ac3c",
+    "HardnessBilevel/Semialgebraic/Value.lean": "8c243320d772f56930f0acf5bffc58c9a980c16ed0559925e62c0b8cd0899b1e",
+    "HardnessBilevel/Smooth/Thm11.lean": "b99fb5205a68118129425cdb26b5f0326325807415468153e2f44690f5ad1508",
+    "HardnessBilevel/Smooth/Whitney.lean": "b86504d424dc006e8a2f456da522fe6ee7d78169109c25c45b2c1fd67023d4a4",
+    "HardnessBilevel/Unbounded/Thm212.lean": "b09e5fbe79c8a6c59575c574adbeb81016fb1227c6f07b489c2d108cf040371f",
+    "HardnessBilevelUnconditional.lean": "7e482b5e00f4b4ef5fa5dd7c0abca09cf99403dd1fd0126b526535a0d3ca0b96",
+    "HardnessBilevelUnconditional/Instances.lean": "864bc72c0126acbcab9a01f3bc3d0128c370c26dd5d8432cf021e5fcaaf7f1f8",
+    "HardnessBilevelUnconditional/Main.lean": "dab3fce142df30ca24f855f676d8f4566895b988e0a6c161439dac491fe696e7",
+    "lake-manifest.json": "58f3ff39ab9fbe5efcf247f9e02bee8856af02298f25f44215c50f222822f2bd",
+    "lakefile.toml": "21d3bfa0f10105d5017a09f9141d2edb6b38e0be9b2ae68e715198f51116bab9",
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "scripts/CheckAxioms.lean": "f17dfed67270f1afe4a484e02471ed82174d7c918873970171a1250831f31582",
+    "scripts/CheckAxiomsUnconditional.lean": "4c82629e08c85c1a6413b54cbe79b6a79cd73184cea760d30aa0055753f5f110",
+    "scripts/CheckNoInstance.lean": "5c512cbb723845af0a3ed9d8734967aa86969fe2c87862f6fee55292b85ef6ec"
+  },
+  "nodes": {
+    "bp": {
+      "declaration": "Bilevel.argminSet",
+      "file": "HardnessBilevel/Framework/Basic.lean",
+      "status": "formalized",
+      "line": 28,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "thm11": {
+      "declaration": "Bilevel.exists_smooth_of_lowerSemicontinuous_proper",
+      "file": "HardnessBilevel/Smooth/Thm11.lean",
+      "status": "formalized",
+      "line": 159,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "def22": {
+      "declaration": "Bilevel.IsExtSemialgebraic",
+      "file": "HardnessBilevel/Semialgebraic/Ext.lean",
+      "status": "formalized",
+      "line": 22,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "thm23": {
+      "declaration": "Bilevel.instHasSemialgebraicProjections",
+      "file": "HardnessBilevelUnconditional/Instances.lean",
+      "status": "formalized",
+      "line": 34,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "prop24": {
+      "declaration": "Bilevel.instHasFinitenessTheorem",
+      "file": "HardnessBilevelUnconditional/Instances.lean",
+      "status": "formalized",
+      "line": 38,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "prop25": {
+      "declaration": "Bilevel.instHasGrowthBound",
+      "file": "HardnessBilevelUnconditional/Instances.lean",
+      "status": "formalized",
+      "line": 42,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "prop26": {
+      "declaration": "Bilevel.Unconditional.valueFun_isExtSemialgebraic",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized",
+      "line": 26,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "cor29": {
+      "declaration": "Bilevel.cor29",
+      "file": "HardnessBilevel/Framework/Berge.lean",
+      "status": "formalized",
+      "line": 200,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "thm212": {
+      "declaration": "Bilevel.Unconditional.thm212_eq_SA",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized",
+      "line": 42,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "thm215": {
+      "declaration": "Bilevel.Unconditional.thm215_eq",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized",
+      "line": 64,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "lem219": {
+      "declaration": "Bilevel.lemma219_exists",
+      "file": "HardnessBilevel/Convex/Lemma219.lean",
+      "status": "formalized",
+      "line": 138,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "thm218": {
+      "declaration": "Bilevel.Unconditional.thm218_main",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized",
+      "line": 74,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "thm220": {
+      "declaration": "Bilevel.Unconditional.thm220_main",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized",
+      "line": 90,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "thm221": {
+      "declaration": "Bilevel.Unconditional.thm221_eq",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized",
+      "line": 119,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "pessimistic": {
+      "declaration": "Bilevel.Unconditional.pess_thm221",
+      "file": "HardnessBilevelUnconditional/Main.lean",
+      "status": "formalized",
+      "line": 123,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "ssi": {
+      "declaration": "Bilevel.SSI.Yes",
+      "file": "HardnessBilevel/Hardness/SSI.lean",
+      "status": "formalized",
+      "line": 31,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "lem33": {
+      "declaration": "Bilevel.SSI.lemma33",
+      "file": "HardnessBilevel/Hardness/Analysis.lean",
+      "status": "formalized",
+      "line": 414,
+      "previousStatus": "formalized",
+      "reason": null
+    },
+    "thm32": {
+      "declaration": "Bilevel.reduce_correct",
+      "file": "HardnessBilevel/Hardness/Reduction.lean",
+      "status": "reduction-only",
+      "line": 162,
+      "previousStatus": "reduction-only",
+      "reason": null
+    }
+  },
+  "changedFiles": [],
+  "issues": [],
+  "buildChecked": false
+}

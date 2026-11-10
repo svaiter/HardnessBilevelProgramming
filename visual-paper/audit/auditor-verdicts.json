@@ -1,0 +1,1612 @@
+[
+  {
+    "id": "bp.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "92f664a8877c1f4d1e6cfeefcca7bbdf1648eee277de2898f92b9b1c16a7b661",
+    "evidence_hash": "50c6cefb7b4e8888381908a021828ab650792a9c2025b47350879e9c0f6c1c02"
+  },
+  {
+    "id": "bp.summary.1",
+    "verdict": "supported",
+    "reason": "The cited definitions first form argmin Q at fixed x and then evaluate P on that set.",
+    "claim_hash": "361c564040e499130a9f7f82b5e06bcb68b0d7619ac684e3337bbea3bfe0cd30",
+    "evidence_hash": "05c959aece519cb527b711519a42e6548c457a2883bca7f45e56630b0ed1c843"
+  },
+  {
+    "id": "bp.summary.2",
+    "verdict": "supported",
+    "reason": "Both infimum/supremum definitions and the +∞/−∞ empty-set conventions are explicit.",
+    "claim_hash": "c7425b98d440c162e85c3652a0cf128f8b0cbf854d1eb44c652fc51fde33aa32",
+    "evidence_hash": "172320a24e19033e9964d0e9df7aaeff9c6cf4b60cb2da030c006a9ac2dcb9c6"
+  },
+  {
+    "id": "thm11.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "cf97b759577d52035a0140f79fdc6941a11f5c06f3d11efd005c789cb41d61c0",
+    "evidence_hash": "2f91c3a8153752cd8642010c3032cec4b65c246257eaa6fa9e630604b25c0338"
+  },
+  {
+    "id": "thm11.summary.1",
+    "verdict": "supported",
+    "reason": "Both spans state properness, lower semicontinuity, closed effective domain, the extended codomain, and three unrestricted lower variables.",
+    "claim_hash": "1a0955b211952df3cb28f9b11f8adb0fe02ecb36b704fc9a215bd98ed3067bfb",
+    "evidence_hash": "2f91c3a8153752cd8642010c3032cec4b65c246257eaa6fa9e630604b25c0338"
+  },
+  {
+    "id": "thm11.idea.1",
+    "verdict": "supported",
+    "reason": "The cited construction selects Whitney functions for the epigraph and domain and displays a sum of three squares.",
+    "claim_hash": "286ecebff02deaa9bade72ee851ead8e9bec04c42447116cf10e75b856974d21",
+    "evidence_hash": "5ce8f29db3f09eb8294fdbecf23aad0b2f224e24441640babfe186ef0a8d584a"
+  },
+  {
+    "id": "thm11.idea.2",
+    "verdict": "supported",
+    "reason": "The two cited cases give the epigraph value when finite and an empty lower argmin at +∞.",
+    "claim_hash": "095aef6126bd75a172af692ef3fb1d2847a194681ceedb213e7d3a235b0ac744",
+    "evidence_hash": "a1696e689810eef531633f2d3737bfbf0fd43c951f5965cfd8637a07e9cdaf23"
+  },
+  {
+    "id": "thm11.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "615a332ebf00649778fe38bb65093551313adb3783c259eae7da2de6909ef5ea",
+    "evidence_hash": "93704128fcfeb76289dc544184f340ad7b84c57cd112b3231bda3d9da71c58d2"
+  },
+  {
+    "id": "thm11.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "efba6cdf06191092fb04266f25c394d05b0e4ea517bc01de4e30749094c1e95b",
+    "evidence_hash": "9c799d09684d9b7b747f86d51fc1bb0a41b552c8d75e62f223c5e44c00e87386"
+  },
+  {
+    "id": "thm11.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "db0250ef1c18cb1476e2282c891966e646f5401e346ecf202f681450b06f41fe",
+    "evidence_hash": "8421996dec431ceb4f5af67d8146d9362818e0ce1c0e3c530a9203d1e61b9ea8"
+  },
+  {
+    "id": "thm11.step.4",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "5ca75eb1cf70e8385dfcdb9dba3cf0ecb240cdbafb0dbd2bf0fa73cea6a731d6",
+    "evidence_hash": "62f09985860970f8ac2509b2e02066432bdc0ed31825a1008105c0227d0e3599"
+  },
+  {
+    "id": "thm11.uses.bp",
+    "verdict": "supported",
+    "reason": "The cited finite case minimizes the output coordinate over the vertical epigraph slice; the claim does not repeat the paper's mistaken identification of the full argmin with that slice.",
+    "claim_hash": "58dfca9d6b6b909ae10c613702c82e5fab53cb7332a3268d85ef1f2bf0b2d51d",
+    "evidence_hash": "0a29db0808d4f98036b7a1dc6a8c7b81ffc247c41249fbc2e04261f0c60edd1c"
+  },
+  {
+    "id": "correction.e14.body",
+    "verdict": "supported",
+    "reason": "E-14 supplies the full three-coordinate argmin condition and the reciprocal relation, conditional on membership in the effective domain.",
+    "claim_hash": "6b84e3020f404fdf0b680c1c08ef91acf969dfd2fc71e97e00c4b64af511ad98",
+    "evidence_hash": "8bc5dfb4113ad8efa805213e05ee2a01dc473f1ad1ea55a50de80a0e3c3634ca"
+  },
+  {
+    "id": "correction.e32.body",
+    "verdict": "supported",
+    "reason": "E-32 explicitly replaces argmin h by argmin h² in the separability identity.",
+    "claim_hash": "1420c23f34b5d372b227bcb25302e0507039b357383c41981bfdd96cac07c86c",
+    "evidence_hash": "6773be9e3893f711fd9fa0393e8cc12788be4c27b9a309f497fb45565dcf76fb"
+  },
+  {
+    "id": "correction.e34.body",
+    "verdict": "supported",
+    "reason": "E-34 and the real-epigraph argument explicitly address the extended-valued target and require only lsc implying epigraph closedness.",
+    "claim_hash": "dbe9e867421e02c442c8dabc74274fa7388c96e29e70293608bdac0550b13501",
+    "evidence_hash": "708c39fa7b4a3ba63684e11241eb4b27c89b7417556f401a2d364317afe248a6"
+  },
+  {
+    "id": "def22.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "3cfb3ecb0a77630a0ba0c96e2e58682d87ff801052d43dad0877646ca5d5ed13",
+    "evidence_hash": "d5929ccce14b8936c746a970100154436b366f4f8f52a20c71a34d1e9c72d8a9"
+  },
+  {
+    "id": "def22.summary.1",
+    "verdict": "supported",
+    "reason": "The definition specifies semialgebraic top/bottom loci and the finite real graph.",
+    "claim_hash": "41254fdabb0b8334476c083183454da3383ec015f7983e43ec9e1dad146c977f",
+    "evidence_hash": "d5929ccce14b8936c746a970100154436b366f4f8f52a20c71a34d1e9c72d8a9"
+  },
+  {
+    "id": "def22.summary.2",
+    "verdict": "supported",
+    "reason": "The cited domain identity uses extended-real trichotomy to take exactly that complement.",
+    "claim_hash": "1c6f9d7315a158a2cc5b97a4047aa2883740ab6c6d790f7e82508fcb735b026b",
+    "evidence_hash": "8767848945da034b72646e69b9daae650c09f0742a1009c3381cc5ecc57d6213"
+  },
+  {
+    "id": "correction.e13.body",
+    "verdict": "supported",
+    "reason": "E-13 distinguishes the finite graph and explains outer-union padding by empty sets or duplicates.",
+    "claim_hash": "6c9ddbe0a955033cb2bdd147220422482c4d47f117fda5d8acf3d42ec5a455ee",
+    "evidence_hash": "d8df34193a0b5ba7a7adab0be96f17d85f94bcebe767c1de72fccca1527c62e6"
+  },
+  {
+    "id": "thm23.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "8805c5f82b16ae95340eb966cdce67d93116e95d066b85beb76d0e5393dff285",
+    "evidence_hash": "2ee85798d411ab482d4e4be4bc5d325d98b405b0102aa9d3b9a89eaed1b504ed"
+  },
+  {
+    "id": "thm23.summary.1",
+    "verdict": "supported",
+    "reason": "The stated projection theorem preserves semialgebraicity when coordinates are forgotten.",
+    "claim_hash": "ac881f4a90ced5406f15ab30c06f96ec70fcda929cd616ec4e4f92c807011cf7",
+    "evidence_hash": "69c9c95c30074d11bcbe98e85d27f19e66f113e7096895559067eaffc678b020"
+  },
+  {
+    "id": "prop24.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "3afd2fdeb565eaab1b99e855045521d3614e5067beab63999079ce4b491b907f",
+    "evidence_hash": "5836ffccbfc035ee182c0f99ad5a4cf2f7b86739b62cbc67ec1c158aee248bf6"
+  },
+  {
+    "id": "prop24.summary.1",
+    "verdict": "supported",
+    "reason": "The finiteness statement is exactly a finite union of intersections of inequalities P≥0, with closedness required.",
+    "claim_hash": "91985561f974faa7586b964ebf92846ded1795d9505aac146263cc6d050d3860",
+    "evidence_hash": "d508649fbae6955c9a23f341b92cd328e05fa7b7071d2430b086d1b8da716a6d"
+  },
+  {
+    "id": "prop24.summary.2",
+    "verdict": "supported",
+    "reason": "The cited note explicitly obtains the open version by complement and distributivity.",
+    "claim_hash": "f49146ae724f577b5ae8e32672d461883edd50479c93a396470a6f87b8bb367e",
+    "evidence_hash": "573038eff04764cc77ca4a734ee8eedfbc90c1f9f3ea229e80ac459a63b6b879"
+  },
+  {
+    "id": "prop25.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "3c5cd5ca9657ba6a95402add2f7f3b1c39497e557b28e29214ab72bdcdd5ad05",
+    "evidence_hash": "d61e88e105dfe6b5ebcfa6c765aeb61d9a44446c07ca903b7ae5cc1d8f6cb026"
+  },
+  {
+    "id": "prop25.summary.1",
+    "verdict": "supported",
+    "reason": "Corrected A3 has the stated local boundedness premise and a global bound B+(1+Σx_i²)^M; this is a mathematical statement, not a claim that A3 was proved in Lean.",
+    "claim_hash": "c9730b727236de77030cd342487dfddf017599084b5c323a4513e5296a876866",
+    "evidence_hash": "aaf9cd73adbefc6ff1f2671af78748215c0031d7d351b3344309378e567ec8ac"
+  },
+  {
+    "id": "prop25.summary.2",
+    "verdict": "supported",
+    "reason": "The cited counterexample is reciprocal distance to the diagonal, zero on it, and violates the printed bound in dimension at least two.",
+    "claim_hash": "6a16b6df4cdb20671d8d044a6716ac40fc7ef60aa293b066b54a54bf9affa03b",
+    "evidence_hash": "7133ffce72927a9aa4f85193f49af55180459920a50993675bd35cc6b0dee4eb"
+  },
+  {
+    "id": "correction.e1.body",
+    "verdict": "supported",
+    "reason": "The correction explicitly adds boundedness on bounded sets and bounds the absolute value.",
+    "claim_hash": "c344f81e62831f10c5bab54713aad0f9385ae8c82fdc6a45d071105c474b1af9",
+    "evidence_hash": "f8c7809c1eb6344aecfe7b91f3b5fc1b126d5aa0b0894391ef280273ddd5145d"
+  },
+  {
+    "id": "prop26.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "9bd10c1910d64b6aa26a16e75250307f52682cc4e4caf9647e3a989ac9732464",
+    "evidence_hash": "191dd747c7aae7c9604b35bc647b23b7e9473a96c20c695e319b12a09f5b2783"
+  },
+  {
+    "id": "prop26.summary.1",
+    "verdict": "supported",
+    "reason": "The corrected proposition explicitly covers arbitrary semialgebraic Y and polynomial P,Q, with an extended-real semialgebraic result.",
+    "claim_hash": "69d70fa9a2c42239384ecf23ad69ad8797ed807cbcb34166bcb76044d040dc4f",
+    "evidence_hash": "191dd747c7aae7c9604b35bc647b23b7e9473a96c20c695e319b12a09f5b2783"
+  },
+  {
+    "id": "prop26.idea.1",
+    "verdict": "supported",
+    "reason": "The cited proof gives universal lower-optimality comparisons and quantified formulas for both infinite loci.",
+    "claim_hash": "762020875d307fb30b191f756142e8fbb94a85c9b2d9c664e38dbb7cbf53d60c",
+    "evidence_hash": "8c181d9290950ff97360dc8125f7e5d515725c120e8de751196103d5c780f68a"
+  },
+  {
+    "id": "prop26.idea.2",
+    "verdict": "imprecise",
+    "reason": "The cited fragment begins at the ε-approximation clause and omits the universal lower-bound clause. The claim is mathematically correct, but this particular citation does not display both conditions; the complete formula occurs elsewhere in the supplied source packet.",
+    "claim_hash": "607bbdaa7e492212c9ebebb429a436d97357892dc1c527e117c51e79fcdcb047",
+    "evidence_hash": "52a905b207616e4851f1d1e772812821d4a64430b4f932a50f51873358bcc33c"
+  },
+  {
+    "id": "prop26.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "327f99de96f820733926e999b6b2c8d06698726f62a6943ab01d6d30ee344660",
+    "evidence_hash": "00d3cff9489b7a5e47fedd752860231ebeea67460ca7df9c4f5db30beb2dc81b"
+  },
+  {
+    "id": "prop26.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "e86cf727cb1b7d12a2edc861e1143679fe7d7c31efe42e1d59d0b74c287618a2",
+    "evidence_hash": "0aec7fd8e650a61a6563ac199781a35be9dcf1540270a23e7c6dd5a1386debf6"
+  },
+  {
+    "id": "prop26.uses.bp",
+    "verdict": "supported",
+    "reason": "The cited formulas translate lower optimality and the optimistic infimum, while identifying the paper's nonattainment issue.",
+    "claim_hash": "f252c9a9ff44d591ac70d8e0b71b6f1d77322cc63914a65af40d2ea3ced9ce01",
+    "evidence_hash": "3a28bd94a14c2d2a51c751e9123705f9d407a6f547a0892b19a4584b86262c5d"
+  },
+  {
+    "id": "prop26.uses.def22",
+    "verdict": "supported",
+    "reason": "The cited formulas cover top, bottom, and a finite graph with lower-bound and ε-approximation clauses.",
+    "claim_hash": "16c49cc0606020872e3e1b463dbe8dba1758e5cf1950d00eaa1a6ee260f53023",
+    "evidence_hash": "6001fd6eb30d7a60aefa7b6951a7414ed2dd271df74cee921ba1e3d77ed82a58"
+  },
+  {
+    "id": "prop26.uses.thm23",
+    "verdict": "supported",
+    "reason": "The proof uses semialgebraic polynomial comparisons, quantifier closure, and Tarski–Seidenberg; universal quantifiers are handled through complements.",
+    "claim_hash": "a638fe4b631fe83c3a976ef1158021491a4e0b19289f1a0f650a01a0f1a481be",
+    "evidence_hash": "8ca618a466220021c0424ac77f17fd42904e2177963909aa836edb42fb12d3dc"
+  },
+  {
+    "id": "correction.e6.body",
+    "verdict": "supported",
+    "reason": "E-6 explicitly identifies the required general-Y semialgebraicity argument and Corollary 2.9 as the two ingredients.",
+    "claim_hash": "31298ab6382d829d295239eaff9e90714166d6a2487961c42fc59ad9b12d3b91",
+    "evidence_hash": "dd764965f86cd8968f524fe872d66f825b7198882ddfe8ef00cbe5c6b536814d"
+  },
+  {
+    "id": "correction.e8.body",
+    "verdict": "supported",
+    "reason": "E-8 states both universal lower-bound and arbitrarily-close feasible-value conditions, without asserting attainment or strictly positive approximation gaps.",
+    "claim_hash": "360af01c1f621b2b7bec306e606420f029041bd6cf767268190dd093909603a0",
+    "evidence_hash": "d591e36dddc37d0b03438f2fc77fcfddcb29d89a2f78feca940f42f1afd32dae"
+  },
+  {
+    "id": "cor29.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "e6debc31b79a75c2c5301383ee7cd72d7bbf78a93b545bff3adaba79d4e47a70",
+    "evidence_hash": "bc91088a29441fc6fea110dabcea26a8e8154bea6b9881714884649f37dadab3"
+  },
+  {
+    "id": "cor29.summary.1",
+    "verdict": "supported",
+    "reason": "The clarified corollary includes joint continuity, compactness, nonemptiness, real-valuedness, lsc, and boundedness on compacts.",
+    "claim_hash": "582bf1ae90b465f2e4f1bcf7d3cae5a4594ac71b0717db11b36054d800560c58",
+    "evidence_hash": "bc91088a29441fc6fea110dabcea26a8e8154bea6b9881714884649f37dadab3"
+  },
+  {
+    "id": "cor29.paperIdea.1",
+    "verdict": "supported",
+    "reason": "The cited proof chooses a lower minimizer attaining P at each nearby x; this is read under the corollary's nonempty compact feasible-set hypotheses.",
+    "claim_hash": "2f08acf42170da5b07d70f1f7e7831696ffcb3a65288aa1f0ecfb853a27870f2",
+    "evidence_hash": "d0acdde494a30261797197958221504ee34381b96aeb84974498170384a8805d"
+  },
+  {
+    "id": "cor29.paperIdea.2",
+    "verdict": "supported",
+    "reason": "The cited sequence argument uses a liminf subsequence, compactness, outer semicontinuity, and continuity of P for the inequality.",
+    "claim_hash": "9a56b6275ae05112461ecd9df07cda16e6c36a2a9147dd7b34919bb7e72fff23",
+    "evidence_hash": "43bf303e1536d2a9c3141ea9feb828a48bdb75c05c49e48ff4086924c4056ea1"
+  },
+  {
+    "id": "cor29.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "09759a9125b5377e8cafd43215fe92e0ac82499e83f88a8f0cf4f0a29ae22457",
+    "evidence_hash": "5460d466a1c6d8c801405abe738cceafedc750ee6d880411e7cd28344679d750"
+  },
+  {
+    "id": "cor29.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "2079b8ff09fd5250b97bb5dac7196cce8b74f60122207175b5a1c4aede0e21d9",
+    "evidence_hash": "43bf303e1536d2a9c3141ea9feb828a48bdb75c05c49e48ff4086924c4056ea1"
+  },
+  {
+    "id": "cor29.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "f7c9cf8df0cdbb5dd0abe8e210577d532510e1a633b834fba6d016feff6c0302",
+    "evidence_hash": "0bf59d933f26bad33adeebb830bc977e3ea59b58835707e5a45e35195aaea895"
+  },
+  {
+    "id": "cor29.uses.bp",
+    "verdict": "supported",
+    "reason": "The cited attainment lemma gives a lower minimizer whose P-value equals the infimum, assuming the corollary's hypotheses.",
+    "claim_hash": "4d3f42fd072f8a683dab5efbe7d49217c49a2b1f4e2522d3fd4879b031869b52",
+    "evidence_hash": "5ad73afadb60930f75502accc5fc57022c7067be6b1425a1e61f43c91d5bd731"
+  },
+  {
+    "id": "correction.e9.body",
+    "verdict": "supported",
+    "reason": "E-9 and the blueprint distinguish unconditional extended-real lsc from real-valuedness and compact-set bounds requiring nonempty Y.",
+    "claim_hash": "b8563174ec104e765667752bfa57f45def8d6875fa43833153642cdf05da0fba",
+    "evidence_hash": "55ed33a221e3f209955d915f9d2fb339398e2f03e94c1cdf786e6506f0ca952e"
+  },
+  {
+    "id": "cor29.idea.1",
+    "verdict": "supported",
+    "reason": "The cited B2–B6 argument supplies lower and upper minimizers and closed projections using a compact feasible-set factor.",
+    "claim_hash": "5878eb721cd2a9ab92c2e2fe49ac3d8b12cdd6a905e4901b48eb6f36d301816d",
+    "evidence_hash": "344a3010cbbec7833d54c56c3c1327e5195a15bfb85ba73265c334f64a80e7cc"
+  },
+  {
+    "id": "thm212.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "8c2d684e8981d01c3b1cf4f93dc25ad34bc1531ada4a7c4aa78da765c984f48a",
+    "evidence_hash": "7ca1664fcb9c8f5cd591993fe72511ba3f318a041bf26fac09175e4e8a461c78"
+  },
+  {
+    "id": "thm212.summary.1",
+    "verdict": "supported",
+    "reason": "The corrected class statement gives equality with extended-real SA, and identifies the codomain correction in the paper's original class definition.",
+    "claim_hash": "8e9b4123ef1737ba0efd92eaacefa12953e49068249497223d7a018f287b5b0c",
+    "evidence_hash": "7ca1664fcb9c8f5cd591993fe72511ba3f318a041bf26fac09175e4e8a461c78"
+  },
+  {
+    "id": "thm212.summary.2",
+    "verdict": "supported",
+    "reason": "Both cited spans explicitly allow an unconstrained lower Euclidean space.",
+    "claim_hash": "160214d1bd37a84d82c818d08462d244b6b4904eb628c368602527e923ff91da",
+    "evidence_hash": "9006010833bc94a3fcc170dccbc191b1d0157adaff0a29d616a0c4c7b1229b32"
+  },
+  {
+    "id": "thm212.paperIdea.1",
+    "verdict": "supported",
+    "reason": "The cited nonnegative polynomial products test membership of the graph and the three value loci through zeros.",
+    "claim_hash": "406574bd3cf043e4eae53aa8680fe14c297b0b8a59e90282d5a0c06b31880135",
+    "evidence_hash": "6c5d7ac53f0b2d14e0c1aa0fdd7ee3684f2368d1771eb62c4f9f66aaba4450fd"
+  },
+  {
+    "id": "thm212.paperIdea.2",
+    "verdict": "supported",
+    "reason": "The three-case proof gives an unattained lower infimum on the +∞ locus and all real output coordinates on the −∞ locus.",
+    "claim_hash": "79df2c28eefdc5a8f3dd0485e2588e78e1337a23c7c7332b6890183cc973799a",
+    "evidence_hash": "99c6586f57fd00ff68bf4a4648d9b13bfe6179e2dccd68617cde441963d1e800"
+  },
+  {
+    "id": "thm212.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "df851415b8a124d6cc69527e38ed20fd34025b0be81cec2ba0e7999dece54aad",
+    "evidence_hash": "cee7ec0d67c625ea06f3c3dbab10e8e214d28c00ba3b8659cd01c17a0ce48c5b"
+  },
+  {
+    "id": "thm212.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "85e7f0d53fcdf666c39a68d70cd9aa8918bd854448a61de24b2022801f64c806",
+    "evidence_hash": "c5b0fcd4ac13380b6e303205114fbdb331f1537a89673f543ade072be7e9741d"
+  },
+  {
+    "id": "thm212.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "9dedd49fb8c4a4625bfb7c1a4be9be3a54fcf19cc2436f3f85e1a5efd6f6d63f",
+    "evidence_hash": "3b3b621f3bb015a54cc3bce875e7884b5d9b83b8f0ca55152cf91e57ba788e7e"
+  },
+  {
+    "id": "thm212.step.4",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "92b4ed08387ffd36b2ce6c13a136fcf9c44486efb4befaaa172e77ffd3a10f34",
+    "evidence_hash": "e4f9a92e1a1376a91490785a78fc12fce531cd6b6998ed22f8c291d8b0b29c5d"
+  },
+  {
+    "id": "thm212.step.5",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "a212b4f8a98baafe7676fd1a822594235946c879ebe5edaf21a4895844c1566f",
+    "evidence_hash": "4a2995a49fab90cf5a3523531f66b750dba534b8fd2dbfe8c37e29afa0a7dd4e"
+  },
+  {
+    "id": "thm212.uses.def22",
+    "verdict": "supported",
+    "reason": "The repository construction explicitly uses only the finite graph and bottom locus; the claim does not say these are the paper's only blocks.",
+    "claim_hash": "4c166fb395434d3ac0bd2595856eac29379be2eda38785d93a517f56b8a1b5d0",
+    "evidence_hash": "d74856c0cea42e3f7814415fadda0c2b98a7bee9bd874c5e7ba7dd97a917457b"
+  },
+  {
+    "id": "thm212.uses.prop26",
+    "verdict": "supported",
+    "reason": "The cited theorem overview explicitly assigns the reverse inclusion to Proposition 2.6.",
+    "claim_hash": "f0aac3c8936398a979dce3f3a5340999b8732c8afa5de44bd454f7a3a46ffb54",
+    "evidence_hash": "aa4a8bdf8c3dd60e8d21b15c0be0199db3e74879a72ce482be9089bac3e1ea83"
+  },
+  {
+    "id": "correction.e2.body",
+    "verdict": "supported",
+    "reason": "E-2 describes sign cells' constant membership, rewriting h<0 as −h>0, and the needed normal-form corrections.",
+    "claim_hash": "50107639357a6e1c83013fb0ba3c552d0830ff6acbed31013f3a934fd571618a",
+    "evidence_hash": "89b3ae4cf3e03f1682d6a377a6e9f3e0283845b55a79cee75d692bdf1d35a3fc"
+  },
+  {
+    "id": "correction.e3.body",
+    "verdict": "supported",
+    "reason": "E-3 requires EReal-valued classes to match the extended-real SA target; bounded-box values are separately real.",
+    "claim_hash": "76312a80b5ebac056bfff6bda368ec60db2d056927df7c4a430f1820750cb70b",
+    "evidence_hash": "56da0a3b547927d77eebb5e29c67cb6989fe474b92e980a1b537ed9bd0ac5db6"
+  },
+  {
+    "id": "correction.e10.body",
+    "verdict": "supported",
+    "reason": "E-10 identifies S⁺,S⁻ and their respective auxiliary blocks as the necessary corrections.",
+    "claim_hash": "0d8013c646f4a14821f1d00a9c0f16c8abefc558ffb3a633f1dfa57feb7fb889",
+    "evidence_hash": "f39a854044a1e4597c5b81131b071fb3bcf0fc74bdf25e65e50bbb630dcfca96"
+  },
+  {
+    "id": "correction.e11.body",
+    "verdict": "supported",
+    "reason": "E-11 explicitly gives all real upper outputs at a −∞ target and hence pessimistic value +∞ there.",
+    "claim_hash": "02d552f4a46cccad55de233cc852996eef203c2d667ef4dbe746480dc9738c8f",
+    "evidence_hash": "cb25733d7cae7c38083119d3994bed6ea2f002aabddbf8022a6684f51a0f7bae"
+  },
+  {
+    "id": "thm212.idea.1",
+    "verdict": "supported",
+    "reason": "The simplified repository objective and three cases use finite-graph/bottom-locus zero gadgets plus the reciprocal nonattainment gadget.",
+    "claim_hash": "f24e0d01bf4224f0d740a4d198d1dd20fdf8fd0c82eecf8586cce9c3df5883fc",
+    "evidence_hash": "24a6fe68f13b157755bd4a1e4c947c33ca0611da0aff622b014bbbbfd2231284"
+  },
+  {
+    "id": "thm215.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "7974e1348ea1e76864bb5f180101715b3a22be4e49d998e963f16c6aeac518ca",
+    "evidence_hash": "d48f554a6ce4fb0ad5a9462c2ade66998c68f6f9bcf4b871bb0197d10724aafc"
+  },
+  {
+    "id": "thm215.summary.1",
+    "verdict": "supported",
+    "reason": "The theorem gives exactly SA∩LSC∩CB for bounded-box optimistic polynomial values; CB forces real-valuedness.",
+    "claim_hash": "e3d70c2a87d2076a6bb0c2daafb34a74e6b1439d2812015c3bca91162902a035",
+    "evidence_hash": "d48f554a6ce4fb0ad5a9462c2ade66998c68f6f9bcf4b871bb0197d10724aafc"
+  },
+  {
+    "id": "thm215.paperIdea.1",
+    "verdict": "supported",
+    "reason": "The cited observations identify the least height in the graph closure using lsc.",
+    "claim_hash": "026a03da92e4eaf2dd2975c9397772a1e9098dabfd09ca6a9bae0f8d2c4386a6",
+    "evidence_hash": "3ba507a10e06f67549a06cbb19b9c4319584b137c89abd67df3c744c4fd5c83f"
+  },
+  {
+    "id": "thm215.paperIdea.2",
+    "verdict": "supported",
+    "reason": "The bounded scalar square gadget vanishes exactly for the nonstrict sign condition and uses a coordinate in [0,1/2].",
+    "claim_hash": "63f4baba323dfe389198b917450641e324fe7a6075c81e66f6438b0e6ab1cdde",
+    "evidence_hash": "99b175cad85428c0b4a68886ee88d71e1c0cf890f71b4cb9d78dfa4cc80f18c0"
+  },
+  {
+    "id": "thm215.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "a1705a91ce19eb182d659fe67312d00e60168831abafc9ab0ed2f4c858ca19b4",
+    "evidence_hash": "1c6b8a9c78c67fa267f73ead0ed54bd1fc6826162d692547f7bbded9f16ad193"
+  },
+  {
+    "id": "thm215.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "5470ecf3eb8ed907ff59cb54b30e175f73d28a6550f3c055a8385247421cae65",
+    "evidence_hash": "6ddd57cd5ed7caa54ef19d8cf10f760664fe7232199409b7d32db106e12a84e6"
+  },
+  {
+    "id": "thm215.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "c00a9a88122b074bbc5f342272b89a4296fa51cce52ec512dc6222aab4b2f410",
+    "evidence_hash": "372babc4e1c783dd475c327b38d6d99fef3a227dc776c0775120fce3746b8a2f"
+  },
+  {
+    "id": "thm215.step.4",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "e891f8ae7a3a5f23063b3d5c7bfef72955499f91bfea01cd6af42bff44109bed",
+    "evidence_hash": "491cc87d90c3ef9dbe6dee24990d2cbfc5182e17f088e338d455b471ad56e225"
+  },
+  {
+    "id": "thm215.step.5",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "e1656837a0a27bf0fc7d58df6eabc914c1ea7ec71841f5a5d6af912ed08346f9",
+    "evidence_hash": "88a0077818a1ab611e72efb6c46d46d1ac57dfeecf1a495a57950251c540f471"
+  },
+  {
+    "id": "thm215.uses.prop24",
+    "verdict": "imprecise",
+    "reason": "The blueprint citation states the finiteness decomposition for E without identifying E as the epigraph, while the paper citation concerns the closure of the graph. The epigraph route is correct, but these cited fragments alone leave the identity of the decomposed set ambiguous.",
+    "claim_hash": "28ba7a12e8ec7672a6a6162c118e002e314e6d16b8b7fe562cbdc5a054aad101",
+    "evidence_hash": "7f543cf7ee1c1ac0ac1509663552d8d514ec22fa5da553bbf505e554834a9fba"
+  },
+  {
+    "id": "thm215.uses.prop25",
+    "verdict": "supported",
+    "reason": "The cited corrected growth step explicitly chooses a positive polynomial w with |f|≤w.",
+    "claim_hash": "2d12ba17b4eb849ae1f51358727839855605eab88d5b6d4c0eddce48063f7781",
+    "evidence_hash": "690c834f271ae968b4f7e88c327b7f0f82ba44143d112bdf20c4739029191c10"
+  },
+  {
+    "id": "thm215.uses.thm23",
+    "verdict": "supported",
+    "reason": "The cited epigraph construction projects a graph cylinder intersected with a polynomial inequality, using A1.",
+    "claim_hash": "ba68b8e207aaf7d0e0bd3230118e07a8271bf90dfe9ea25cfec75f68d250bca7",
+    "evidence_hash": "f9b9cf207df9264be47e3ffd674d87e6341749a622025a9ebd3b1edd1bc8e408"
+  },
+  {
+    "id": "thm215.uses.prop26",
+    "verdict": "supported",
+    "reason": "The cited converse combines semialgebraicity of the value with compact-box properties.",
+    "claim_hash": "8575ff4dde2aeca9d09a920917f9680f0af4e2e112ea51b2d06b0ce4c18cb14d",
+    "evidence_hash": "e62ffe4793691db63c800347d1ffa5e631f9bd2f58100de8d836417196c55848"
+  },
+  {
+    "id": "thm215.uses.cor29",
+    "verdict": "supported",
+    "reason": "The cited converse explicitly records real-valuedness, lsc, and CB for the nonempty bounded-box class.",
+    "claim_hash": "dc391118973f6974c7fcee2faa4e63a5fa6ad1f66ba8eccc562985b6aca0ef6f",
+    "evidence_hash": "e62ffe4793691db63c800347d1ffa5e631f9bd2f58100de8d836417196c55848"
+  },
+  {
+    "id": "correction.e4.body",
+    "verdict": "supported",
+    "reason": "E-4 explicitly requires a two-sided positive bound and corrects the theorem cross-reference.",
+    "claim_hash": "2ee0c2a6e9ad6e463caa4acd8b899f36171cc20a663e1c240a76a7a9d11b2af7",
+    "evidence_hash": "9e493810b6fafba057cc87712128dd182d11d6cb36cbd303eb8efe1350e205a4"
+  },
+  {
+    "id": "correction.e5.body",
+    "verdict": "supported",
+    "reason": "The cited alternative route replaces graph closure by the epigraph and substitutes τ=t w(x) in its polynomial description.",
+    "claim_hash": "27a2ffc719ab670a3e1cb016f728cec950f280984c839c5cd9262c7d426ca9a4",
+    "evidence_hash": "677f8c10768fb18f46b9aa813977dc8c0601c88ea00ed9026f2d0fd99d699453"
+  },
+  {
+    "id": "thm215.idea.1",
+    "verdict": "supported",
+    "reason": "The growth and rescaling spans give |f|≤w, τ=t w(x), P=t w(x), and a bounded t interval.",
+    "claim_hash": "423081b72f8e7c97e9ae4a38e3f7a6ba83397f039c68d5dd353793e540654422",
+    "evidence_hash": "cd1736fc011c68fa3e585b7fd8262c4f048b490cfbb6992e6e9f1493342c9f0e"
+  },
+  {
+    "id": "thm215.idea.2",
+    "verdict": "supported",
+    "reason": "The cited repository route combines the closed semialgebraic epigraph, finiteness, rescaling, and the bounded gadget.",
+    "claim_hash": "47361ec5609c8dce68e5ef65d89a578b4ff20121a33c84d0545b304a2282cb95",
+    "evidence_hash": "2e7c8cdc08a3a6b43de8e74a475e093659d36abd3b4870da23439d0dcd2ecff4"
+  },
+  {
+    "id": "lem219.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "743bc6091057cb5b969cd50b90889e9e86b36c67b42af724ae44b5caaaf15b79",
+    "evidence_hash": "90f9a02f53848601ad10cdb2cf5c43d06dbcd0b64518273278ca1e36fccfecce"
+  },
+  {
+    "id": "lem219.summary.1",
+    "verdict": "supported",
+    "reason": "The lemma explicitly represents basic semialgebraic indicators using polynomial objectives, a convex lower objective, and an unbounded box.",
+    "claim_hash": "5d10ce2e34c2e8e48ae1a89b4eff544b1a7f8123b1f34f6f483504a54cf3c415",
+    "evidence_hash": "90f9a02f53848601ad10cdb2cf5c43d06dbcd0b64518273278ca1e36fccfecce"
+  },
+  {
+    "id": "lem219.summary.2",
+    "verdict": "supported",
+    "reason": "The strengthened repository statement asserts nonempty argmin and constancy of P on it, with the indicator value.",
+    "claim_hash": "93e1843f33fc96c69b59b09a9416c94cc83b39efd89c1c7abd970718ff50f3db",
+    "evidence_hash": "0bed282a0c1927df505fff56c25e2a9b9372cedab93aa71fd1afa54632e97cf3"
+  },
+  {
+    "id": "lem219.paperIdea.1",
+    "verdict": "supported",
+    "reason": "The original construction separates the equality, strict-sign, and auxiliary linear/quadratic lower terms.",
+    "claim_hash": "84ccdee39e15607d45eeb4dc65ff68ec51778a35a071b4349dec0cea45b35960",
+    "evidence_hash": "1630f8829237104bc6cfba895d433e98f9d62bd087f2167f84ccdc2550b53130"
+  },
+  {
+    "id": "lem219.paperIdea.2",
+    "verdict": "supported",
+    "reason": "The cited identities give 0/1 equality and strict-inequality indicators whose product is membership in the basic set.",
+    "claim_hash": "35a8213e260d0e51f07227f311272dc1d3533a3e19c26370ca89e037cf7bdeff",
+    "evidence_hash": "3d65fad45dd9f6fef66cd8cf1a8547eaa5ef2050810eb5ff0cd24bb8eda2572d"
+  },
+  {
+    "id": "lem219.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "975e63b5e1d5b3f1f303d5426f2e5fc21d7ff5a4dafd905b754fc974ab7086e2",
+    "evidence_hash": "d235af4c95e2af789d593b098693e5e8c98877e0be0d4bc24f5346cfeef40669"
+  },
+  {
+    "id": "lem219.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "142a102f6ee5ba0773f145e2e4d378a97da3762d9e180ced26e0d364893c5ace",
+    "evidence_hash": "165912d275e3b49ce6b29c818856d665b1b9d1db857a28648a41f5184fef7e98"
+  },
+  {
+    "id": "lem219.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "c912e0526980a19065f64d1526dbe1a1ac95f3a5dbe8930d050d7a5c363590b1",
+    "evidence_hash": "3d65fad45dd9f6fef66cd8cf1a8547eaa5ef2050810eb5ff0cd24bb8eda2572d"
+  },
+  {
+    "id": "correction.e18.body",
+    "verdict": "supported",
+    "reason": "E-18 specifies that −Q_j w_j belongs inside the sum for each strict-inequality block.",
+    "claim_hash": "8904041cf47795b68da106fb7e2ac737fb608121d81c7c5f938c4b51724d4c9f",
+    "evidence_hash": "ed16c79c0bd6d692d744db7f538839266854d7653bda926198015b4ac20cd020"
+  },
+  {
+    "id": "correction.e19.body",
+    "verdict": "supported",
+    "reason": "E-19 explicitly explains why arbitrary-sign polynomial weights require indicator constancy throughout the lower argmin.",
+    "claim_hash": "f4f8d611f35283731d72b3346415266feeb433e64bd6ca88169020863609622d",
+    "evidence_hash": "aded53ff97468bc82c362945c672c1c5437b9b64bae555ccc3bbd318df3aafd3"
+  },
+  {
+    "id": "correction.e31.body",
+    "verdict": "supported",
+    "reason": "The correction distinguishes nonunique lower minimizers from a constant upper objective on their argmin.",
+    "claim_hash": "cb83190a2a3c9be17b54d71828b02ed7febde58e90a9749f8a4cba3c392896b4",
+    "evidence_hash": "9f529787f0d55b39fae3be0eadd3be4f560f0513c0f8f68af2a02576dac3d653"
+  },
+  {
+    "id": "lem219.idea.1",
+    "verdict": "supported",
+    "reason": "The repository gadget is a sum of separable convex quadratic terms and an upper product of their 0/1 outputs at minimizers.",
+    "claim_hash": "e941b3c1af1a654ae9c912309d6690633598d7b39ba6f9ba77209fb55d7f4d7d",
+    "evidence_hash": "244efd3dc3d8268f8402438af8b83e50b44288c639dd60cdd4126d9b3d7961e8"
+  },
+  {
+    "id": "thm218.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "159bd696aa766dc3679f82039c706eadcbe05edcc89c8abf680bc152c8ea95aa",
+    "evidence_hash": "a6b761f03ab4f8a0d35be14ef42213c8e0eff6f283a17efb2e4cbd3144338e66"
+  },
+  {
+    "id": "thm218.summary.1",
+    "verdict": "supported",
+    "reason": "The cited theorem asserts PP inclusion in the unbounded-box convex-lower class, not equality.",
+    "claim_hash": "5e06b3c56b459c82c5a868b2cb8c94615a32179d8adc785d12683479853f4e52",
+    "evidence_hash": "4bf4e6033bb59129d88ed83a17578749fd78a7003214b54b75a623c54b58f13c"
+  },
+  {
+    "id": "thm218.summary.2",
+    "verdict": "supported",
+    "reason": "The cited second inclusion is C_unbound⊆SA; SA is the extended-real class.",
+    "claim_hash": "9dd82f318f54404b364ab79f71d7820fa87a3981ad976f0fb7714d6304264338",
+    "evidence_hash": "caed7300821de09d004c23e885a4cdbaa6d089cd514efa3088fd8359a0abe5ba"
+  },
+  {
+    "id": "thm218.idea.1",
+    "verdict": "supported",
+    "reason": "The cited construction uses independent basic-set indicator blocks and polynomial weights, with a product formula for unions.",
+    "claim_hash": "69f9f3d86782911ea05edec0a64968e1a21ff84ebf198b852a1924dc4e55ed7a",
+    "evidence_hash": "38e90820f1d5f5a5355d6e55127e34854a6c2f20f941ef2889cdf8f0cd156bc8"
+  },
+  {
+    "id": "thm218.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "85b94a98745fe87b60cb145357922c35889593aa91a145cca41ea4324a2b541d",
+    "evidence_hash": "fa6c2677eb82e052451db34d55605e76d8b96fd9f1a768a12448609ee2ced0cb"
+  },
+  {
+    "id": "thm218.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "a1b05bc51494e086a84819db84f07110f67ca7c233598076b91fca9b7e7eadf3",
+    "evidence_hash": "889e23dfa72aa9a0b61a64c0cdfb1c96be6dce016d6157a156af0fb6c713a621"
+  },
+  {
+    "id": "thm218.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "7d34ab53eccb548b2545f659638d2cd778f474a85878224ce01004f687f730e8",
+    "evidence_hash": "aac814c009103b9ff9028add4af12086b48c052cf701ac35fc8f70af633dc2ec"
+  },
+  {
+    "id": "thm218.uses.lem219",
+    "verdict": "supported",
+    "reason": "The cited proof obtains constancy of each indicator block on its nonempty argmin, so signed weights retain the intended value.",
+    "claim_hash": "a47128ecc883e75587925a1c8c71becf37f3b5dda4481aa09ce3420a0fb37591",
+    "evidence_hash": "4f07dfc2676f4ed4f838cb4fb4520967bd33e9e08200fdf491de7257cb408cf3"
+  },
+  {
+    "id": "thm218.uses.prop26",
+    "verdict": "supported",
+    "reason": "The cited second inclusion explicitly invokes semialgebraicity for the unbounded-box class.",
+    "claim_hash": "c5529060a0eb81f22a2a2ee6aacc8ea37bee201c112b7e66ec368890d1554051",
+    "evidence_hash": "58a1a0f6afd1aee724c0edd27be877d31be32d8aae02e95add66f0a042db332e"
+  },
+  {
+    "id": "correction.e17.body",
+    "verdict": "supported",
+    "reason": "E-17 and the clarified definition specify convexity on the whole lower space for every x; the constructions satisfy this stronger domain choice.",
+    "claim_hash": "2a7c98a352a13ab22ab1dc31a5fd7b9a205ef9da34b07b58ed5cd64bdacc8699",
+    "evidence_hash": "99d73ce8b44ac3370b3719873b0f1e5382a86bb1700bb1f8c22f7bd23f05287d"
+  },
+  {
+    "id": "thm220.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "fcad79f620773c9a700a1df540e60c0f1ae722b360107415afd976cf44d0967f",
+    "evidence_hash": "6a93006fa35ff023a38d741afa27fdbe7968d181a44aa50481e35370a847b8f0"
+  },
+  {
+    "id": "thm220.summary.1",
+    "verdict": "supported",
+    "reason": "The theorem and repository statement assert PP∩LSC inclusion in the bounded convex-lower class, with real target values.",
+    "claim_hash": "35ec8bd8fe5918e3eba0fac4f9c7dab6081ad23376ee8b894985d82cf5ab320c",
+    "evidence_hash": "d353c7cee38b5d5f3e64953782f6f172bbdb271cf5f7fbff129893d77252cc6f"
+  },
+  {
+    "id": "thm220.summary.2",
+    "verdict": "supported",
+    "reason": "The cited second inclusion gives SA, LSC, and CB for that entire bilevel class.",
+    "claim_hash": "57b961708d3882c6cd935e57e74980ef63fea27f7167004c450fdd7644a325bc",
+    "evidence_hash": "952f99beaa277543adcbfe015924d03e14856d16357fa24add14162a3719ef89"
+  },
+  {
+    "id": "thm220.paperIdea.1",
+    "verdict": "supported",
+    "reason": "The paper's observation defines I(x) by closures and states f(x)=min over the corresponding polynomial values, under lsc.",
+    "claim_hash": "bfef408ffec00ecd3268da7a5395e019fec729028894f048493af54ed2988d17",
+    "evidence_hash": "9ec5c19b978652b21a807c67c26b04a9a1bae0ec8ae65ba93ee53956a8bc53d2"
+  },
+  {
+    "id": "thm220.paperIdea.2",
+    "verdict": "supported",
+    "reason": "The cited construction combines bounded sign variables and simplex weights to minimize among active normalized polynomial pieces.",
+    "claim_hash": "4d25ef1b146ae065f02f16fdbb38806fad692ab4dc3f43d8fb6d4b35331d7617",
+    "evidence_hash": "52da9b84d6772e2fed0e80d3493c7a25d1ee8fdb7d8c549d15ded399943f6d17"
+  },
+  {
+    "id": "thm220.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "e6afec90978d548a969bf037f7a0434a5ae6823c8a8f83ef7fba469dc073ed08",
+    "evidence_hash": "b3c49620bfc8c3e5c08e6e427344383e87d6c941804fce326f3217cc32ff3cc4"
+  },
+  {
+    "id": "thm220.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "54cf2ee364ca654e5da7a73a02f4f0a51b042a852d3a4a7dc718f84b7feef8d5",
+    "evidence_hash": "9336e66fb4b1ea6f903d4ced0b41f7cea72847ff9fe3987e4906f65e2d195230"
+  },
+  {
+    "id": "thm220.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "a0d9f37b54eb119fd7eb5cebd9fe0d8e721f1ee7b4a698baea10068880a1f091",
+    "evidence_hash": "4573ece89a3da258b6aaf8aba674d1085e6c78ec9b3e3b061691ace25d09d710"
+  },
+  {
+    "id": "thm220.step.4",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "0c2966ae95269f7b91a1a32a96c5b6b52afc23cc56fc73f27ce15b648c252006",
+    "evidence_hash": "298c4161de6cf599e4854a51bcd8c9286a342c21f55fb3fc1f6d1914f6656b1b"
+  },
+  {
+    "id": "thm220.step.5",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "2e2ec91795774c6e997029d0662447fe33d991995424fe016182c38a42df3bc3",
+    "evidence_hash": "16fee86f1d67a9625bcd45f3916faa474f8335f254981e88ac96b7a1786f74ba"
+  },
+  {
+    "id": "thm220.uses.prop24",
+    "verdict": "supported",
+    "reason": "The repository span explicitly applies A2 to the closed semialgebraic comparison sets D_i and obtains basic closed pieces.",
+    "claim_hash": "b8f75837a49bf559ffc261fdcfccc4fc0bc8c5c921bf8703ab15f3c4d307082a",
+    "evidence_hash": "9acd9d56a4bd2176e889b6a0ba543762630d07513d3ae4007add438a391b941b"
+  },
+  {
+    "id": "thm220.uses.cor29",
+    "verdict": "supported",
+    "reason": "The cited second-inclusion argument explicitly invokes the compact-box corollary for LSC and CB.",
+    "claim_hash": "f480e86f35010dd4fc5cc610da2305bc723cfcbef50d01f24bc36b20d4ca284e",
+    "evidence_hash": "dbf66f3967e9596b7d201e82b4d023988067144f89f3d4f8b7ae3b7e6a7e6ddc"
+  },
+  {
+    "id": "thm220.uses.prop26",
+    "verdict": "supported",
+    "reason": "The cited second-inclusion argument explicitly invokes the semialgebraicity theorem.",
+    "claim_hash": "92eb4a0e51a78458085f989f7940a37648fc96b182d91c895299cb3ff709cbfa",
+    "evidence_hash": "dbf66f3967e9596b7d201e82b4d023988067144f89f3d4f8b7ae3b7e6a7e6ddc"
+  },
+  {
+    "id": "correction.e20.body",
+    "verdict": "supported",
+    "reason": "E-20 and its supplied proof use coverage, lsc, and continuity to establish a nonempty active index set and its least value.",
+    "claim_hash": "7f0cb23e099c86132455d980b77f7fdd1118209b460cb597785442b0bf0143d3",
+    "evidence_hash": "d1c5ec4d75e707a3ad512a596b0e13e4467ea96e51917fc1b62dfd4bdb83b3b4"
+  },
+  {
+    "id": "correction.e21.body",
+    "verdict": "supported",
+    "reason": "The cited normalization uses g=1/4+Σp_i² and p_i≤g, avoiding a general semialgebraic growth premise.",
+    "claim_hash": "5df597c1ea8a9e9a0227a77a6be21adf1e1a2c1ab946a5edcb9e38b5632bf020",
+    "evidence_hash": "2526f3670171d6120b5fe0cdf98d6413185b8d2323bfb99a1115f447628d5649"
+  },
+  {
+    "id": "correction.e23.body",
+    "verdict": "supported",
+    "reason": "The cited construction separates the selector and sign argmins, and its p_i≤0 normalization makes disabled outputs zero and hence no smaller than f.",
+    "claim_hash": "845ce807abeaeeb356d6fdc2114838895ddeea135ff4e5284e32a55bba668bcd",
+    "evidence_hash": "a2e65b4e18ff43653afe1db033ffd6c5ccd8819855fed57d4ff5d701f193c6a5"
+  },
+  {
+    "id": "thm220.idea.1",
+    "verdict": "supported",
+    "reason": "The cited four-step construction supplies simplex weights, bounded sign tests, a lower bound, and an attaining active piece.",
+    "claim_hash": "f2a814bcebc31cc5f142ef44cc5b9620b5d55980f7a9831bbf396262d7ee7f0a",
+    "evidence_hash": "eda3e868996dd459efd952167bd41c88c1625e0965c2c2cd79a3c92258a61146"
+  },
+  {
+    "id": "thm220.idea.2",
+    "verdict": "supported",
+    "reason": "The cited alternative route defines D_i={f≤p_i}, proves closedness and semialgebraicity, and uses these sets as its pieces.",
+    "claim_hash": "d59d68a29ed0a029dff4b1fde68193f891a27ea92a73d10d30bb76f37072da31",
+    "evidence_hash": "da82e876ef3abb3306d2c7cfe3956f3c97146f470cdc27d2d944075c92684af6"
+  },
+  {
+    "id": "thm221.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "21ecd0c6418b44a76c559176f0f9c5498d70088dce234bc92a63e03ea43f02d7",
+    "evidence_hash": "01ed5657746812b80a5d3a3d7a84c16f19121451901d6c41fb61691ea3f86c7b"
+  },
+  {
+    "id": "thm221.summary.1",
+    "verdict": "supported",
+    "reason": "The cited corrected class explicitly requires nonempty compact convex semialgebraic Y and gives equality with real SA∩LSC∩CB.",
+    "claim_hash": "bb6fc557a4d6de38ff15beb164b4adff38c04acf40a1f5e1a9842e423232138a",
+    "evidence_hash": "5733852fc0c5a33673537dd98bb0ae781c05373efa04a9b82ef899d158fe775e"
+  },
+  {
+    "id": "thm221.idea.1",
+    "verdict": "supported",
+    "reason": "The linearization lemma includes supports of both P and Q and defines linear objectives in the lifted monomial variables.",
+    "claim_hash": "9e406531e9a8541ac9c357088251c162148b699a5b96821123c138c83e6b383d",
+    "evidence_hash": "76fe606f026d927d111e91a3212afd720aa98155bc15a6a171e3654597c5b9f1"
+  },
+  {
+    "id": "thm221.idea.2",
+    "verdict": "supported",
+    "reason": "The cited convex-hull inclusion and both value inequalities preserve optimistic and pessimistic values, including the empty case.",
+    "claim_hash": "914a4294966bdcdbba49cb7bfe01fdb14036644cbed991977e6c06fde5e323cd",
+    "evidence_hash": "8d1ef8f761d468f223f00b2f52326bdc02b26bdc816319693db16d99ea7a416d"
+  },
+  {
+    "id": "thm221.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "f8d73daddce3ff0118b98ade1991bc2f0df7709aa1d935295416abd0ed000af1",
+    "evidence_hash": "4252847a13b9bdab8107dc7c37b74033357f5e3ce4e0b07bdd4ba98f1efc0452"
+  },
+  {
+    "id": "thm221.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "38152178ee8cdb625e89187b1d6758fdb42dac8512870cd6971a027bb5e39762",
+    "evidence_hash": "275350845da0d3124f843d8ef81fa27f750c4c7eea815e1e4cac9ac8109c7c78"
+  },
+  {
+    "id": "thm221.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "e232874e3bb2f5dfe845d1ec9afd409525070a4d9a684060ed262bbd7441775f",
+    "evidence_hash": "f81c059b540dab28b1fa28a2c520dd575ac24cf70cc56845e335d689af683706"
+  },
+  {
+    "id": "thm221.uses.thm215",
+    "verdict": "supported",
+    "reason": "The cited theorem equality provides the bounded-box polynomial representation used before lifting.",
+    "claim_hash": "d4b4b917c1ab166eb6fa6bf0e510b104277321b97962b6d3d667d7d05aa9c2c6",
+    "evidence_hash": "8f8d1ceb663390c1023bd73a0966edbee3469d0dba1bd94191b1b50117802e96"
+  },
+  {
+    "id": "thm221.uses.prop26",
+    "verdict": "supported",
+    "reason": "The cited t221 subset proof explicitly requires Proposition 2.6 for a general semialgebraic Y.",
+    "claim_hash": "19d5bb21046a3a6b7bb8fb039505443d192e0bc31e00005c78dfa4e224d468a7",
+    "evidence_hash": "a06e44c014b4dee8707a550d5bd560dd2eaba470a4632ff70ccb2a0abd27fcee"
+  },
+  {
+    "id": "thm221.uses.cor29",
+    "verdict": "supported",
+    "reason": "The same cited subset proof explicitly invokes the nonempty compact corollary for LSC and CB.",
+    "claim_hash": "1825010cde0cc61baf74a72585cf988ca07916db16134207cab2242d22865432",
+    "evidence_hash": "a06e44c014b4dee8707a550d5bd560dd2eaba470a4632ff70ccb2a0abd27fcee"
+  },
+  {
+    "id": "thm221.uses.thm23",
+    "verdict": "supported",
+    "reason": "The cited Carathéodory formula uses finitely many points and weights; projection gives semialgebraicity of the hull.",
+    "claim_hash": "b39c08f9eaad3734fb5a56113d7b7dee46389a2e218600d21df66794e2387b53",
+    "evidence_hash": "636466718af260a5dd883170af911d71b8816d337ace1116afbc166d9114d418"
+  },
+  {
+    "id": "correction.e7.body",
+    "verdict": "supported",
+    "reason": "E-7 explicitly identifies the empty-set counterexample and adds nonemptiness to C_cc.",
+    "claim_hash": "36172b1566731c125db7fadd5520d40c2a4f6180f0109bc283de4aa8e0883bfc",
+    "evidence_hash": "0fbeb10260bd1d4fbbe2e1626c12bd8a5c9fb836b70f362019f85c8499e3c447"
+  },
+  {
+    "id": "correction.e15.body",
+    "verdict": "supported",
+    "reason": "E-15 and the coefficient formula retain polynomial dependence on x when lower monomials are lifted.",
+    "claim_hash": "3f494197f01ca874abdbec65cd32e87ea777999bb17172a5bbf039e275478b76",
+    "evidence_hash": "845cae247c425a260e739436e4fbde872584f735efa188484021b653aa79e219"
+  },
+  {
+    "id": "correction.e16.body",
+    "verdict": "supported",
+    "reason": "E-16 and the corrected proof restrict the minimizing-component conclusion to positive weights.",
+    "claim_hash": "6feef087253d41f2bed118dd6a0bb6da2a7d37d3054bcb37aae277006dc25b77",
+    "evidence_hash": "bb3a0c326771edd9b77fd474b72b5bd7957baad17ecdc957eb940db1cfffc064"
+  },
+  {
+    "id": "pessimistic.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "4a47403ab706cf62748a21c3bcbde3bcf684c4f1c6f0cd95de5cde2948023921",
+    "evidence_hash": "80c71b5a469e4f92214b38b93fb5fffb80b979563146db4e69b64e2b444f4cc1"
+  },
+  {
+    "id": "pessimistic.summary.1",
+    "verdict": "supported",
+    "reason": "The cited geometric corollaries replace LSC by USC where relevant; this does not assert a pessimistic computational-hardness result.",
+    "claim_hash": "ab723c938c0709bf8bc16614ceb7ddda746ed1ee7c69f8fc8e1e2cdc1c021ce5",
+    "evidence_hash": "b2c8451496b8cb83a0e99acb2abebf42009672e1ff74e21fdd79761031379124"
+  },
+  {
+    "id": "pessimistic.summary.2",
+    "verdict": "supported",
+    "reason": "The cited corrected pessimistic theorem establishes the same extended-real SA representation class via negation.",
+    "claim_hash": "dea634ea246560871a329ab01933556f41a8e5ae7a7051fe0b5655b328b633b9",
+    "evidence_hash": "09d6b5733c3814dd6f1125f2e7c64295fc332111f755748b1f1899673a8ed138"
+  },
+  {
+    "id": "pessimistic.idea.1",
+    "verdict": "supported",
+    "reason": "The cited identity pvalue(P,Q)=−value(−P,Q) and target negation preserve the lower constraints and regularity classes.",
+    "claim_hash": "89bc25bbf83cbec64f7d30bad4f8a6752224e8186c46ef6a632c86fb80cce822",
+    "evidence_hash": "b32a546c0834254e007df90ceaa611dbdb48abeb1053de2a6bff1c75f9933f9d"
+  },
+  {
+    "id": "pessimistic.uses.thm11",
+    "verdict": "supported",
+    "reason": "The cited smooth pessimistic corollary transfers the smooth theorem to usc targets with its corresponding closed-domain hypothesis; the claim is a theorem-dependency description.",
+    "claim_hash": "a68ba7ec8eac1b18a81d295521cfebe5b8b7415221e5f8416923c4a4ef082cae",
+    "evidence_hash": "32b55e63a2901b65ece21dea9b4717e3ecfe875f70d66b945598ecd4e64602bf"
+  },
+  {
+    "id": "pessimistic.uses.cor29",
+    "verdict": "supported",
+    "reason": "The cited compact pessimistic corollary gives usc, real values, and CB under compact nonempty lower constraints.",
+    "claim_hash": "d5a1233b775a509861c136bb06585799d99ac6762970e3dd25f274b56629dee7",
+    "evidence_hash": "839df397be1d0d82eae8dd5361e1d0f0242cae12635155cb41fb20d88df5cb47"
+  },
+  {
+    "id": "pessimistic.uses.thm212",
+    "verdict": "supported",
+    "reason": "The cited corrected pessimistic theorem proves the unbounded-box characterization by applying the optimistic theorem to −h.",
+    "claim_hash": "17e3a3e718df28ee963170e1b8a344eccd86b73bde7b10852530bd00ba85472b",
+    "evidence_hash": "a64158c60d5cbabb12a5dcae99ae5e01fb27d77e26df975ddb9d79d375ef3184"
+  },
+  {
+    "id": "pessimistic.uses.thm215",
+    "verdict": "supported",
+    "reason": "The cited pessimistic bounded-box theorem gives SA∩USC∩CB via negation.",
+    "claim_hash": "afd0b3585c32be01843fe1fbfc419c132843d641a4ab764d98f647158779eae4",
+    "evidence_hash": "f551451e085b94ef3f4ea704a8d49fdfed1b8e68b2a8560e9aac5437e40f0657"
+  },
+  {
+    "id": "pessimistic.uses.thm218",
+    "verdict": "supported",
+    "reason": "The cited pessimistic convex-unbounded result explicitly allows either indicator constancy or negation, and asserts inclusions only.",
+    "claim_hash": "ff04ea19c6eb6c57e8fb4f1d011dfee1cf9f0f36fdef54e94b51d18a2db06b19",
+    "evidence_hash": "00bc911f5a6a9fe8457d9edb5af2574698b264d6199852d33cb88ec2676d13d3"
+  },
+  {
+    "id": "pessimistic.uses.thm220",
+    "verdict": "supported",
+    "reason": "The cited pessimistic bounded-convex inclusions replace LSC by USC.",
+    "claim_hash": "c99e17aa28a7981e3a353501a5d827b2d974cabca06bf344a8c5ea684711bc37",
+    "evidence_hash": "43fec2537c3ff4688ecafb3db2cbf30a1927168a69477171b746cc589c6a27b1"
+  },
+  {
+    "id": "pessimistic.uses.thm221",
+    "verdict": "supported",
+    "reason": "The cited compact-convex pessimistic characterization is the USC counterpart and follows by negation or linearization.",
+    "claim_hash": "d352e3652ca147543fd43f9966c9f14ca092c93dbce0e7ba698315c7bb219290",
+    "evidence_hash": "2f536a536550a8dd9b9c5f12946c404f651e0cb49d60223250b27db8888e819f"
+  },
+  {
+    "id": "ssi.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "43eec3fda3483143a0081eee63983079ccaf70d270fd517e52b31bb360cefb65",
+    "evidence_hash": "a1008b0faa7411bdc1a29d86dfc5d9c0bf9fb0cde0225c89245004ac38a1f97e"
+  },
+  {
+    "id": "ssi.summary.1",
+    "verdict": "supported",
+    "reason": "The SSI definition has the existential integer target in the prescribed interval followed by exclusion of every subset sum.",
+    "claim_hash": "2d2f9668a49dee2e3ec5f106309ac3aa50467f6619aa0be564dc3fa7ee8aa2b6",
+    "evidence_hash": "1c09232bf7f35aea265e47a7de7be8fe765a22c8d3f08b779b2d926fa67a91f0"
+  },
+  {
+    "id": "correction.e30.body",
+    "verdict": "supported",
+    "reason": "E-30 supplies the correctly restricted universal quantifier, and the NO-instance argument uses exactly that condition.",
+    "claim_hash": "7f04ca1ac7e97c18fee466a28c772a8121eda8ee37e12beb2e82c81102e8bdfe",
+    "evidence_hash": "e41508e4cb6e8563e26cb18a253004f913de67caae967036adff7987e00aeef9"
+  },
+  {
+    "id": "lem33.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "cef052c1437211340b3152bd52e64eadd12b2971514d41f4e22167cab8d72a71",
+    "evidence_hash": "ecd0b2f40015abe38503427fa15d90f2bac7fec4cddc18bd4c76bc1708ac6b13"
+  },
+  {
+    "id": "lem33.summary.1",
+    "verdict": "supported",
+    "reason": "Lemma 3.3 states YES iff the optimistic optimum is strictly negative, with NO optimum zero.",
+    "claim_hash": "2f9bf76e5f83daeb121d14fd23f1ef52c502da145588bb702e969b4f3fa2ae72",
+    "evidence_hash": "ecd0b2f40015abe38503427fa15d90f2bac7fec4cddc18bd4c76bc1708ac6b13"
+  },
+  {
+    "id": "lem33.summary.2",
+    "verdict": "supported",
+    "reason": "The construction uses integer polynomial data and a compact box; the cited degree argument proves ≤5, not unqualified equality.",
+    "claim_hash": "e9dbc71ab1a17a78f2da28e185ac1ec07ceccbaef00515812fa5b2920f87087d",
+    "evidence_hash": "8b6325f9cceb0c18aebfa3af3a2ae9a8d1bcd977816bd699b679d457104eb55a"
+  },
+  {
+    "id": "lem33.idea.1",
+    "verdict": "supported",
+    "reason": "The cited switch analysis gives z∈{0,1} only for binary x and H=0 exactly for a binary subset representation.",
+    "claim_hash": "ef014dd61ae9b0912920cc242cfe84af5ed309ef92571275885831356dd03017",
+    "evidence_hash": "78998e797e8ccb4310b96accf036608abddf74ac652141edf9eef4fb624f1b5a"
+  },
+  {
+    "id": "lem33.step.1",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "630432893202861de9873e2bf6ceea96aa5c9db9b10d958402623a53584e0884",
+    "evidence_hash": "09872948e5f738d69b52ad9b4d4bb4365a6026d86b15c8d53ac0da594f4ad877"
+  },
+  {
+    "id": "lem33.step.2",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "4ee056df35a1cec14ea8a4638b775a57dab1ef7a96412aa51bf5ef838c4c0c52",
+    "evidence_hash": "e50ea6a5635ccac17731c39335f058cbccdbd4c025b2be6113fb135ba17ac546"
+  },
+  {
+    "id": "lem33.step.3",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "26506a48fa50f39e5905d2ef2b797c76fc5af80da741f4c4c0230f4d6c25d236",
+    "evidence_hash": "44ac421acbd6ac5f396227a86bf76ca9e127b733e67e32b7f9a9dc812bd1b259"
+  },
+  {
+    "id": "lem33.step.4",
+    "verdict": "supported",
+    "reason": "The cited proof passage performs the operation named in this step, within the surrounding theorem hypotheses; the label does not endorse the separately documented printed errors.",
+    "claim_hash": "09e50a754289046abdffbdb27899c86f8f7f21df69cc746eaffff3bc4a1eda04",
+    "evidence_hash": "e9a38505cb9c89f442b2899828bbc68b4c08716cf1a6b5c518ab7a5b009ebfcf"
+  },
+  {
+    "id": "lem33.uses.ssi",
+    "verdict": "supported",
+    "reason": "The cited two directions distinguish an unrepresented interval target from universal interval coverage.",
+    "claim_hash": "1a865ebb6e54cb5976d4863875bc24421ed97821a5bf77fb78b739cdfcd2ac4e",
+    "evidence_hash": "4fd0e6775268bd7ccb644be0492185e5a4e3a4feaa072b2a6ad4ca2826ac46f9"
+  },
+  {
+    "id": "lem33.uses.bp",
+    "verdict": "supported",
+    "reason": "The cited value analysis explicitly compares outputs 1 and −m on lower minimizers and takes the least.",
+    "claim_hash": "cdfa771d01133b0a076593e602609fc46e9094f80822bd3cb816add7f497a656",
+    "evidence_hash": "cb21b49ebb264929a256cf2c75dcec903d75069776417608db0928d926555e84"
+  },
+  {
+    "id": "correction.e25.body",
+    "verdict": "supported",
+    "reason": "The corrected scalar analysis gives exactly z=0 always, with z=1 available precisely when x is binary; interior minimizers are excluded.",
+    "claim_hash": "83453b9433c5d4dad96d69c9e2735879f2a0854a0b82fe6535bbfb468a6915c9",
+    "evidence_hash": "c1ff97fa71ded7cdf97c225b1da060586455add47f5f7e0a435b67b56489c9ea"
+  },
+  {
+    "id": "correction.e27.body",
+    "verdict": "supported",
+    "reason": "E-27 and the value lemma correct the scalar dimension and give φ=−min H on binary x.",
+    "claim_hash": "2b3bfb7ade65e0863c68218027928ba3e514b4573e6846f98c9416ff58784264",
+    "evidence_hash": "f1983fe32c5f9cbe351bcdf21aca6e2eccf2292fd316db71b36d5014c8678ec7"
+  },
+  {
+    "id": "correction.e28.body",
+    "verdict": "supported",
+    "reason": "The correction and degree specification explicitly give ≤5 as the formalized degree statement and the threshold theorem's required bound.",
+    "claim_hash": "e44c5930b4eb87337bd8207dcd710477b690984744420cdddc116b7736b10970",
+    "evidence_hash": "6efb924cd09ab7db5cb3d023fa94d3a3d35004a2903ea7d2843759cfda9dcc46"
+  },
+  {
+    "id": "correction.e29.body",
+    "verdict": "supported",
+    "reason": "E-29 corrects log M bits to O(log M) and the cited coefficient expansion justifies the logarithmic encoding scale.",
+    "claim_hash": "0228c8a865232356098abf67577ebe9a1fdda428dfdeae5d9cca478f1eb4d514",
+    "evidence_hash": "e7dcf793543ed586182b71a9983d900dada786374f7d2acfb978a835d3e2d02b"
+  },
+  {
+    "id": "thm32.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "9c660b4c155e6204ab7a470fcd1ad763af7e521fa3856182003886f5afe465ab",
+    "evidence_hash": "8500627d362b80db40b0b6db8a4110970c54d3ae44c94351a67f853255d56352"
+  },
+  {
+    "id": "thm32.summary.1",
+    "verdict": "supported",
+    "reason": "The cited theorem asserts Σ₂ᵖ-hardness of the strict optimistic threshold decision with degree≤5 and bounded lower box; it does not assert membership or completeness.",
+    "claim_hash": "2c7f82615ee9d23e90ea76ffa9bd4eb573dea21ea7f73214993e615fee789bcf",
+    "evidence_hash": "8500627d362b80db40b0b6db8a4110970c54d3ae44c94351a67f853255d56352"
+  },
+  {
+    "id": "thm32.summary.2",
+    "verdict": "supported",
+    "reason": "The cited actual Lean declarations prove reduce_correct and both total-degree bounds; the cited status note explicitly excludes the complexity wrapper, so this narrow claim is supported.",
+    "claim_hash": "6c8f451e0dbbfb89e4c85098de4e6dcb8a224f70391e2d87308ebbf5bbe0eb21",
+    "evidence_hash": "01624e97bfecaa4c9b215adc8cd68028a99a7de1c2b81270216cc2796d282c0c"
+  },
+  {
+    "id": "thm32.idea.1",
+    "verdict": "supported",
+    "reason": "The cited map has threshold c=0 and reduction correctness from SSI; the complexity wrapper is explicitly outside the formalization.",
+    "claim_hash": "2cc3a5e8eb7dad987f7384e7171102cb003eb35615570388a1ef189021099446",
+    "evidence_hash": "76f3284deee42a8c9a148e7ba9fd53f845d40b34c11d89c95c01192e6c1f02cc"
+  },
+  {
+    "id": "thm32.step.1",
+    "verdict": "imprecise",
+    "reason": "The cited sentence says that the hardness theorem follows from the lemma. The lemma constructs an SSI-to-bilevel reduction; wording this as reducing the strict-threshold decision to the lemma blurs deduction of hardness with the direction of a decision-problem reduction.",
+    "claim_hash": "097244a1fe4849b48098a5db9e3ba06c5b7abbdb41aa3a63f7c9f5993788c74f",
+    "evidence_hash": "7d2c56d7b72a7ce6e9db7234d1453cb08dd459d6522fc8c26de53d8cc155c7d7"
+  },
+  {
+    "id": "thm32.uses.lem33",
+    "verdict": "supported",
+    "reason": "The cited lemma gives YES iff a negative optimum, NO optimum zero, and total degree≤5.",
+    "claim_hash": "33e498702464a21a311dd34e241378952b72228f10b0f3dd4888274fb9961835",
+    "evidence_hash": "b79d296a974a3d6843e4bef962b1d3d0e3a09af45f04a3dcb9a414802d9b2aa2"
+  },
+  {
+    "id": "thm32.uses.ssi",
+    "verdict": "supported",
+    "reason": "The cited construction and status note explicitly start with SSI as the source problem; no formalized hardness wrapper is claimed.",
+    "claim_hash": "1f917ade580b0f682dd2e8eefd3386fde5ad42e03d0bc42e7179ffa98bb0f38c",
+    "evidence_hash": "61e2181d1b430893c6dc9650a8632135912b35a8252c4619800e2361d8dd07b9"
+  },
+  {
+    "id": "section.framework.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "73afe62aa592b7c685499927d8d43ba52a8ffe662453bfcb95aeeff1b99782cc",
+    "evidence_hash": "7f0fc87272bdd691523144e11218601bfaadf95f39bbc6aba9c68f5bddb9ce3f"
+  },
+  {
+    "id": "section.geometry.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "05746b4b5cf82abe2c1b9952b80f745f96008d5f20f76aa6bb62cf0f83065884",
+    "evidence_hash": "0f8a7aaade85370f1596961b87eebc4747a40dd921ec4e707d1d9260cdcf26f1"
+  },
+  {
+    "id": "section.complexity.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "32ef471a0eecd0124cc304e972d755d2301d62a7cb37333a3c24d6772bfbc238",
+    "evidence_hash": "84a7499c5c1673df788a58cae162ecb8f3618051e2e2a80e10a16547a0d5ada5"
+  },
+  {
+    "id": "notation.theta",
+    "verdict": "supported",
+    "reason": "The cited definition is argmin Q over the fixed lower feasible set at x.",
+    "claim_hash": "d85526458ddf6a65088380e59518452074a6054a975d1286d58b09db12228ded",
+    "evidence_hash": "e7b561cadf9b20d0368dbfa991495a032fdbc7d3fa00be4db247ea3c19d18ed8"
+  },
+  {
+    "id": "notation.optimistic",
+    "verdict": "supported",
+    "reason": "The cited optimistic definition is the infimum of P over Θ(x).",
+    "claim_hash": "b4db6446e78a9a6341c2b581311c124b399bced5ea2af418dc3c8f689499ac3f",
+    "evidence_hash": "7863193546c82c6a1456d625caf83c5f4faafa917240789702948f61ddd84304"
+  },
+  {
+    "id": "notation.pessimistic",
+    "verdict": "supported",
+    "reason": "The cited pessimistic definition is the supremum of P over Θ(x).",
+    "claim_hash": "25b2df1942d8c7ca4b180a99707a87f4b7096060c4334c903ab05a01bd5e0fdc",
+    "evidence_hash": "f6b9cf73670c30916047c72b58ec08348da6ca6c307d0c097e6f7927e5635117"
+  },
+  {
+    "id": "notation.p",
+    "verdict": "supported",
+    "reason": "The cited BP formulation names P the upper objective of both variables.",
+    "claim_hash": "85523653f50d81fd553a06f57f2236e560323375592f1f8285e5d880ee35d5c1",
+    "evidence_hash": "1520932bedc8ca55bf91938821052155140bf8c0565c2a6c2a00a60a6b0649b8"
+  },
+  {
+    "id": "notation.q",
+    "verdict": "supported",
+    "reason": "The cited BP and argmin definitions minimize Q in the lower variable over Y.",
+    "claim_hash": "a84ac1bbdcb3460d3fee53b406d2c929f641e608620a36f24030f2df06aa51d2",
+    "evidence_hash": "289c6ffcfb71507117d5bc34a31579f6f7180f474b750b460aa051e08738f9d9"
+  },
+  {
+    "id": "notation.yset",
+    "verdict": "supported",
+    "reason": "The cited setup explicitly identifies Y as the lower feasible set independent of x.",
+    "claim_hash": "c7dde4bdf0f851b51a437c3e8650af12c1e1bc306809c383f8c5b5804b16c2c7",
+    "evidence_hash": "3a7d4c13a6c591e3e63b8c7fd5405fa9c7c1baf2f515b20fc16b5c73a6456282"
+  },
+  {
+    "id": "notation.sa",
+    "verdict": "supported",
+    "reason": "The cited definition includes the finite graph and both infinite loci, hence extended-real SA.",
+    "claim_hash": "13d4b3d8a067b5095575a18367162c1584aebc8c1b8b798b5f8cbd988bc6969c",
+    "evidence_hash": "215bf54aecff2b93c045ef4e73cc141bb4a70c6995902ebe101fefe76230d05a"
+  },
+  {
+    "id": "notation.lsc",
+    "verdict": "supported",
+    "reason": "The cited Lean definition is the set of LowerSemicontinuous functions.",
+    "claim_hash": "22920d6bdb715a88344dfe00a656bf8ab49b880c3c9d7cbc05a82b45a9331fd4",
+    "evidence_hash": "6cf5848789c855ba153e2324376069b29075d32104e8d2090c31bd72e8d56c4c"
+  },
+  {
+    "id": "notation.usc",
+    "verdict": "supported",
+    "reason": "The cited Lean definition is the set of UpperSemicontinuous functions.",
+    "claim_hash": "f8a8cb08b6aa67d02257559cd6ba96e639c9098d67a818d9a1f8482af6bef010",
+    "evidence_hash": "491f8e29587a0a4983313780f219e96e8742285245023efb379b8fdde72dd118"
+  },
+  {
+    "id": "notation.cb",
+    "verdict": "supported",
+    "reason": "The cited CB definition bounds each compact-set restriction above and below by finite real constants.",
+    "claim_hash": "388ad194653459e5583f6806aa88318a679206b0ac5ef225e62243f2991b2a1f",
+    "evidence_hash": "3e108cad6e54d2739660506719e3ce6b497d64c1884c32da2b75ace4476da396"
+  },
+  {
+    "id": "notation.pp",
+    "verdict": "supported",
+    "reason": "The cited PP definition uses finitely many polynomial pieces on a semialgebraic partition.",
+    "claim_hash": "33523661c54017e26443578736e51cfc88d113c0357e4838351fe7ed900848f9",
+    "evidence_hash": "2955c590cf57dd2db1c041fea11dae139dc70365ca397f9a409d267f23b3b0d7"
+  },
+  {
+    "id": "notation.p-unbound",
+    "verdict": "supported",
+    "reason": "The corrected class overview gives optimistic polynomial values over unbounded boxes with extended-real codomain.",
+    "claim_hash": "bbad5ed633caa141a5850df7bb0f54aa640f220608acc7319da6d25b8d7f9207",
+    "evidence_hash": "b7a2a0b3b427224e0b847cde49fd0a5d80c743769184603aa9a67c5162a1630e"
+  },
+  {
+    "id": "notation.p-bounded",
+    "verdict": "supported",
+    "reason": "The cited bounded-box characterization identifies the corresponding optimistic polynomial value class.",
+    "claim_hash": "ae77984cad9261ea9945f0bfc8a7211380e7fc243b693af3abe23364e90b9a9f",
+    "evidence_hash": "0c029cc9c97068627265f89d80fbb085df2c1e51b7c008fee681144c3cbb7cd9"
+  },
+  {
+    "id": "notation.c-unbound",
+    "verdict": "supported",
+    "reason": "The cited definition adds convexity of Q in the lower variables to the unbounded-box class.",
+    "claim_hash": "48a2c4f6a7cf300ce0fa66ed9331623658870008532c58bc21c6f5a000c50c08",
+    "evidence_hash": "00e740cda5fedb36f4bf45f1047b76b66e3529b99130ce1a6858dbaab8fe6039"
+  },
+  {
+    "id": "notation.c-bounded",
+    "verdict": "supported",
+    "reason": "The cited definition adds convexity of Q in the lower variables to the bounded-box class.",
+    "claim_hash": "b87e4dca4f3f5c642b303f3e1cf64e6702f33ea0323cd75b3cf9ca3a52d39a2c",
+    "evidence_hash": "00e740cda5fedb36f4bf45f1047b76b66e3529b99130ce1a6858dbaab8fe6039"
+  },
+  {
+    "id": "notation.c-cc",
+    "verdict": "supported",
+    "reason": "The cited corrected overview explicitly adds nonemptiness to compactness, convexity, and semialgebraicity of Y.",
+    "claim_hash": "890b9b42d00278c8cbd06f1a50df1fb2ecfba299fbe5ca79ff35df481d4f7aa9",
+    "evidence_hash": "6255e6a671e8f357a7da3a50298697aa12a172c104b29e7e6374cacfe938bef5"
+  },
+  {
+    "id": "notation.epigraph",
+    "verdict": "supported",
+    "reason": "The cited real epigraph is exactly {(x,r): f(x)≤r} with real height r.",
+    "claim_hash": "14f3fd95ab0849e4a606affab340f1c5e08c6e9e05045a19f5018f4156d8a8cc",
+    "evidence_hash": "69ed5489e9c9cb6da7d7a2fb1afd199c45ebbbcdea87e630744ad91c27a96ec3"
+  },
+  {
+    "id": "notation.sigma2",
+    "verdict": "supported",
+    "reason": "The polynomial-hierarchy definition gives alternating quantifiers beginning existentially; k=2 is its second existential level.",
+    "claim_hash": "708eadeafa7f8ba25d7ee35b64fe5740a6a4c9f547c6d660401a96510ac39518",
+    "evidence_hash": "c73dde37513bd3839c8191414137388fc57cc213bbb5b9eaacc7f40f9cadc8db"
+  },
+  {
+    "id": "notation.ssi",
+    "verdict": "supported",
+    "reason": "Both cited spans explicitly name and define the subset sum interval problem.",
+    "claim_hash": "31ba5cb00496fe0e33ee3aa416cc82bc6010a82dbb39419b002e19a112175336",
+    "evidence_hash": "318d7d2ea13f928f19d35053880d1dbbc4661d7e319594dd7580b0d67eed8947"
+  },
+  {
+    "id": "correction.e1.title",
+    "verdict": "supported",
+    "reason": "The cited E1 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "065f6fd958c77b3b28764a8da37818971953633f821d1b763d38729a28201666",
+    "evidence_hash": "f8c7809c1eb6344aecfe7b91f3b5fc1b126d5aa0b0894391ef280273ddd5145d"
+  },
+  {
+    "id": "correction.e2.title",
+    "verdict": "supported",
+    "reason": "The cited E2 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "0da0c6da948899679a26816a1eb1ef1637e90b9357f6aced1cac035720aaa414",
+    "evidence_hash": "89b3ae4cf3e03f1682d6a377a6e9f3e0283845b55a79cee75d692bdf1d35a3fc"
+  },
+  {
+    "id": "correction.e3.title",
+    "verdict": "supported",
+    "reason": "The cited E3 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "8d1526b5b47d425a6510efd83ae15893f8b91e44d3e24c2a8cc41ce0d512e97d",
+    "evidence_hash": "56da0a3b547927d77eebb5e29c67cb6989fe474b92e980a1b537ed9bd0ac5db6"
+  },
+  {
+    "id": "correction.e4.title",
+    "verdict": "supported",
+    "reason": "The cited E4 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "39c3f3fff0e517d6ea4569525aceeacadd8e4a90dabe31bcb6fc0bea4e041f97",
+    "evidence_hash": "9e493810b6fafba057cc87712128dd182d11d6cb36cbd303eb8efe1350e205a4"
+  },
+  {
+    "id": "correction.e5.title",
+    "verdict": "supported",
+    "reason": "The cited E5 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "0ba3cd0aef4529333264e292b8158f344e2d6ed4e928189573784a9820c646c2",
+    "evidence_hash": "677f8c10768fb18f46b9aa813977dc8c0601c88ea00ed9026f2d0fd99d699453"
+  },
+  {
+    "id": "correction.e6.title",
+    "verdict": "supported",
+    "reason": "The cited E6 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "4816cbb6a43552de37c7abb5b1cb62d9d453b5934d698f3fed2b181bbc070795",
+    "evidence_hash": "dd764965f86cd8968f524fe872d66f825b7198882ddfe8ef00cbe5c6b536814d"
+  },
+  {
+    "id": "correction.e7.title",
+    "verdict": "supported",
+    "reason": "The cited E7 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "2ed8990f76d158b501b27b346fff71b5af83397a2ac34c496e6efe1111e2d7f9",
+    "evidence_hash": "0fbeb10260bd1d4fbbe2e1626c12bd8a5c9fb836b70f362019f85c8499e3c447"
+  },
+  {
+    "id": "correction.e8.title",
+    "verdict": "supported",
+    "reason": "The cited E8 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "6e822d8cd4823db88841842d9502c694c0b1ef6b2ab1b002c59a150a32275f89",
+    "evidence_hash": "d591e36dddc37d0b03438f2fc77fcfddcb29d89a2f78feca940f42f1afd32dae"
+  },
+  {
+    "id": "correction.e9.title",
+    "verdict": "supported",
+    "reason": "The cited E9 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "4b79e4f582c9aec237ead7bb01f34f4021428cdd328dc282787962ccc73f1c12",
+    "evidence_hash": "55ed33a221e3f209955d915f9d2fb339398e2f03e94c1cdf786e6506f0ca952e"
+  },
+  {
+    "id": "correction.e10.title",
+    "verdict": "supported",
+    "reason": "The cited E10 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "0b70b2073a349d07e8494a4703f8afcb2c1e2d177ba920390004cfc6a1f86022",
+    "evidence_hash": "f39a854044a1e4597c5b81131b071fb3bcf0fc74bdf25e65e50bbb630dcfca96"
+  },
+  {
+    "id": "correction.e11.title",
+    "verdict": "supported",
+    "reason": "The cited E11 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "d48551bd53c2d57444da4e52cfc09012ea741c78f106fdc325e51a535a89d7f0",
+    "evidence_hash": "cb25733d7cae7c38083119d3994bed6ea2f002aabddbf8022a6684f51a0f7bae"
+  },
+  {
+    "id": "correction.e13.title",
+    "verdict": "supported",
+    "reason": "The cited E13 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "bd12c5963be6933199c562649297c5104abf24f9640de2f032e0f41ef3b0f5f2",
+    "evidence_hash": "d8df34193a0b5ba7a7adab0be96f17d85f94bcebe767c1de72fccca1527c62e6"
+  },
+  {
+    "id": "correction.e14.title",
+    "verdict": "supported",
+    "reason": "The cited E14 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "b3cb2365b523c1d0006ea53a992e17f5311e38d4aa71e6f11d16ac15ef09cdbe",
+    "evidence_hash": "8bc5dfb4113ad8efa805213e05ee2a01dc473f1ad1ea55a50de80a0e3c3634ca"
+  },
+  {
+    "id": "correction.e15.title",
+    "verdict": "supported",
+    "reason": "The cited E15 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "3fa91730e3d524a82055835f4edabfc0ce066b41fedc8027328eca6d2c047e48",
+    "evidence_hash": "845cae247c425a260e739436e4fbde872584f735efa188484021b653aa79e219"
+  },
+  {
+    "id": "correction.e16.title",
+    "verdict": "supported",
+    "reason": "The cited E16 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "2710454a28fc9df99816f27f11381e30a32286bb739138c174dcd4eca6d90395",
+    "evidence_hash": "bb3a0c326771edd9b77fd474b72b5bd7957baad17ecdc957eb940db1cfffc064"
+  },
+  {
+    "id": "correction.e17.title",
+    "verdict": "supported",
+    "reason": "The cited E17 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "90b61fa26451c18e607cebdefb796a46d31f88de8e3485c6441a6730ecdb25d0",
+    "evidence_hash": "99d73ce8b44ac3370b3719873b0f1e5382a86bb1700bb1f8c22f7bd23f05287d"
+  },
+  {
+    "id": "correction.e18.title",
+    "verdict": "supported",
+    "reason": "The cited E18 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "a48682cb1ba9393af60ee6645c31958954acbfbc3b238851bc6cffc2ed72edb7",
+    "evidence_hash": "ed16c79c0bd6d692d744db7f538839266854d7653bda926198015b4ac20cd020"
+  },
+  {
+    "id": "correction.e19.title",
+    "verdict": "supported",
+    "reason": "The cited E19 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "db61050f07f7b05639ff39e7d74cde8ae44925542218b3b683fc6b3f953a9997",
+    "evidence_hash": "aded53ff97468bc82c362945c672c1c5437b9b64bae555ccc3bbd318df3aafd3"
+  },
+  {
+    "id": "correction.e20.title",
+    "verdict": "supported",
+    "reason": "The cited E20 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "1d97310b0ef3a8e68bafcf7237950cb4aa9f0a184f7f3124f2189c523180c992",
+    "evidence_hash": "d1c5ec4d75e707a3ad512a596b0e13e4467ea96e51917fc1b62dfd4bdb83b3b4"
+  },
+  {
+    "id": "correction.e21.title",
+    "verdict": "supported",
+    "reason": "The cited E21 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "7ff78a47cd2029d3feba715fd0fa88fc63a48bec8573debf52c99291e3326279",
+    "evidence_hash": "2526f3670171d6120b5fe0cdf98d6413185b8d2323bfb99a1115f447628d5649"
+  },
+  {
+    "id": "correction.e23.title",
+    "verdict": "supported",
+    "reason": "The cited E23 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "199b57106bf90d34fb03e64a6305a824b298c6ec6dfc6b2cabd3df31df82eb22",
+    "evidence_hash": "a2e65b4e18ff43653afe1db033ffd6c5ccd8819855fed57d4ff5d701f193c6a5"
+  },
+  {
+    "id": "correction.e25.title",
+    "verdict": "supported",
+    "reason": "The cited E25 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "73c5dc56b3445b50924ada8598362ec635d6a4bdc02af3da546b34e9639c4318",
+    "evidence_hash": "c1ff97fa71ded7cdf97c225b1da060586455add47f5f7e0a435b67b56489c9ea"
+  },
+  {
+    "id": "correction.e27.title",
+    "verdict": "supported",
+    "reason": "The cited E27 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "90a41c1eca3d87ae773a7aad5066f59e266d6de80cd479e027f2c0e6b2fb0576",
+    "evidence_hash": "f1983fe32c5f9cbe351bcdf21aca6e2eccf2292fd316db71b36d5014c8678ec7"
+  },
+  {
+    "id": "correction.e28.title",
+    "verdict": "supported",
+    "reason": "The cited E28 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "412b9e45a938b19d2d13bc07db155393c1dda41b99d84690d8cf6e6b57ef97e5",
+    "evidence_hash": "6efb924cd09ab7db5cb3d023fa94d3a3d35004a2903ea7d2843759cfda9dcc46"
+  },
+  {
+    "id": "correction.e29.title",
+    "verdict": "supported",
+    "reason": "The cited E29 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "89abcef25f46f5574ff31c703e0e4110ad1e80fe88182de818c175a6b505b1c5",
+    "evidence_hash": "e7dcf793543ed586182b71a9983d900dada786374f7d2acfb978a835d3e2d02b"
+  },
+  {
+    "id": "correction.e30.title",
+    "verdict": "supported",
+    "reason": "The cited E30 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "39077d1ed8056b4e56f1e14ad9cd85ee27a48b20e697a263ca6c68cd4f7d7f84",
+    "evidence_hash": "e41508e4cb6e8563e26cb18a253004f913de67caae967036adff7987e00aeef9"
+  },
+  {
+    "id": "correction.e31.title",
+    "verdict": "supported",
+    "reason": "The cited E31 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "01f6d801a24df500af4eaceafcbfa3981888e0ee9772d518101fc773cc195c5a",
+    "evidence_hash": "9f529787f0d55b39fae3be0eadd3be4f560f0513c0f8f68af2a02576dac3d653"
+  },
+  {
+    "id": "correction.e32.title",
+    "verdict": "supported",
+    "reason": "The cited E32 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "4695fdf82a01a386509bab16309b8b6d18c7746afa92d7f07ce414a326875874",
+    "evidence_hash": "6773be9e3893f711fd9fa0393e8cc12788be4c27b9a309f497fb45565dcf76fb"
+  },
+  {
+    "id": "correction.e34.title",
+    "verdict": "supported",
+    "reason": "The cited E34 correction explicitly identifies this issue; the title does not assert a broader mathematical or formalization claim.",
+    "claim_hash": "4d06b87ee7e580afb686ed7aa60360b8d0b954b3f66c67f970e5eb41275aa6ab",
+    "evidence_hash": "708c39fa7b4a3ba63684e11241eb4b27c89b7417556f401a2d364317afe248a6"
+  },
+  {
+    "id": "figure.growth.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "e624302b59706c8efc7b1cadb207f57648c3d1951a11128147874563c2c19249",
+    "evidence_hash": "7d59789b1591248302d5c373dbf0829f158ae7d70929cf3fdd57e2db0bdaf8d6"
+  },
+  {
+    "id": "figure.growth.caption",
+    "verdict": "supported",
+    "reason": "The E-1 example fixes C>0, approaches the diagonal from x1>x2, and keeps the Euclidean norm at least C while 1/ε diverges.",
+    "claim_hash": "52b6cec23151a5bb6fa8c51e820af915b940dd36c26ca3aae28d6ed7407cea18",
+    "evidence_hash": "7d59789b1591248302d5c373dbf0829f158ae7d70929cf3fdd57e2db0bdaf8d6"
+  },
+  {
+    "id": "figure.growth.formula",
+    "verdict": "supported",
+    "reason": "Direct substitution in the cited reciprocal-diagonal example gives x1−x2=ε and f=1/ε for the stated positive parameters.",
+    "claim_hash": "29c1f36d9e0553970c24b449225a326f1c3b798b0937276b1171b9d5518bb02a",
+    "evidence_hash": "7d59789b1591248302d5c373dbf0829f158ae7d70929cf3fdd57e2db0bdaf8d6"
+  },
+  {
+    "id": "figure.nonattainment.title",
+    "verdict": "supported",
+    "reason": "The title names the result, definition, or construction explicitly present in the cited spans; it is not read as a complete theorem statement.",
+    "claim_hash": "f5e37eea8ad0798e4f2c17168a4f4258b96a20ab8a91a02de6e986538a57ffe9",
+    "evidence_hash": "6d320d240af8a2de54a5a0603c36203be189e7a050082c2f09e1b74b10dc8ed1"
+  },
+  {
+    "id": "figure.nonattainment.caption",
+    "verdict": "supported",
+    "reason": "The cited lower argmin is y1y2=1 and P=y1²; along its positive branch y2→∞ entails y1→0 while P remains positive.",
+    "claim_hash": "449664cbbc9f4f2d2a31c437c74283255b74d9da4ee5832fc365919d855d1774",
+    "evidence_hash": "bd9b01d2d77216e597aecc6d5362f54abde52533553668374111cf801401365d"
+  },
+  {
+    "id": "figure.nonattainment.formula",
+    "verdict": "supported",
+    "reason": "The parameterization satisfies the cited hyperbola constraint for t>0, and substitution gives P=t².",
+    "claim_hash": "324723094be8898cfff934e8b7120787709363ae7b86bcd5864fd43d81f462c4",
+    "evidence_hash": "bd9b01d2d77216e597aecc6d5362f54abde52533553668374111cf801401365d"
+  }
+]

@@ -1,0 +1,24 @@
+# Generated site builds and exports (vendor package dist directories are inputs).
+/dist/
+/dist-next/
+/dist-preview/
+/website/
+/website-next/
+/website-svssg/
+/website-svssg-next/
+/bilevel-hardness-svssg.zip
+/bilevel-hardness-website.zip
+/source/lean-next/
+/vendor-tmp/
+node_modules
+/test-output/
+
+# Generated build and browser reports.
+/reports/*.json
+/reports/*.png
+/reports/render-failure.txt
+
+# main.aux is pinned build input and must be committed with the project.
+source/paper/*.log
+source/paper/*.out
+source/paper/*.toc

@@ -1,0 +1,17 @@
+{
+  "name": "bilevel-hardness-visual-paper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:browser": "node test/browser.mjs",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
+    "release": "node scripts/build.mjs --release",
+    "sync:lean": "node scripts/sync-lean.mjs",
+    "export": "node scripts/export.mjs",
+    "update": "node scripts/update.mjs"
+  }
+}

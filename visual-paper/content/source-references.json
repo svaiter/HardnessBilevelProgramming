@@ -1,0 +1,863 @@
+{
+  "source": "source/paper/main.tex",
+  "baseline": [
+    {
+      "node": "bp",
+      "refs": [
+        {
+          "label": "eq:simple-bilevel-poly-optim",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 8877,
+            "end": 8913,
+            "sha256": "48b8383037ffd72e9a163bd5c7ea011d3bbf1fd1f9e19c4f3c2adbd18b6a2a4e"
+          },
+          "number": "BP",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:simple-bilevel-poly-optim",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 9312,
+            "end": 9348,
+            "sha256": "48b8383037ffd72e9a163bd5c7ea011d3bbf1fd1f9e19c4f3c2adbd18b6a2a4e"
+          },
+          "number": "BP",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:simple-bilevel-poly-optim",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 10282,
+            "end": 10318,
+            "sha256": "48b8383037ffd72e9a163bd5c7ea011d3bbf1fd1f9e19c4f3c2adbd18b6a2a4e"
+          },
+          "number": "BP",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:simple-bilevel-poly-optim",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 11226,
+            "end": 11262,
+            "sha256": "48b8383037ffd72e9a163bd5c7ea011d3bbf1fd1f9e19c4f3c2adbd18b6a2a4e"
+          },
+          "number": "BP",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:optimistic-bilevel",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 11298,
+            "end": 11327,
+            "sha256": "8ca4c3a074fd2aa9ac10d5f90083fe81af0ac9a623a43b2a5f9d17ef30cb53b6"
+          },
+          "number": "BP-O",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:simple-bilevel-poly-optim",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 11452,
+            "end": 11488,
+            "sha256": "48b8383037ffd72e9a163bd5c7ea011d3bbf1fd1f9e19c4f3c2adbd18b6a2a4e"
+          },
+          "number": "BP",
+          "disposition": "within-node"
+        },
+        {
+          "label": "subsection:summary_results",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 11613,
+            "end": 11646,
+            "sha256": "60fbdde901dbe513a2cdb342164608995c0d7d1b9d5d60143052dd9d393b4d4f"
+          },
+          "number": "2.4",
+          "disposition": "omitted",
+          "reason": "Forward pointer to the pessimistic discussion."
+        }
+      ]
+    },
+    {
+      "node": "thm11",
+      "refs": [
+        {
+          "label": "theorem:whitney-representation",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 151643,
+            "end": 151680,
+            "sha256": "98a8e22f9b51e288b4fec98a5e61ee0473735fb5092c9e6f7cd27a719af66005"
+          },
+          "number": "A.1",
+          "disposition": "outside-map-scope",
+          "targetName": "Whitney zero-set theorem"
+        },
+        {
+          "label": "theorem:whitney-representation",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 151924,
+            "end": 151961,
+            "sha256": "98a8e22f9b51e288b4fec98a5e61ee0473735fb5092c9e6f7cd27a719af66005"
+          },
+          "number": "A.1",
+          "disposition": "outside-map-scope",
+          "targetName": "Whitney zero-set theorem"
+        }
+      ]
+    },
+    {
+      "node": "def22",
+      "refs": [
+        {
+          "label": "def:semi-algebraic-set",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 34366,
+            "end": 34395,
+            "sha256": "2d38ee749f26e7f79b08ef3c20be9725cf5a03905487b09859decc410922c53b"
+          },
+          "number": "2.1",
+          "disposition": "outside-map-scope",
+          "targetName": "Definition of a basic semialgebraic set"
+        }
+      ]
+    },
+    {
+      "node": "thm23",
+      "refs": []
+    },
+    {
+      "node": "prop24",
+      "refs": []
+    },
+    {
+      "node": "prop25",
+      "refs": []
+    },
+    {
+      "node": "prop26",
+      "refs": []
+    },
+    {
+      "node": "cor29",
+      "refs": [
+        {
+          "label": "eq:simple-bilevel-poly-optim",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 43342,
+            "end": 43378,
+            "sha256": "48b8383037ffd72e9a163bd5c7ea011d3bbf1fd1f9e19c4f3c2adbd18b6a2a4e"
+          },
+          "number": "BP",
+          "disposition": "graph-edge",
+          "target": "bp"
+        },
+        {
+          "label": "theorem:maximum_theorem",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 44013,
+            "end": 44043,
+            "sha256": "999e5c1caa2528afc2500c4d83f8a5c74ca4ebc9bea88dd2c1c00f1b44a57cac"
+          },
+          "number": "2.8",
+          "disposition": "outside-map-scope",
+          "targetName": "Berge maximum theorem"
+        }
+      ]
+    },
+    {
+      "node": "thm212",
+      "refs": [
+        {
+          "label": "def:extended-semi-algebraic-function",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 53894,
+            "end": 53937,
+            "sha256": "520c517ccd74cc04688fdb1d6c155b88ef86e40f4f45ea7fe11d049d2a577582"
+          },
+          "number": "2.2",
+          "disposition": "graph-edge",
+          "target": "def22"
+        },
+        {
+          "label": "eq:graph-decomposition",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 54654,
+            "end": 54684,
+            "sha256": "48bd5c90402ef7fc28db2931df33e1cfca06e0b7da9de4b55aefe1c48b3ba8a8"
+          },
+          "number": "3",
+          "disposition": "within-node"
+        },
+        {
+          "label": "tab:variables-semi-algebraic-function",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 54887,
+            "end": 54931,
+            "sha256": "e1008910c2d749bc007a3c61b0da2e04cd353a5660b74dbe1b00807d762a65b7"
+          },
+          "number": "1",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:graph-decomposition",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 56452,
+            "end": 56481,
+            "sha256": "21241ac285cbfe1bdde6171e5f2f5523e4d26848447a6518038aa9209a5c3fe0"
+          },
+          "number": "3",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:optimized-z-ij",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 57325,
+            "end": 57350,
+            "sha256": "329e95be35b68f85f941db4b05c63bdba89a5fca9f3230d5467463f979264765"
+          },
+          "number": "6",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:optimized-z-ij",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 57786,
+            "end": 57811,
+            "sha256": "329e95be35b68f85f941db4b05c63bdba89a5fca9f3230d5467463f979264765"
+          },
+          "number": "6",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:def-F",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 58118,
+            "end": 58134,
+            "sha256": "f740db3ba1cf39a16cc7aabe6932c31640f10c30c80882017499d80a9c9546f0"
+          },
+          "number": "5",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:domain-decomposition",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 58221,
+            "end": 58252,
+            "sha256": "1f983ced06f4a4815e258225cdd364b9e51c1ca74a68f253f548761384212eb4"
+          },
+          "number": "4",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:optimized-z-ij",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 60486,
+            "end": 60510,
+            "sha256": "b981a546ed71ac95dfe89166df48bd7dc92cf53ef14bc22e4cec49a41c177449"
+          },
+          "number": "6",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:def-H",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 60554,
+            "end": 60569,
+            "sha256": "22ed81ebef1e7ddbe9e487607bb2d07fff47499d93999de4f40aa6748327c0cf"
+          },
+          "number": "7",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:def-H",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 61112,
+            "end": 61127,
+            "sha256": "22ed81ebef1e7ddbe9e487607bb2d07fff47499d93999de4f40aa6748327c0cf"
+          },
+          "number": "7",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:def-H",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 61666,
+            "end": 61681,
+            "sha256": "22ed81ebef1e7ddbe9e487607bb2d07fff47499d93999de4f40aa6748327c0cf"
+          },
+          "number": "7",
+          "disposition": "within-node"
+        }
+      ]
+    },
+    {
+      "node": "thm215",
+      "refs": [
+        {
+          "label": "theorem:compact-convex=LSC",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 69065,
+            "end": 69098,
+            "sha256": "89b8c42ddec03c29977dab09b7b62b6a58816071efb3dca1a9edc377c2114bfb"
+          },
+          "number": "2.21",
+          "disposition": "omitted",
+          "reason": "Incorrect theorem label in the proof opening, recorded in correction e4."
+        },
+        {
+          "label": "cor:upper-bound-nonconvex-class",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 69115,
+            "end": 69153,
+            "sha256": "ac35ed7023b4eaded4a39bcc5b26f82d88a86351a7348fd7eb879c5983985ba6"
+          },
+          "number": "2.6",
+          "disposition": "graph-edge",
+          "target": "prop26"
+        },
+        {
+          "label": "lemma:upper-bound-compact-nonconvex-class",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 69158,
+            "end": 69206,
+            "sha256": "5602ef11fa04f4718673b0b9bc9f67ee75c1f324415e21737b1969f8bbb514ce"
+          },
+          "number": "2.9",
+          "disposition": "graph-edge",
+          "target": "cor29"
+        },
+        {
+          "label": "theorem:compact-convex=LSC",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 69440,
+            "end": 69473,
+            "sha256": "89b8c42ddec03c29977dab09b7b62b6a58816071efb3dca1a9edc377c2114bfb"
+          },
+          "number": "2.21",
+          "disposition": "omitted",
+          "reason": "Incorrect theorem label in the proof opening, recorded in correction e4."
+        },
+        {
+          "label": "lemma:closed-semi-algebraic-set",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 70082,
+            "end": 70120,
+            "sha256": "53655da2cb5160c73efda18794f88e6739da760c00164840af1bd7bebd48773c"
+          },
+          "number": "2.4",
+          "disposition": "graph-edge",
+          "target": "prop24"
+        },
+        {
+          "label": "lemma:growth-semi-algebraic-functions",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 70661,
+            "end": 70705,
+            "sha256": "15e4b2854243a8389719604eb9554d7de4ea6c449306419628ba8d4192763605"
+          },
+          "number": "2.5",
+          "disposition": "graph-edge",
+          "target": "prop25"
+        },
+        {
+          "label": "eq:optimistic-bilevel",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 71590,
+            "end": 71619,
+            "sha256": "8ca4c3a074fd2aa9ac10d5f90083fe81af0ac9a623a43b2a5f9d17ef30cb53b6"
+          },
+          "number": "BP-O",
+          "disposition": "graph-edge",
+          "target": "bp"
+        },
+        {
+          "label": "tab:variables-lower-semicontinuous-function",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 71843,
+            "end": 71893,
+            "sha256": "b3d4e821bd5d5dd6ebf44a16d93dc12ce5ea8dc6fce0dd8d41af24178720fa4b"
+          },
+          "number": "2",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:proof-closed-semi-algebraic-set",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 72808,
+            "end": 72850,
+            "sha256": "f0b15bae9ff8dfcb85308e6142cc2214a8c770102c4387e7b083f91729e540a4"
+          },
+          "number": "8",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:proof-semi-optimal-values",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 74374,
+            "end": 74410,
+            "sha256": "3e2e61389a52b5609fc80564046df28bbe59baa7e4ff961f9583dd7866a3e2e0"
+          },
+          "number": "9",
+          "disposition": "within-node"
+        }
+      ]
+    },
+    {
+      "node": "lem219",
+      "refs": [
+        {
+          "label": "def:semi-algebraic-set",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 80916,
+            "end": 80945,
+            "sha256": "2d38ee749f26e7f79b08ef3c20be9725cf5a03905487b09859decc410922c53b"
+          },
+          "number": "2.1",
+          "disposition": "outside-map-scope",
+          "targetName": "Definition of a basic semialgebraic set"
+        }
+      ]
+    },
+    {
+      "node": "thm218",
+      "refs": [
+        {
+          "label": "def:piecewise-polynomial",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 83793,
+            "end": 83824,
+            "sha256": "5f3bce2133542099381b6f2114f23bcb3252bd37cf95f1b37d0b32847da831f5"
+          },
+          "number": "2.17",
+          "disposition": "outside-map-scope",
+          "targetName": "Definition of a piecewise polynomial function"
+        },
+        {
+          "label": "def:semi-algebraic-set",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 83880,
+            "end": 83909,
+            "sha256": "2d38ee749f26e7f79b08ef3c20be9725cf5a03905487b09859decc410922c53b"
+          },
+          "number": "2.1",
+          "disposition": "outside-map-scope",
+          "targetName": "Definition of a basic semialgebraic set"
+        },
+        {
+          "label": "lemma:stratification-elementary-set",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 84145,
+            "end": 84187,
+            "sha256": "0c6aa927025b1245577aef9d4dc7fe2239ad60cd8d4b6ac814c6974cf1d4440b"
+          },
+          "number": "C.1",
+          "disposition": "outside-map-scope",
+          "targetName": "Disjoint basic-set decomposition"
+        },
+        {
+          "label": "appendix:alternative-def",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 84191,
+            "end": 84222,
+            "sha256": "facf7574fada1175a7a3af61a91caea1082311b48529b71e57be614600d308e3"
+          },
+          "number": "C",
+          "disposition": "omitted",
+          "reason": "Location of the disjoint decomposition already cited as Proposition C.1."
+        },
+        {
+          "label": "lem:constrained-convex-construction",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 84917,
+            "end": 84959,
+            "sha256": "10c686eafe39453b7b9f305ebc2637a67c8120017707c0ee5b7bf82a54b28f25"
+          },
+          "number": "2.19",
+          "disposition": "graph-edge",
+          "target": "lem219"
+        },
+        {
+          "label": "lem:constrained-convex-construction",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 85778,
+            "end": 85820,
+            "sha256": "10c686eafe39453b7b9f305ebc2637a67c8120017707c0ee5b7bf82a54b28f25"
+          },
+          "number": "2.19",
+          "disposition": "graph-edge",
+          "target": "lem219"
+        }
+      ]
+    },
+    {
+      "node": "thm220",
+      "refs": [
+        {
+          "label": "theorem:compact=lsc+bc",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 100672,
+            "end": 100701,
+            "sha256": "d2276415445165783314f179b219b8fe5b2b54591e746728042e4b89df7a7bc6"
+          },
+          "number": "2.15",
+          "disposition": "graph-edge",
+          "target": "thm215"
+        },
+        {
+          "label": "theorem:compact=lsc+bc",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 101266,
+            "end": 101295,
+            "sha256": "d2276415445165783314f179b219b8fe5b2b54591e746728042e4b89df7a7bc6"
+          },
+          "number": "2.15",
+          "disposition": "graph-edge",
+          "target": "thm215"
+        },
+        {
+          "label": "lemma:closed-semi-algebraic-set",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 102028,
+            "end": 102066,
+            "sha256": "53655da2cb5160c73efda18794f88e6739da760c00164840af1bd7bebd48773c"
+          },
+          "number": "2.4",
+          "disposition": "graph-edge",
+          "target": "prop24"
+        },
+        {
+          "label": "eq:closure-elementary-set-representation",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 103546,
+            "end": 103594,
+            "sha256": "616a42f1a0facda7d07ef78ee7941f52cdda7b4ecf0727aecf118a81a0eeec4a"
+          },
+          "number": "14",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:optimized-product-z-i",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 105338,
+            "end": 105370,
+            "sha256": "c2799a0733a2a014e07574c952e04b8dbc8d983f7e4c54253882e2222debb360"
+          },
+          "number": "15",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:bilevel-construction-convex-bounded",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 105910,
+            "end": 105956,
+            "sha256": "4ba9ae0221575184146f0c4ac0397bfac32d7ed6200c88b8bd4b243bfec80ee5"
+          },
+          "number": "16",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:optimize-product-h-z",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 106727,
+            "end": 106758,
+            "sha256": "d37300c1d3f9d9f8e818a2e53b5094df9d2b52ee320e3ec806eb16e00774c410"
+          },
+          "number": "17",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:closure-elementary-set-representation",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 106904,
+            "end": 106952,
+            "sha256": "616a42f1a0facda7d07ef78ee7941f52cdda7b4ecf0727aecf118a81a0eeec4a"
+          },
+          "number": "14",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:minimum-selection",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 107059,
+            "end": 107087,
+            "sha256": "ff1c3ec651445800df7d0da26bf735bb2c15bcf6451d4114d6e500962604555f"
+          },
+          "number": "13",
+          "disposition": "within-node"
+        }
+      ]
+    },
+    {
+      "node": "thm221",
+      "refs": [
+        {
+          "label": "theorem:compact=lsc+bc",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 109564,
+            "end": 109593,
+            "sha256": "d2276415445165783314f179b219b8fe5b2b54591e746728042e4b89df7a7bc6"
+          },
+          "number": "2.15",
+          "disposition": "graph-edge",
+          "target": "thm215"
+        },
+        {
+          "label": "theorem:projection-theorem",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 111388,
+            "end": 111421,
+            "sha256": "96f19d4172976bb58db29b348dd85537a24d37eb2bf2fdde320623aa29dd3480"
+          },
+          "number": "2.3",
+          "disposition": "graph-edge",
+          "target": "thm23"
+        },
+        {
+          "label": "theorem:compact=lsc+bc",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 111622,
+            "end": 111651,
+            "sha256": "d2276415445165783314f179b219b8fe5b2b54591e746728042e4b89df7a7bc6"
+          },
+          "number": "2.15",
+          "disposition": "graph-edge",
+          "target": "thm215"
+        },
+        {
+          "label": "eq:construction-compact-lsc",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 111720,
+            "end": 111755,
+            "sha256": "9bb18dfc253c9818bc20f5c9ac7d89972af30b061be2e319dae353689f68caeb"
+          },
+          "number": "10",
+          "disposition": "graph-edge",
+          "target": "thm215"
+        }
+      ]
+    },
+    {
+      "node": "pessimistic",
+      "refs": [
+        {
+          "label": "tab:expressivity",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 121697,
+            "end": 121720,
+            "sha256": "19d252523425fc403002e5016489e936e7d15000f1ec312cb21056e21c1f003c"
+          },
+          "number": "4",
+          "disposition": "outside-map-scope",
+          "targetName": "Summary table for geometric representation"
+        },
+        {
+          "label": "eq:pessimistic-bilevel",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 121765,
+            "end": 121795,
+            "sha256": "7ac0131fcb2b27f656a7efb8e1ed8a1cadaafb8c4352ebfeb866490b17ce9287"
+          },
+          "number": "BP-P",
+          "disposition": "graph-edge",
+          "target": "bp"
+        },
+        {
+          "label": "eq:pessimistic-bilevel",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 122092,
+            "end": 122122,
+            "sha256": "7ac0131fcb2b27f656a7efb8e1ed8a1cadaafb8c4352ebfeb866490b17ce9287"
+          },
+          "number": "BP-P",
+          "disposition": "graph-edge",
+          "target": "bp"
+        },
+        {
+          "label": "tab:expressivity",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 122551,
+            "end": 122574,
+            "sha256": "19d252523425fc403002e5016489e936e7d15000f1ec312cb21056e21c1f003c"
+          },
+          "number": "4",
+          "disposition": "outside-map-scope",
+          "targetName": "Summary table for geometric representation"
+        }
+      ]
+    },
+    {
+      "node": "ssi",
+      "refs": []
+    },
+    {
+      "node": "lem33",
+      "refs": [
+        {
+          "label": "prob:subset-sum-interval",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 138935,
+            "end": 138966,
+            "sha256": "db34cb496d2a917e89a50336f82a41d2ba91241e23ef89a5621acd08889b10d3"
+          },
+          "number": "3.1",
+          "disposition": "graph-edge",
+          "target": "ssi"
+        },
+        {
+          "label": "eq:optimistic-bilevel",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 139296,
+            "end": 139325,
+            "sha256": "8ca4c3a074fd2aa9ac10d5f90083fe81af0ac9a623a43b2a5f9d17ef30cb53b6"
+          },
+          "number": "BP-O",
+          "disposition": "graph-edge",
+          "target": "bp"
+        },
+        {
+          "label": "prob:subset-sum-interval",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 139809,
+            "end": 139840,
+            "sha256": "db34cb496d2a917e89a50336f82a41d2ba91241e23ef89a5621acd08889b10d3"
+          },
+          "number": "3.1",
+          "disposition": "graph-edge",
+          "target": "ssi"
+        },
+        {
+          "label": "prob:subset-sum-interval",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 141884,
+            "end": 141915,
+            "sha256": "db34cb496d2a917e89a50336f82a41d2ba91241e23ef89a5621acd08889b10d3"
+          },
+          "number": "3.1",
+          "disposition": "graph-edge",
+          "target": "ssi"
+        },
+        {
+          "label": "eq:construction-P-Q",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 143170,
+            "end": 143197,
+            "sha256": "e69c87488a22ad1f0a546d31bf4819ffe4c24f31b988387587440e7c7b5bc5ca"
+          },
+          "number": "19",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:construction-P-Q",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 144051,
+            "end": 144078,
+            "sha256": "e69c87488a22ad1f0a546d31bf4819ffe4c24f31b988387587440e7c7b5bc5ca"
+          },
+          "number": "19",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:construction-P-Q",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 145262,
+            "end": 145289,
+            "sha256": "e69c87488a22ad1f0a546d31bf4819ffe4c24f31b988387587440e7c7b5bc5ca"
+          },
+          "number": "19",
+          "disposition": "within-node"
+        },
+        {
+          "label": "eq:optimal-z-1",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 145852,
+            "end": 145873,
+            "sha256": "f10def4466a2e677936f2bea847f1693dfa180e186bcdd7ae5bf6cc80f8f9b1d"
+          },
+          "number": "21",
+          "disposition": "within-node"
+        }
+      ]
+    },
+    {
+      "node": "thm32",
+      "refs": [
+        {
+          "label": "theorem:hardness2",
+          "source": {
+            "file": "source/paper/main.tex",
+            "start": 138789,
+            "end": 138813,
+            "sha256": "c86a230b7f3e78c7f273f14d87c5d2c8a0020e787bd155c0285f50248409b1a4"
+          },
+          "number": "3.2",
+          "disposition": "within-node"
+        }
+      ]
+    }
+  ]
+}

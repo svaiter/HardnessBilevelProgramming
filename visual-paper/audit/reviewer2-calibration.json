@@ -1,0 +1,10 @@
+[
+  {"id":"q1","verdict":"contradicted","reason":"E-1 supplies a multivariable semialgebraic counterexample unbounded near a diagonal even outside any fixed ball."},
+  {"id":"q2","verdict":"supported","reason":"E-1 explicitly repairs the growth statement by assuming boundedness on bounded sets."},
+  {"id":"q3","verdict":"contradicted","reason":"E-8 states that the infimum in the nonattainment example is zero."},
+  {"id":"q4","verdict":"contradicted","reason":"E-7 says the empty feasible set gives the identically positive-infinite value, invalidating the real-valued characterization."},
+  {"id":"q5","verdict":"contradicted","reason":"E-11 says every t occurs on the negative-infinite target locus and restricts arbitrary-selection equivalence to real-valued targets."},
+  {"id":"q6","verdict":"contradicted","reason":"E-28 identifies the formalized degree bound as at most five and exhibits degree-five monomials for positive dimensions."},
+  {"id":"q7","verdict":"supported","reason":"E-8 gives exactly this value and nonattainment example."},
+  {"id":"q8","verdict":"supported","reason":"E-28 explicitly says Theorem 3.2 only needs degree at most five."}
+]

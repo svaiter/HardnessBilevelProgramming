@@ -1,0 +1,118 @@
+[
+  {
+    "id": "growth",
+    "node": "prop25",
+    "kind": "quantitative illustration",
+    "status": "review",
+    "title": {
+      "id": "figure.growth.title",
+      "text": "A diagonal singularity at large radius",
+      "cites": [
+        {
+          "file": "../blueprint.md",
+          "start": 155690,
+          "end": 156333,
+          "sha256": "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda"
+        }
+      ]
+    },
+    "caption": [
+      {
+        "id": "figure.growth.caption",
+        "text": "Moving toward the diagonal off it sends the reciprocal value to positive infinity while the point stays outside the chosen radius.",
+        "cites": [
+          {
+            "file": "../blueprint.md",
+            "start": 155690,
+            "end": 156333,
+            "sha256": "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda"
+          }
+        ]
+      }
+    ],
+    "formula": {
+      "id": "figure.growth.formula",
+      "text": "$f(C+\\varepsilon,C)=1/\\varepsilon$ for $C>0$ and $\\varepsilon>0$.",
+      "cites": [
+        {
+          "file": "../blueprint.md",
+          "start": 155690,
+          "end": 156333,
+          "sha256": "5b6b7c43551ba8bc4995cef8454d948313c17692866b7fadb4f9f1cee455bfda"
+        }
+      ]
+    },
+    "parameters": [
+      {
+        "id": "radius",
+        "description": "Fixed positive diagonal coordinate and comparison radius."
+      },
+      {
+        "id": "epsilon",
+        "description": "Positive offset from the diagonal, controlled by the slider."
+      }
+    ]
+  },
+  {
+    "id": "nonattainment",
+    "node": "prop26",
+    "kind": "quantitative illustration",
+    "status": "review",
+    "title": {
+      "id": "figure.nonattainment.title",
+      "text": "Approaching an infimum along a hyperbola",
+      "cites": [
+        {
+          "file": "../blueprint.md",
+          "start": 159514,
+          "end": 160150,
+          "sha256": "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831"
+        }
+      ]
+    },
+    "caption": [
+      {
+        "id": "figure.nonattainment.caption",
+        "text": "Along the positive branch of the lower minimizer hyperbola, the square of the first coordinate approaches zero as the second coordinate grows, while every upper output is positive.",
+        "cites": [
+          {
+            "file": "../blueprint.md",
+            "start": 159514,
+            "end": 160150,
+            "sha256": "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831"
+          },
+          {
+            "file": "../blueprint.md",
+            "start": 64869,
+            "end": 65437,
+            "sha256": "093602cb83fc7a15e965e85b39a6a3d336467c97e56dc62ef7712d410406b4a5"
+          }
+        ]
+      }
+    ],
+    "formula": {
+      "id": "figure.nonattainment.formula",
+      "text": "$y_1=t$, $y_2=1/t$, and $P(y)=t^2$ for $t>0$.",
+      "cites": [
+        {
+          "file": "../blueprint.md",
+          "start": 159514,
+          "end": 160150,
+          "sha256": "5731632fcfcd0f14c635e403fa47729c8b97363ab8345bb6c0c61c297bd26831"
+        },
+        {
+          "file": "../blueprint.md",
+          "start": 64869,
+          "end": 65437,
+          "sha256": "093602cb83fc7a15e965e85b39a6a3d336467c97e56dc62ef7712d410406b4a5"
+        }
+      ]
+    },
+    "parameters": [
+      {
+        "id": "t",
+        "description": "Positive first coordinate of the selected lower minimizer, controlled by the slider."
+      }
+    ]
+  }
+]

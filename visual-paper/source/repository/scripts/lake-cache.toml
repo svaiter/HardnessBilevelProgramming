@@ -1,0 +1,7 @@
+# Lake cache service for TauCeti's published oleans (public, anonymous reads).
+cache.defaultService = "tauceti-public"
+[[cache.service]]
+name = "tauceti-public"
+kind = "s3"
+artifactEndpoint = "https://cache.taucetiproject.org/artifacts"
+revisionEndpoint = "https://cache.taucetiproject.org/revisions"

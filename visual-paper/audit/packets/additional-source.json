@@ -1,0 +1,51 @@
+[
+  {
+    "id": "f0ece41be216aeeab508269b0d76c8bb41cd350ff54bc792b7e09dd32094c9e1",
+    "file": "source/paper/main.tex",
+    "start": 70615,
+    "end": 71741,
+    "text": "        \\item Since $f$ is semi-algebraic, by \\Cref{lemma:growth-semi-algebraic-functions}, there exist a positive constant $C$ and an integer $N$ such that $|f(x)| \\leq \\|x\\|^N, \\forall x, \\|x\\|\\geq C$. We can choose $N$ to be an even integer so that $\\|x\\|^N$ is a polynomial. On the other hand, since $f$ is bounded on compact sets, there exists another positive constant $B$ such that $|f(x)| \\leq B, \\forall x, \\|x\\| \\leq C$. By combining these two observations, we have:\n        \\begin{equation*}\n            f(x) \\leq B + \\|x\\|^N, \\forall x \\in \\RR^n.\n        \\end{equation*}\n       Using this remark, we may assume that $f$ is bounded in $[-1,1]$. \n       \n       Indeed, consider the function: $h(x) = f(x) / (B + \\|x\\|^N)$. Since the polynomial $B + \\|x\\|^N \\geq B, \\forall x \\in \\RR$, $h(x)$ is well-defined, and it remains semi-algebraic, lower-semicontinuous. Moreover, $h$ is bounded in $[-1,1]$. If one can construct $P,Q$ and $\\cY$ such that $\\valbilevel$ in \\eqref{eq:optimistic-bilevel} satisfies $\\valbilevel = h$, then the bilevel problem with $(P(B + \\|x\\|^N), Q, \\cY)$ has a value function equal to $f$.\n"
+  },
+  {
+    "id": "287c7822c1f9464e71d62142ec0f618e5557e61288646fa2a2fa876f30d909df",
+    "file": "source/paper/main.tex",
+    "start": 9777,
+    "end": 9995,
+    "text": "\\noindent\\begin{minipage}{.5\\linewidth}\n\\begin{equation}\n    \\label{eq:optimistic-bilevel}\n    \\tag{BP-O}\n    \\valoptim\\colon \\firstvar \\mapsto \\inf_{\\secondvar \\in \\Theta(x)} \\; P(\\firstvar,\\secondvar)\n\\end{equation}\n"
+  },
+  {
+    "id": "9f9d20cec5bb7d349ab8c249cb8034e7ebc6ea91293de3dc70b7a4dc860e1ca4",
+    "file": "source/paper/main.tex",
+    "start": 68570,
+    "end": 69020,
+    "text": "\\begin{theorem}[Value functions of  box-constrained polynomial bilevel programming]\n    \\label{theorem:compact=lsc+bc}\n    Any function which is semi-algebraic, lower semicontinuous, and bounded on compact sets is the value function of a polynomial bilevel problem whose lower-level feasible set $\\cY$ is a bounded box. In other words:\n    \\begin{equation*}\n        \\cP_{\\textup{\\bounded}} = \\SA \\cap \\LSC \\cap \\BC.\n    \\end{equation*}\n\\end{theorem}\n"
+  },
+  {
+    "id": "0b70bacdc14bef87a8e07c7b7a928fa9a5d72d096220a232d107148e54bf9f14",
+    "file": "source/paper/main.tex",
+    "start": 100506,
+    "end": 100703,
+    "text": "    In the following, we show that if $f \\in \\PP \\cap \\LSC$, then $f \\in \\cC_{\\bounded}$, which is the first inclusion. The second inclusion was already justified in \\Cref{theorem:compact=lsc+bc}.\n"
+  },
+  {
+    "id": "9de2ace4942b38a5c0a5dde56ac696332c2669e7f7ccf6ce05ff26bb4aa2f306",
+    "file": "source/paper/main.tex",
+    "start": 101228,
+    "end": 101925,
+    "text": "        \\item Similar to the proof of \\Cref{theorem:compact=lsc+bc}, there exists a pair integer $N$ and a positive constant $B > 0$ such that $\\max_{i = 1, \\ldots, N} P_i(x) \\leq B + \\|x\\|^N$. Thus, in the following construction, WLOG, one can assume that $P_i(x) \\leq 0, \\forall i = 1, \\ldots, N, \\forall x \\in \\RR^n$. Otherwise, we can consider the function $r(x) = f(x) - B - \\|x\\|^N$, which is also an element of $\\cS$, lower-semicontinuous and all $r_i(x) = P_i(x) - B - \\|x\\|^N \\leq 0$ for all $x$. If we can find functions $P, Q$ and a bounded box so that the corresponding bilevel problem has the value function equal to $r(x)$, then that of $(P + B + \\|x\\|^N, Q, \\cY)$ is equal to $h$. \n"
+  },
+  {
+    "id": "2515ec75551427c6114fd4bc66b7b6806c90b8bd0d6ace218670a893f4f2d850",
+    "file": "source/paper/main.tex",
+    "start": 10042,
+    "end": 11711,
+    "text": "\\begin{equation}\n    \\label{eq:pessimistic-bilevel}\n    \\tag{BP-P}\n    \\valpessim \\colon x \\mapsto \\sup_{\\secondvar \\in \\Theta(\\firstvar)} \\; P(\\firstvar,\\secondvar)\n\\end{equation}\n\\end{minipage},\nwhere $\\Theta(\\firstvar)$ is defined as in \\eqref{eq:simple-bilevel-poly-optim}. %The use of ``$\\min/\\max$'' to define value functions in \\eqref{eq:optimistic-bilevel} and \\eqref{eq:pessimistic-bilevel} implicitly means that $\\Theta(\\firstvar)$ is non-empty for all $\\firstvar \\in \\cX$ and $P(\\firstvar,\\cdot)$ attains its min/max values in $\\Theta(\\firstvar)$. This is formalized in \\Cref{assumption:well-definedness}. \nWe distinguish $\\valoptim$ (resp. $\\valpessim$) the optimistic (resp. pessimistic) value function, where $\\valoptim(\\firstvar) = + \\infty$ (resp. $\\valpessim(\\firstvar) = - \\infty$), if $\\Theta(\\firstvar) = \\emptyset$.  We emphasize that the term ``value function'' is different from the ``lower-level value function'', which has been used in the literature to construct algorithms, starting with \\cite{ye1995optimality}. For simplicity, we will focus on the optimistic formulation of the bilevel problem, for the rest of this paper, the term ``bilevel problem'' in \\eqref{eq:simple-bilevel-poly-optim} denotes the optimistic formulation \\eqref{eq:optimistic-bilevel} and $\\valbilevel = \\valoptim$ denote the corresponding value function. This amounts to considering that the minimization in \\eqref{eq:simple-bilevel-poly-optim} also takes place over the variable $y$. The majority of our results have a counterpart for the pessimistic formulation, see \\Cref{subsection:summary_results}, with lower semicontinuity is replaced by upper semicontinuity.\n"
+  },
+  {
+    "id": "5325478897d7ef42cec0e7416e5357f22b0f3e680fea532ae2ef0cfe73abf12c",
+    "file": "source/paper/main.tex",
+    "start": 121630,
+    "end": 122643,
+    "text": "    \\item Both representation results involving unbounded boxes in \\Cref{tab:expressivity} hold true also for the pessimistic versions \\eqref{eq:pessimistic-bilevel} and actually for any specification of the selection process in the lower level argmin. Indeed, all these constructions involve unique minimizers in the lower level.\n    \\item For the results involving bounded constraint sets, our constructions can be adapted to treat the pessimistic formulation \\eqref{eq:pessimistic-bilevel} similarly. The corresponding representation results would be exactly the same, with the notion of lower-semicontinuity being replaced by that of upper-semicontinuity, as the value function of pessimistic bilevel problems with compact lower level constraints are upper semicontinuous.\n\\end{itemize}\nWe do not include these results explicitly for simplicity, but in the context of pessimistic bilevel problems, all the results of \\Cref{tab:expressivity} hold true with upper-semicontinuity replacing lower-semicontinuity.\n"
+  }
+]

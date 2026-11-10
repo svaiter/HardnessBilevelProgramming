@@ -1,0 +1,10 @@
+[
+  {"id":"q1","verdict":"contradicted","reason":"E-1 explicitly states Proposition 2.5 is false for n≥2 and supplies a semialgebraic counterexample unbounded near the diagonal."},
+  {"id":"q2","verdict":"supported","reason":"E-1 imposes boundedness on bounded sets in corrected A3."},
+  {"id":"q3","verdict":"contradicted","reason":"E-8 states the value is identically zero, although every feasible upper objective value is positive."},
+  {"id":"q4","verdict":"contradicted","reason":"E-7 requires Y nonempty: empty Y gives value identically +∞ and contradicts the stated class characterization."},
+  {"id":"q5","verdict":"contradicted","reason":"E-11 limits the any-selection statement exactly to real-valued h; on {h=−∞}, every t occurs and the pessimistic value is +∞."},
+  {"id":"q6","verdict":"contradicted","reason":"E-28 says the formalization proves degree ≤5 only, with genuine degree-five monomials when the corresponding r or k is positive."},
+  {"id":"q7","verdict":"supported","reason":"E-8 gives precisely this example, with Θ={y₁y₂=1}, value identically zero, and no attainment."},
+  {"id":"q8","verdict":"supported","reason":"E-28 expressly says Theorem 3.2 needs only degree at most five."}
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1ee635d97ae82062ac12fa79bffb36da1923cf6c484a318e2cd8633e95a09804",
+    "file": "../blueprint.md",
+    "start": 64350,
+    "end": 64993,
+    "text": "*Proof.* Work in the enlarged spaces `(x,y)`, `(x,y,y')`, `(x,y,\u03b5)`, `(x,t)`, always as explicit nested sums. (1) `\u0398 := {(x,y) | y\n\u2208 Y \u2227 \u2200 y', y' \u2208 Y \u2192 Q x y \u2264 Q x y'}` is semialgebraic: `Y` pulled back by `sa.reindex`, `Q x y \u2264 Q x y'` polynomial in `(x,y,y')`\n(`sa.preimage_poly`/`sa.sign_sets`), then `sa.forall_sumElim`. (2) `{\u03c6=\u22a4} = {x | \u2200 y, (x,y) \u2209 \u0398}` (`fw.value_eq_top_iff`). (3)\n`{\u03c6=\u22a5} = {x | \u2200 \u03b4 : \u211d, \u2203 y, (x,y) \u2208 \u0398 \u2227 P x y < \u03b4}` (`fw.value_eq_bot_iff`). (4) graph `= {(x,t) | (\u2200 y, (x,y) \u2208 \u0398 \u2192 t \u2264 P x y) \u2227\n\u2200 \u03b5, \u03b5 \u2264 0 \u2228 \u2203 y, (x,y) \u2208 \u0398 \u2227 P x y < t + \u03b5}` (`fw.value_eq_coe_iff`, with `EReal.coe_eq_coe_iff`). **No attainment is used\n"
+  },
+  {
+    "id": "7f12f3b54cc4bb1cf608248ed13e7900d0f098ec3327659f0c41005bff4af12c",
+    "file": "source/paper/main.tex",
+    "start": 69874,
+    "end": 70491,
+    "text": "        \\item Since $f$ is semi-algebraic, $\\graph f$ is also semi-algebraic. Consequently, the closure $\\overline{\\graph f}$ is also semi-algebraic (see, for example, \\cite[Proposition 3.1]{realgeoalg}). By \\Cref{lemma:closed-semi-algebraic-set}, $\\overline{\\graph f}$ can be represented as:\n        \\begin{equation}\n            \\label{eq:proof-closed-semi-algebraic-set}\n            \\overline{\\graph f} = \\bigcup_{i \\in I}\\bigcap_{j \\in J} \\{(x, t) \\in \\RR^{n+1} \\mid \\, P_{ij}(x,t) \\geq 0\\},\n        \\end{equation}\n        where $P_{ij}$ are polynomials with $n+1$ variables, and $I,J$ are two finite index sets. \n"
+  },
+  {
+    "id": "de5d3dddfdc5c4664a66d4b45e2c3912fced1a78752e5278b6a070142a58c47e",
+    "file": "../blueprint.md",
+    "start": 103043,
+    "end": 104063,
+    "text": "2. **t215.epi_closed** `[S]` `E := {z : Fin n \u2295 Unit \u2192 \u211d | f (z \u2218 Sum.inl) \u2264 z (Sum.inr ())}` is closed:\n   `LowerSemicontinuous.isClosed_epigraph` (`Topology/Semicontinuity/Basic.lean:357`; iff at `:353`, needs `ClosedIciTopology \u211d`)\n   gives the epigraph `{p : (Fin n \u2192 \u211d) \u00d7 \u211d | f p.1 \u2264 p.2}`; transport by the homeomorphism\n   `Homeomorph.sumArrowHomeomorphProdArrow` (`Topology/Homeomorph/Lemmas.lean:279`) or directly as preimage of the closed epigraph\n   under the continuous map `z \u21a6 (z \u2218 inl, z (inr ()))`.\n3. **t215.epi_sa** `[S, A1]` `E` is semialgebraic: `E = (\u00b7 \u2218 Sum.inl) '' {(z, s) | (z,s) \u2208 graph f-cylinder \u2227 0 \u2264 z(inr ()) \u2212 s}`\n   \u2014 the inner set (on `(Fin n \u2295 Unit) \u2295 Unit \u2192 \u211d`) is the intersection of the cylinder over `graphSet f` (via\n   `sa.reindex`/`sa.cylinder`) with the polynomial inequality; the projection is A1 (`sa.exists_sumElim`).\n4. **FT** (A2): `E = \u22c3 i \u22c2 j {0 \u2264 eval \u00b7 (p i j)}` for `p : Fin a \u2192 Fin b \u2192 MvPolynomial (Fin n \u2295 Unit) \u211d`. This is exactly where\n   the closed-ness enters.\n"
+  },
+  {
+    "id": "f0ece41be216aeeab508269b0d76c8bb41cd350ff54bc792b7e09dd32094c9e1",
+    "file": "source/paper/main.tex",
+    "start": 70615,
+    "end": 71741,
+    "text": "        \\item Since $f$ is semi-algebraic, by \\Cref{lemma:growth-semi-algebraic-functions}, there exist a positive constant $C$ and an integer $N$ such that $|f(x)| \\leq \\|x\\|^N, \\forall x, \\|x\\|\\geq C$. We can choose $N$ to be an even integer so that $\\|x\\|^N$ is a polynomial. On the other hand, since $f$ is bounded on compact sets, there exists another positive constant $B$ such that $|f(x)| \\leq B, \\forall x, \\|x\\| \\leq C$. By combining these two observations, we have:\n        \\begin{equation*}\n            f(x) \\leq B + \\|x\\|^N, \\forall x \\in \\RR^n.\n        \\end{equation*}\n       Using this remark, we may assume that $f$ is bounded in $[-1,1]$. \n       \n       Indeed, consider the function: $h(x) = f(x) / (B + \\|x\\|^N)$. Since the polynomial $B + \\|x\\|^N \\geq B, \\forall x \\in \\RR$, $h(x)$ is well-defined, and it remains semi-algebraic, lower-semicontinuous. Moreover, $h$ is bounded in $[-1,1]$. If one can construct $P,Q$ and $\\cY$ such that $\\valbilevel$ in \\eqref{eq:optimistic-bilevel} satisfies $\\valbilevel = h$, then the bilevel problem with $(P(B + \\|x\\|^N), Q, \\cY)$ has a value function equal to $f$.\n"
+  },
+  {
+    "id": "287c7822c1f9464e71d62142ec0f618e5557e61288646fa2a2fa876f30d909df",
+    "file": "source/paper/main.tex",
+    "start": 9777,
+    "end": 9995,
+    "text": "\\noindent\\begin{minipage}{.5\\linewidth}\n\\begin{equation}\n    \\label{eq:optimistic-bilevel}\n    \\tag{BP-O}\n    \\valoptim\\colon \\firstvar \\mapsto \\inf_{\\secondvar \\in \\Theta(x)} \\; P(\\firstvar,\\secondvar)\n\\end{equation}\n"
+  },
+  {
+    "id": "9f9d20cec5bb7d349ab8c249cb8034e7ebc6ea91293de3dc70b7a4dc860e1ca4",
+    "file": "source/paper/main.tex",
+    "start": 68570,
+    "end": 69020,
+    "text": "\\begin{theorem}[Value functions of  box-constrained polynomial bilevel programming]\n    \\label{theorem:compact=lsc+bc}\n    Any function which is semi-algebraic, lower semicontinuous, and bounded on compact sets is the value function of a polynomial bilevel problem whose lower-level feasible set $\\cY$ is a bounded box. In other words:\n    \\begin{equation*}\n        \\cP_{\\textup{\\bounded}} = \\SA \\cap \\LSC \\cap \\BC.\n    \\end{equation*}\n\\end{theorem}\n"
+  },
+  {
+    "id": "0b70bacdc14bef87a8e07c7b7a928fa9a5d72d096220a232d107148e54bf9f14",
+    "file": "source/paper/main.tex",
+    "start": 100506,
+    "end": 100703,
+    "text": "    In the following, we show that if $f \\in \\PP \\cap \\LSC$, then $f \\in \\cC_{\\bounded}$, which is the first inclusion. The second inclusion was already justified in \\Cref{theorem:compact=lsc+bc}.\n"
+  },
+  {
+    "id": "9de2ace4942b38a5c0a5dde56ac696332c2669e7f7ccf6ce05ff26bb4aa2f306",
+    "file": "source/paper/main.tex",
+    "start": 101228,
+    "end": 101925,
+    "text": "        \\item Similar to the proof of \\Cref{theorem:compact=lsc+bc}, there exists a pair integer $N$ and a positive constant $B > 0$ such that $\\max_{i = 1, \\ldots, N} P_i(x) \\leq B + \\|x\\|^N$. Thus, in the following construction, WLOG, one can assume that $P_i(x) \\leq 0, \\forall i = 1, \\ldots, N, \\forall x \\in \\RR^n$. Otherwise, we can consider the function $r(x) = f(x) - B - \\|x\\|^N$, which is also an element of $\\cS$, lower-semicontinuous and all $r_i(x) = P_i(x) - B - \\|x\\|^N \\leq 0$ for all $x$. If we can find functions $P, Q$ and a bounded box so that the corresponding bilevel problem has the value function equal to $r(x)$, then that of $(P + B + \\|x\\|^N, Q, \\cY)$ is equal to $h$. \n"
+  },
+  {
+    "id": "2515ec75551427c6114fd4bc66b7b6806c90b8bd0d6ace218670a893f4f2d850",
+    "file": "source/paper/main.tex",
+    "start": 10042,
+    "end": 11711,
+    "text": "\\begin{equation}\n    \\label{eq:pessimistic-bilevel}\n    \\tag{BP-P}\n    \\valpessim \\colon x \\mapsto \\sup_{\\secondvar \\in \\Theta(\\firstvar)} \\; P(\\firstvar,\\secondvar)\n\\end{equation}\n\\end{minipage},\nwhere $\\Theta(\\firstvar)$ is defined as in \\eqref{eq:simple-bilevel-poly-optim}. %The use of ``$\\min/\\max$'' to define value functions in \\eqref{eq:optimistic-bilevel} and \\eqref{eq:pessimistic-bilevel} implicitly means that $\\Theta(\\firstvar)$ is non-empty for all $\\firstvar \\in \\cX$ and $P(\\firstvar,\\cdot)$ attains its min/max values in $\\Theta(\\firstvar)$. This is formalized in \\Cref{assumption:well-definedness}. \nWe distinguish $\\valoptim$ (resp. $\\valpessim$) the optimistic (resp. pessimistic) value function, where $\\valoptim(\\firstvar) = + \\infty$ (resp. $\\valpessim(\\firstvar) = - \\infty$), if $\\Theta(\\firstvar) = \\emptyset$.  We emphasize that the term ``value function'' is different from the ``lower-level value function'', which has been used in the literature to construct algorithms, starting with \\cite{ye1995optimality}. For simplicity, we will focus on the optimistic formulation of the bilevel problem, for the rest of this paper, the term ``bilevel problem'' in \\eqref{eq:simple-bilevel-poly-optim} denotes the optimistic formulation \\eqref{eq:optimistic-bilevel} and $\\valbilevel = \\valoptim$ denote the corresponding value function. This amounts to considering that the minimization in \\eqref{eq:simple-bilevel-poly-optim} also takes place over the variable $y$. The majority of our results have a counterpart for the pessimistic formulation, see \\Cref{subsection:summary_results}, with lower semicontinuity is replaced by upper semicontinuity.\n"
+  },
+  {
+    "id": "5325478897d7ef42cec0e7416e5357f22b0f3e680fea532ae2ef0cfe73abf12c",
+    "file": "source/paper/main.tex",
+    "start": 121630,
+    "end": 122643,
+    "text": "    \\item Both representation results involving unbounded boxes in \\Cref{tab:expressivity} hold true also for the pessimistic versions \\eqref{eq:pessimistic-bilevel} and actually for any specification of the selection process in the lower level argmin. Indeed, all these constructions involve unique minimizers in the lower level.\n    \\item For the results involving bounded constraint sets, our constructions can be adapted to treat the pessimistic formulation \\eqref{eq:pessimistic-bilevel} similarly. The corresponding representation results would be exactly the same, with the notion of lower-semicontinuity being replaced by that of upper-semicontinuity, as the value function of pessimistic bilevel problems with compact lower level constraints are upper semicontinuous.\n\\end{itemize}\nWe do not include these results explicitly for simplicity, but in the context of pessimistic bilevel problems, all the results of \\Cref{tab:expressivity} hold true with upper-semicontinuity replacing lower-semicontinuity.\n"
+  },
+  {
+    "id": "95af968794c2b52f8c7bea63b60e0443b3fd42b0327ed228374f50aa22056abb",
+    "file": "source/paper/main.tex",
+    "start": 138789,
+    "end": 138861,
+    "text": "\\Cref{theorem:hardness2} is an immediate result of the following lemma.\n"
+  },
+  {
+    "id": "9451efc0fefd24e6a1ba3993085d2de7e1c5f9a4b0a96d4689f4a38af5550c96",
+    "file": "source/paper/main.tex",
+    "start": 138910,
+    "end": 140952,
+    "text": "    Given an instance of \\Cref{prob:subset-sum-interval}, there exist two polynomials of degree five $P$ and $Q$ whose coefficients are integers in the interval $[-2(M^2 + 1), 2(M^2 + 1)]$ where $M = \\max(\\max_{i = 1}^k q_i, 2^{r-1}, R)$ and variable $(\\firstvar,\\secondvar)$, where $\\firstvar \\in \\RR^{r}, \\secondvar \\in \\RR^{k + 1}, \\cY = [0,1]^{k+1}$, such that the optimal value of \\eqref{eq:optimistic-bilevel}  \n    \\iffalse\n    the following optimistic polynomial bilevel problem:\n    \\begin{equation*}\n        \\begin{aligned}\n            &\\min_{\\firstvar} && \\valoptim(\\firstvar):= \\min_{(x, y(x))} P(\\firstvar, \\secondvar(\\firstvar))\\\\\n            &\\text{s.t.} && \\secondvar(\\firstvar) \\in \\argmin_{\\secondvar \\in \\cY} Q_\\firstvar(\\secondvar) := Q(\\firstvar, \\secondvar) \n        \\end{aligned}\n    \\end{equation*}\n    \\fi\n    is strictly smaller than zero if the answer for the instance of \\Cref{prob:subset-sum-interval} is YES, and exactly equal to zero if the answer is NO. \n\\end{lemma}\n\nBefore proving the lemma, we argue that the ``description'' of the polynomials $P,Q$ in \\Cref{lemma:hardness-bounded} is at most polynomial w.r.t. the size of the inputs of \\Cref{prob:subset-sum-interval}. Indeed, the polynomials $P,Q$ have degree five and all coefficients can be expressed by $\\log M$ bits. We remark that the representation of each coefficient might use $O(r)$ bits, from the bound $2^{r-1}$, which is exponential w.r.t. the number of bits representing the number $r$ itself. In addition, we have polynomials of $r$ variables, which represent a number of coefficient polynomial in $r$. This dependency in $r$ is still polynomial overall because any bit representation of \\Cref{prob:subset-sum-interval} must use at least $k \\geq r$ bits to represent to numbers $q_i, i = 1, \\ldots, k$. Regarding the other quantities appearing in the definition of $M$, it is clear that an integer smaller than $\\max_{i = 1}^k q_i$ has a bit representation of size bounded by that of the collection $q_1,\\ldots, q_k$ and similarly for $R$.\n"
+  }
+]
